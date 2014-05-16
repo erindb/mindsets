@@ -24,30 +24,22 @@
   <img src="stanford.png" alt="Stanford University">
   <br>
   <br>
-  <p class="block-text">In this experiment, you will ____.</p>
-  <p class="block-text">This experiment should take about ______ minutes to complete.</b></p> 
-  <button type="button" onClick="this.blur(); experiment.intro()">Start</button>
+  <p class="block-text">In this experiment, we are interested in how people reason about how people reason about people’s performance in classes. We will ask you to give us your opinion on some statements.</p>
+  <p class="block-text">This experiment should take about 3 minutes to complete.</b></p> 
+  <button type="button" onClick="this.blur(); experiment.trial(0)">Start</button>
   <p class="block-text">(Note: you won't be able to preview this HIT before accepting it.)</p>
   <p class="block-text" id="mustaccept"> You must accept the HIT in order to continue.</p>
   <p class="block-text" id="legal">By answering the following questions, you are participating in a study being performed by cognitive scientists in the Stanford Department of Psychology. If you have questions about this research, please contact Erin Bennett at 
   <a href="mailto:erindb@stanford.edu">erindb@stanford.edu</a> or Noah Goodman at ngoodman@stanford.edu. You must be at least 18 years old to participate. Your participation in this research is voluntary. You may decline to answer any or all of the following questions. You may decline further participation, at any time, without adverse consequences. Your anonymity is assured; the researchers who have requested your participation will not receive any personal information about you.</p>
 </div>
 
-<div class="slide" id="questionnaire">
-  <p>Last section! Please enter your responses below, and then click 'Submit'.</p>
-  <br/>
-  <form id="questionaireform">
-  <p>Your age: <input type="text" name="age"></input></p>
-  <br/>
-  <p>Your native language*:<input type="text" name="lg"></input><br/>(the language that was spoken at home when you were a child)</p>
-  <br/>
+<div class="slide" id="outgoing_questionnaire">
+  <p>What do you think this experiment was about?</p>
+  <p>Have you ever heard of "mindsets"?</p>
   <p>We would be interested in any comments you have about this experiment. Please type them here:</p>
   <textarea rows="7" cols="70" name="comments"></textarea>
-  <br/><br/>
   <button type="button" id="formsubmit">Submit</button>
   </form>
-  <br/>
-  <p>*required</p>
 </div>
 
 <div class="slide" id="finished">
@@ -55,67 +47,40 @@
 </div>
 
 <!-- slides for this experiment -->
-<div class="slide" id="intro">
-  <p id="introduction"></p>
-  <button type="button" class="continue">Continue</button>
-</div>
-
-<div class="slide" id="prior">
-  <p class="prompt"></p>
-  <div class="slider_container"></div>
-  <button type="button" class="continue">Continue</button>
-  <p class="err">Please make sure to adjust all the sliders before continuing (or tap the slider if you think it's already in the right position).</p>
-</div>
-
-<div class="slide" id="performance">
-  <p class="prompt"></p>
-  <button type="button" class="continue">Continue</button>
-  <p class="err">Please make sure to adjust the slider before continuing (or tap the slider if you think it's already in the right position).</p>
-</div>
-
-<div class="slide" id="improvement">
-  <p class="prompt"></p>
-  <button type="button" class="continue">Continue</button>
-  <p class="err">Please make sure to adjust the slider before continuing (or tap the slider if you think it's already in the right position).</p>
-</div>
-
 <div class="slide" id="goals">
+  <p>Imagine that at West High School, there’s a class taught by Mrs. Bennett in which students are learning math.</p>
   <p class="prompt"></p>
-  <button type="button" class="continue">Continue</button>
-  <p class="err">Please make sure to adjust all the sliders before continuing (or tap the slider if you think it's already in the right position).</p>
-</div>
-
-<div class="slide" id="improvement_transfer">
-  <p class="prompt"></p>
-  <button type="button" class="continue">Continue</button>
-  <p class="err">Please make sure to adjust the slider before continuing (or tap the slider if you think it's already in the right position).</p>
-</div>
-
-<div class="slide" id="failure">
-  <p class="prompt"></p>
+  <table><tbody>
+    <tr>
+      <td></td>
+      <td class="slider_labels">
+        <div class="left_label"></div>
+        <div class="right_label"></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="slider_referent">ability</td>
+      <td><div id="ability_slider" class="slider"></div></td>
+    </tr>
+  </tbody></table>
   <button type="button" class="continue">Continue</button>
   <p class="err">Please make sure to adjust all the sliders before continuing (or tap the slider if you think it's already in the right position).</p>
 </div>
 
 <div class="slide" id="dweck_questionnaire">
-  dweck questionnaire
+  <p>Please show how much you agree or disagree with each statement by adjusting the slider.</p>
+  <div class="slider_container"></div>
   <button type="button" class="continue">Continue</button>
   <p class="err">Please make sure to adjust all the sliders before continuing (or tap the slider if you think it's already in the right position).</p>
-</div>
-
-<div class="slide" id="sanity">
-  <p class="prompt"></p>
-  <button type="button" class="continue">Continue</button>
-  <p class="err">Please make sure to adjust the slider before continuing (or tap the slider if you think it's already in the right position).</p>
 </div>
 
 </div>
 
 <!-- run scripts -->
-<script src="jquery-1.11.0.min.js"></script>
+<script src="jquery.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="mmturkey.js"></script>
 <script src="browserCheck.js"></script>
-<script src="mindsets.js"></script>
+<script src="goals.js"></script>
 
 </body>

@@ -15,6 +15,7 @@ This stuff can be ported from experiment to experiment.*/
   position:relative;
   top: -6px;
 }
+
 p {
   max-width: 500px;
   margin: auto auto;
@@ -33,19 +34,27 @@ body {
 	height: 95%;
 }
 
-canvas {
-    height: 600;
-    width: 950;
-	width: 100%;
-	height: 100%;
- align: center;
+.left_label {
+  display: inline;
+  float: left;
+}
+
+.right_label {
+  display: inline;
+  float: right;
 }
 
 table {
-  font-size: 16px;
-  width: 100%;
-  margin:0 auto;
+  max-width: 800px;
+  margin:auto auto;
   margin-bottom: 1em;
+}
+
+.slider_referent {
+  height: 40px;
+  max-width: 300px;
+  padding-right: 5px;
+  text-align: left;
 }
 
 .slide {

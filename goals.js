@@ -9,6 +9,32 @@ function sample_n(v, n) {var lst=[]; var v_copy=v.slice(); for (var i=0; i<n; i+
 function rep(e, n) {var lst=[]; for (var i=0; i<n; i++) {lst.push(e);} return(lst);}
 var startTime;
 
+var enough_responses;
+
+var n_goal_responses = 0;
+goal_responses = [];
+function changeCreator(i) {
+  return function(value) {
+    $('#slider' + i).css({"background":"#99D6EB"});
+    $('#slider' + i + ' .ui-slider-handle').css({
+      "background":"#667D94",
+      "border-color": "#001F29" });
+    if (goal_responses[i] == null) {
+      n_goal_responses++;
+    }
+    var slider_val = $("#slider"+i).slider("value");
+    goal_responses[i] = slider_val;
+  } 
+}
+function slideCreator(i) {
+  return function() {
+    $('#slider' + i + ' .ui-slider-handle').css({
+       "background":"#E0F5FF",
+       "border-color": "#001F29"
+    });
+  }
+}
+
 var names = ["Adam", "Bob", "Carl", "Dave", "Evan", "Fred", "George",
              "Hank", "Ivan", "John", "Kevin", "Luke", "Mark", "Nick",
              "Oscar", "Patrick", "Rick", "Steve", "Tom", "Vince",
@@ -24,10 +50,20 @@ var dweck_questions = [
   "To be honest, you can’t really change how intelligent you are."
 ];
 
+var goals = [
+  "doing well on this test",
+  "doing well on future tests",
+  "being good at math",
+  "improving at math",
+  "showing his teacher that he has high math ability",
+  "showing his teacher that he tries at math"
+]
+
 /* randomization */
 var randomization = {
   dweck_questions: shuffle(dweck_questions),
-  names: shuffle(names)
+  names: shuffle(names),
+  goals: shuffle(goals)
 }
 
 var nQs = dweck_questions.length + 1;
@@ -49,41 +85,34 @@ var experiment = {
     showSlide(trial_type);
     experiment[trial_type](randomization.names[trial_num]);
     $(".continue").click(function() {
-      $(".continue").unbind("click");
-      if (trial_num + 1 < nQs) {
-        experiment.trial(trial_num + 1);
+      if (enough_responses()) {
+        $(".continue").unbind("click");
+        if (trial_num + 1 < nQs) {
+          experiment.trial(trial_num + 1);
+        } else {
+          experiment.outgoing_questionnaire();
+        }
       } else {
-        experiment.outgoing_questionnaire();
+        $(".err").show();
       }
     });
   },
   goals: function(rand_name) {
     console.log("hi");
     $(".prompt").html(rand_name + " is taking a test in this class. How much do you think he cares about each of the following things:");
-    $(".slider_table").html(
-      '<tbody>' +
-      '<tr><td>ability</td>' +
-        '<td><div id="ability_slider" class="slider"></div></td></tr>' +
-      '</tbody>'
-    );
-    $("#ability_slider").slider({
-               animate: true,
-               max: 1 , min: 0, step: .01, value: 0.5,
-               slide: function( event, ui ) {
-                   $("#responseSlider .ui-slider-handle").css({
-                      "background":"#E0F5FF",
-                      "border-color": "#001F29"
-                   });
-               },
-               change: function( event, ui ) {
-                   $("#responseSlider").css({"background":"#99D6EB"});
-                   $("#responseSlider .ui-slider-handle").css({
-                     "background":"#667D94",
-                     "border-color": "#001F29" });
-                   //responseNeeded = false;
-                   //trialData["response"].push(ui.value);
-                   //trialData["rt"].push(Date.now() - trialStart);
-               }});
+    for (var i=0; i<randomization.goals.length; i++) {
+      $("#ref" + i).html(randomization.goals[i]);
+      $('#slider' + i).slider({
+        animate: true,
+        orientation: "horizontal",
+        max: 100 , min: 0, step: 1, value: 50,
+        slide: slideCreator(i),
+        change: changeCreator(i)
+      });
+    }
+    enough_responses = function() {
+      return n_goal_responses == randomization.goals.length;
+    }
   },
   dweck_questions: function(trial_data) {
   },

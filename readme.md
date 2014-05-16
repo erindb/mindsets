@@ -6,7 +6,7 @@ Question: Are goals different for people with mindsets? (And can we pick up on t
 Goal Elicitation
 ----------------
 
-Imagine that at West High School, there’s a class taught by Mrs. Bennett in which students are learning math.
+Imagine that at West High School, there’s a class taught by Ms. S in which students are learning math.
 
 
 Bob is taking a math test in this class. How much do you think he cares about each of the following things:

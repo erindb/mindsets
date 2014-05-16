@@ -11,17 +11,19 @@ Imagine that at West High School, there’s a class taught by Mrs. Bennett in wh
 
 Bob is taking a math test in this class. How much do you think he cares about each of the following things:
 
-                                                   | cares a lot       doesn't care at all
+                                                   | cares a lot <-------> doesn't care at all
 -------------------------------------------------- | -------------------------------------
-getting a passing score on this test               |     -----------[]-----------
-getting a high score on future tests               |     -----------[]-----------
-being good at math                                 |     -----------[]-----------
-improving at math                                  |     -----------[]-----------
-showing his teacher that he has high math ability  |     -----------[]-----------
-showing his teacher that he tries hard at math     |     -----------[]-----------
+getting a passing score on this test               | ------------------[]------------------
+getting a high score on future tests               | ------------------[]------------------
+being good at math                                 | ------------------[]------------------
+improving at math                                  | ------------------[]------------------
+showing his teacher that he has high math ability  | ------------------[]------------------
+showing his teacher that he tries hard at math     | ------------------[]------------------
 
 Mindsets Questionnaire (for binning)
 ------------------------------------
+
+Maybe:
 
 “Dweck Questionnaire” (View: Malleability/Change   Domain: Intelligence)
 

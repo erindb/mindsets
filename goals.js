@@ -11,19 +11,20 @@ var startTime;
 
 var enough_responses;
 
-var n_goal_responses = 0;
-goal_responses = [];
+var n_responses = 0;
+responses = {};
 function changeCreator(i) {
   return function(value) {
     $('#slider' + i).css({"background":"#99D6EB"});
     $('#slider' + i + ' .ui-slider-handle').css({
       "background":"#667D94",
       "border-color": "#001F29" });
-    if (goal_responses[i] == null) {
-      n_goal_responses++;
+    if (responses[i] == null) {
+      n_responses++;
+      responses[i] = [];
     }
     var slider_val = $("#slider"+i).slider("value");
-    goal_responses[i] = slider_val;
+    responses[i] = slider_val;
   } 
 }
 function slideCreator(i) {
@@ -66,7 +67,7 @@ var randomization = {
   goals: shuffle(goals)
 }
 
-var nQs = dweck_questions.length + 1;
+var nQs = 2;//dweck_questions.length + 1;
 
 $(document).ready(function() {
   showSlide("consent");
@@ -98,7 +99,6 @@ var experiment = {
     });
   },
   goals: function(rand_name) {
-    console.log("hi");
     $(".prompt").html(rand_name + " is taking a test in this class. How much do you think he cares about each of the following things:");
     for (var i=0; i<randomization.goals.length; i++) {
       $("#ref" + i).html(randomization.goals[i]);
@@ -111,10 +111,23 @@ var experiment = {
       });
     }
     enough_responses = function() {
-      return n_goal_responses == randomization.goals.length;
+      return n_responses == randomization.goals.length;
     }
   },
   dweck_questions: function(trial_data) {
+    for (var i=0; i<randomization.dweck_questions.length; i++) {
+      $("#ref" + (6+i)).html(randomization.dweck_questions[i]);
+      $('#slider' + (6+i)).slider({
+        animate: true,
+        orientation: "horizontal",
+        max: 100 , min: 0, step: 1, value: 50,
+        slide: slideCreator((6+i)),
+        change: changeCreator((6+i))
+      });
+    }
+    enough_responses = function() {
+      return n_responses == randomization.goals.length + randomization.dweck_questions.length;
+    }
   },
   outgoing_questionnaire: function() {
     //disable return key
@@ -125,7 +138,7 @@ var experiment = {
     });
     //progress bar complete
     $('.bar').css('width', ( "100%"));
-    showSlide("outgoing_questionaire");
+    showSlide("outgoing_questionnaire");
     //submit to turk (using mmturkey)
     $("#formsubmit").click(function() {
       rawResponse = $("#questionaireform").serialize();

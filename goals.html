@@ -24,7 +24,7 @@
   <img src="stanford.png" alt="Stanford University">
   <br>
   <br>
-  <p class="block-text">In this experiment, we are interested in how people reason about how people reason about people’s performance in classes. We will ask you to give us your opinion on some statements.</p>
+  <p class="block-text">In this experiment, we are interested in how people reason about people’s performance in classes. We will ask you to give us your opinion on some statements.</p>
   <p class="block-text">This experiment should take about 3 minutes to complete.</b></p> 
   <button type="button" onClick="this.blur(); experiment.trial(0)">Start</button>
   <p class="block-text">(Note: you won't be able to preview this HIT before accepting it.)</p>
@@ -34,12 +34,29 @@
 </div>
 
 <div class="slide" id="outgoing_questionnaire">
-  <p>What do you think this experiment was about?</p>
-  <p>Have you ever heard of "mindsets"?</p>
+  <p><b>You're finished! The following questions are optional and will help us understand our data better.</b></p>
+  <p>What do you think this experiment was about? <input type="text" id="what_about"></input></p>
+  <p>Have you ever heard of "mindsets"?
+    <select id="heard_of">
+      <option></option>
+      <option>yes</option>
+      <option>no</option>
+    </select></p>
+  <p>What is your gender?
+    <select id="gender">
+      <option></option>
+      <option>female</option>
+      <option>male</option>
+    </select></p>
   <div><p>We would be interested in any comments you have about this experiment. Please type them here:</p>
-    <textarea rows="7" cols="70" name="comments"></textarea></div>
+    <textarea rows="7" cols="70" id="comments"></textarea></div>
   <button type="button" id="formsubmit">Submit</button>
-  </form>
+  <p>Would you like to hear more about this study?
+    <select id="hear_more">
+      <option></option>
+      <option>yes</option>
+      <option>no</option>
+    </select></p>
 </div>
 
 <div class="slide" id="finished">

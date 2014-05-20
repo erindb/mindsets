@@ -19,12 +19,12 @@ function changeCreator(i) {
     $('#slider' + i + ' .ui-slider-handle').css({
       "background":"#667D94",
       "border-color": "#001F29" });
-    if (responses[i] == null) {
+    if (responses["response" + i] == null) {
       n_responses++;
-      responses[i] = [];
+      responses["response" + i] = [];
     }
     var slider_val = $("#slider"+i).slider("value");
-    responses[i] = slider_val;
+    responses["response" + i] = slider_val;
   } 
 }
 function slideCreator(i) {
@@ -35,6 +35,8 @@ function slideCreator(i) {
     });
   }
 }
+
+//var gender = ["male", "female", "mixed"];
 
 var names = ["Adam", "Bob", "Carl", "Dave", "Evan", "Fred", "George",
              "Hank", "Ivan", "John", "Kevin", "Luke", "Mark", "Nick",
@@ -63,7 +65,7 @@ var goals = [
 /* randomization */
 var randomization = {
   dweck_questions: shuffle(dweck_questions),
-  names: shuffle(names),
+  names: shuffle(names).slice(0,5),
   goals: shuffle(goals)
 }
 
@@ -102,10 +104,11 @@ var experiment = {
     $(".prompt").html(rand_name + " is taking a test in this class. How much do you think he cares about each of the following things:");
     for (var i=0; i<randomization.goals.length; i++) {
       $("#ref" + i).html(randomization.goals[i]);
+      responses["target" + i] = randomization.goals[i];
       $('#slider' + i).slider({
         animate: true,
         orientation: "horizontal",
-        max: 100 , min: 0, step: 1, value: 50,
+        max: 1 , min: 0, step: 0.01, value: 0.5,
         slide: slideCreator(i),
         change: changeCreator(i)
       });
@@ -120,7 +123,7 @@ var experiment = {
       $('#slider' + (6+i)).slider({
         animate: true,
         orientation: "horizontal",
-        max: 100 , min: 0, step: 1, value: 50,
+        max: 1 , min: 0, step: 0.01, value: 0.5,
         slide: slideCreator((6+i)),
         change: changeCreator((6+i))
       });
@@ -139,22 +142,18 @@ var experiment = {
     //progress bar complete
     $('.bar').css('width', ( "100%"));
     showSlide("outgoing_questionnaire");
+    experiment.data["responses"] = responses;
     //submit to turk (using mmturkey)
     $("#formsubmit").click(function() {
-      rawResponse = $("#questionaireform").serialize();
-      pieces = rawResponse.split("&");
-      var age = pieces[0].split("=")[1];
-      var lang = pieces[1].split("=")[1];
-      var comments = pieces[2].split("=")[1];
-      if (lang.length > 0) {
-        experiment.data["language"] = lang;
-        experiment.data["comments"] = comments;
-        experiment.data["age"] = age;
-        var endTime = Date.now();
-        experiment.data["duration"] = endTime - startTime;
-        showSlide("finished");
-        setTimeout(function() { turk.submit(experiment.data) }, 1000);
-      }
+      experiment.data["what_about"] = $("#what_about").val();
+      experiment.data["comments"] = $("#comments").val();
+      experiment.data["gender"] = $("#gender").val();
+      experiment.data["heard_of"] = $("#heard_of").val();
+      experiment.data["hear_more"] = $("#hear_more").val();
+      var endTime = Date.now();
+      experiment.data["duration"] = endTime - startTime;
+      showSlide("finished");
+      setTimeout(function() { turk.submit(experiment.data) }, 1000);
     });
   }
 }

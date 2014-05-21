@@ -34,15 +34,16 @@
 </div>
 
 <div class="slide" id="outgoing_questionnaire">
-  <p><b>You're finished! The following questions are optional and will help us understand our data better.</b></p>
+  <p><b>Thanks! Just a few more questions:</b></p>
   <p>What do you think this experiment was about? <input type="text" id="what_about"></input></p>
-  <p>Have you ever heard of "mindsets"?
+  <p>* Have you ever heard of "mindsets"?
     <select id="heard_of">
       <option></option>
       <option>yes</option>
       <option>no</option>
     </select></p>
-  <p>What is your gender?
+  <p id="if_heard_of">* Please describe what a "fixed" mindset is: <input type="text" id="what_is_fixed"></input></p>
+  <p>* What is your gender?
     <select id="gender">
       <option></option>
       <option>female</option>
@@ -50,13 +51,15 @@
     </select></p>
   <div><p>We would be interested in any comments you have about this experiment. Please type them here:</p>
     <textarea rows="7" cols="70" id="comments"></textarea></div>
-  <button type="button" id="formsubmit">Submit</button>
   <p>Would you like to hear more about this study?
     <select id="hear_more">
       <option></option>
       <option>yes</option>
       <option>no</option>
     </select></p>
+  <button type="button" id="formsubmit">Submit</button>
+  <p>* indicates a required field</p>
+  <p class="err">Please answer the required questions.</p>
 </div>
 
 <div class="slide" id="finished">
@@ -71,8 +74,8 @@
     <tr>
       <td></td>
       <td class="slider_labels">
-        <div class="left_label">doesn't care</div>
-        <div class="right_label">cares a lot</div>
+        <div class="left_label">very unlikely</div>
+        <div class="right_label">very likely</div>
       </td>
     </tr>
     <tr>
@@ -99,6 +102,10 @@
       <td class="slider_referent" id="ref5"></td>
       <td class="slider_container"><div id="slider5" class="slider"></div></td>
     </tr>
+    <tr>
+      <td class="slider_referent" id="ref6"></td>
+      <td class="slider_container"><div id="slider6" class="slider"></div></td>
+    </tr>
   </tbody></table>
   <button type="button" class="continue">Continue</button>
   <p class="err">Please make sure to adjust all the sliders before continuing (or tap the slider if you think it's already in the right position).</p>
@@ -113,10 +120,6 @@
         <div class="left_label">strongly disagree</div>
         <div class="right_label">strongly agree</div>
       </td>
-    </tr>
-    <tr>
-      <td class="slider_referent" id="ref6"></td>
-      <td class="slider_container"><div id="slider6" class="slider"></div></td>
     </tr>
     <tr>
       <td class="slider_referent" id="ref7"></td>

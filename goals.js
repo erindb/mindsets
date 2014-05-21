@@ -47,10 +47,9 @@ var names = ["Adam", "Bob", "Carl", "Dave", "Evan", "Fred", "George",
              "Mike", "Paul", "Phillip", "Toby", "Andrew", "Charles"];
 
 var dweck_questions = [
-  "You have a certain amount of intelligence, and you can’t really do much to change it.",
-  "Your intelligence is something about you that you can’t change very much.",
-  "No matter who you are, you can significantly change your intelligence level.",
-  "To be honest, you can’t really change how intelligent you are."
+  "You have a certain amount of intelligence, and you really can't do much to change it",
+  "Your intelligence is something about you that you can't change very much",
+  "You can learn new things, but you can't really change your basic intelligence"
 ];
 
 var goals = [
@@ -59,7 +58,8 @@ var goals = [
   "being good at math",
   "improving at math",
   "showing his teacher that he has high math ability",
-  "showing his teacher that he tries at math"
+  "showing his teacher that he tries at math",
+  "doing badly on his tests"
 ]
 
 /* randomization */
@@ -101,7 +101,7 @@ var experiment = {
     });
   },
   goals: function(rand_name) {
-    $(".prompt").html(rand_name + " is taking a test in this class. How much do you think he cares about each of the following things:");
+    $(".prompt").html(rand_name + " is taking a test in this class. How likely is " + rand_name + " to have each of the following goals?");
     for (var i=0; i<randomization.goals.length; i++) {
       $("#ref" + i).html(randomization.goals[i]);
       responses["target" + i] = randomization.goals[i];
@@ -119,13 +119,13 @@ var experiment = {
   },
   dweck_questions: function(trial_data) {
     for (var i=0; i<randomization.dweck_questions.length; i++) {
-      $("#ref" + (6+i)).html(randomization.dweck_questions[i]);
-      $('#slider' + (6+i)).slider({
+      $("#ref" + (goals.length+i)).html(randomization.dweck_questions[i]);
+      $('#slider' + (goals.length+i)).slider({
         animate: true,
         orientation: "horizontal",
         max: 1 , min: 0, step: 0.01, value: 0.5,
-        slide: slideCreator((6+i)),
-        change: changeCreator((6+i))
+        slide: slideCreator((goals.length+i)),
+        change: changeCreator((goals.length+i))
       });
     }
     enough_responses = function() {
@@ -143,17 +143,38 @@ var experiment = {
     $('.bar').css('width', ( "100%"));
     showSlide("outgoing_questionnaire");
     experiment.data["responses"] = responses;
+    $("#if_heard_of").hide();
+    $( "#heard_of" ).change(function() {
+      if ($("#heard_of").val() == "yes") {
+        $("#if_heard_of").show();
+      } else {
+        $("#if_heard_of").hide();
+      }
+    });
+    $(".err").hide();
+    var what_is_fixed = "";
     //submit to turk (using mmturkey)
     $("#formsubmit").click(function() {
-      experiment.data["what_about"] = $("#what_about").val();
-      experiment.data["comments"] = $("#comments").val();
-      experiment.data["gender"] = $("#gender").val();
-      experiment.data["heard_of"] = $("#heard_of").val();
-      experiment.data["hear_more"] = $("#hear_more").val();
-      var endTime = Date.now();
-      experiment.data["duration"] = endTime - startTime;
-      showSlide("finished");
-      setTimeout(function() { turk.submit(experiment.data) }, 1000);
+      var what_about = $("#what_about").val();
+      var comments = $("#comments").val();
+      var gender = $("#gender").val();
+      var heard_of = $("#heard_of").val();
+      var hear_more = $("#hear_more").val();
+      what_is_fixed = $("#what_is_fixed").val();
+      if (gender != "" && heard_of != "" && (heard_of == "no" || what_is_fixed != "")) {
+        experiment.data["what_about"] = what_about;
+        experiment.data["comments"] = comments;
+        experiment.data["gender"] = gender;
+        experiment.data["heard_of"] = heard_of;
+        experiment.data["hear_more"] = hear_more;
+        experiment.data["what_is_fixed"] = what_is_fixed;
+        var endTime = Date.now();
+        experiment.data["duration"] = endTime - startTime;
+        showSlide("finished");
+        setTimeout(function() { turk.submit(experiment.data) }, 1000);
+      } else {
+        $(".err").show();
+      }
     });
   }
 }

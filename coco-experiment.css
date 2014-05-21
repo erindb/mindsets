@@ -51,8 +51,8 @@ table {
 }
 
 .slider_referent {
-  height: 40px;
-  max-width: 300px;
+  height: 70px;
+  width: 500px;
   padding-right: 5px;
   text-align: left;
 }

@@ -1,0 +1,301 @@
+subject,what_about,comments,gender,heard_of,hear_more,what_is_fixed,duration,dweck_sum_score,trial_type,version,goal_variable,goal_timeline,goal_impress,response
+0,perception,none,male,no,no,,49625,0.68,g,test_bad,test,NA,for_me,0.0121951219512
+0,perception,none,male,no,no,,49625,0.68,g,test_future,test,future,for_me,0.162020905923
+0,perception,none,male,no,no,,49625,0.68,g,test_now,test,now,for_me,0.172473867596
+0,perception,none,male,no,no,,49625,0.68,g,show_effort,effort,NA,show,0.168989547038
+0,perception,none,male,no,no,,49625,0.68,g,show_ability,ability,NA,show,0.165505226481
+0,perception,none,male,no,no,,49625,0.68,g,improve,improve,NA,for_me,0.160278745645
+0,perception,none,male,no,no,,49625,0.68,g,ability,ability,NA,for_me,0.158536585366
+0,perception,none,male,no,no,,49625,0.68,d,certain_amount,NA,NA,NA,0.23
+0,perception,none,male,no,no,,49625,0.68,d,cannot_change,NA,NA,NA,0.15
+0,perception,none,male,no,no,,49625,0.68,d,can_learn,NA,NA,NA,0.3
+1,,,female,no,no,,38136,0.4,g,test_now,test,now,for_me,0.228013029316
+1,,,female,no,no,,38136,0.4,g,ability,ability,NA,for_me,0.120521172638
+1,,,female,no,no,,38136,0.4,g,improve,improve,NA,for_me,0.0618892508143
+1,,,female,no,no,,38136,0.4,g,show_ability,ability,NA,show,0.0749185667752
+1,,,female,no,no,,38136,0.4,g,test_bad,test,NA,for_me,0.0358306188925
+1,,,female,no,no,,38136,0.4,g,test_future,test,future,for_me,0.218241042345
+1,,,female,no,no,,38136,0.4,g,show_effort,effort,NA,show,0.260586319218
+1,,,female,no,no,,38136,0.4,d,can_learn,NA,NA,NA,0.14
+1,,,female,no,no,,38136,0.4,d,certain_amount,NA,NA,NA,0.12
+1,,,female,no,no,,38136,0.4,d,cannot_change,NA,NA,NA,0.14
+2,Just fun,nice task,male,no,yes,,90331,1.88,g,improve,improve,NA,for_me,0.170786516854
+2,Just fun,nice task,male,no,yes,,90331,1.88,g,ability,ability,NA,for_me,0.121348314607
+2,Just fun,nice task,male,no,yes,,90331,1.88,g,test_future,test,future,for_me,0.143820224719
+2,Just fun,nice task,male,no,yes,,90331,1.88,g,test_bad,test,NA,for_me,0.16404494382
+2,Just fun,nice task,male,no,yes,,90331,1.88,g,test_now,test,now,for_me,0.105617977528
+2,Just fun,nice task,male,no,yes,,90331,1.88,g,show_effort,effort,NA,show,0.155056179775
+2,Just fun,nice task,male,no,yes,,90331,1.88,g,show_ability,ability,NA,show,0.139325842697
+2,Just fun,nice task,male,no,yes,,90331,1.88,d,certain_amount,NA,NA,NA,0.59
+2,Just fun,nice task,male,no,yes,,90331,1.88,d,can_learn,NA,NA,NA,0.64
+2,Just fun,nice task,male,no,yes,,90331,1.88,d,cannot_change,NA,NA,NA,0.65
+3,don't know,,female,no,no,,83257,0,g,improve,improve,NA,for_me,0.125
+3,don't know,,female,no,no,,83257,0,g,show_effort,effort,NA,show,0.120192307692
+3,don't know,,female,no,no,,83257,0,g,test_now,test,now,for_me,0.317307692308
+3,don't know,,female,no,no,,83257,0,g,ability,ability,NA,for_me,0.158653846154
+3,don't know,,female,no,no,,83257,0,g,test_future,test,future,for_me,0.206730769231
+3,don't know,,female,no,no,,83257,0,g,show_ability,ability,NA,show,0.0721153846154
+3,don't know,,female,no,no,,83257,0,g,test_bad,test,NA,for_me,0.0
+3,don't know,,female,no,no,,83257,0,d,can_learn,NA,NA,NA,0
+3,don't know,,female,no,no,,83257,0,d,certain_amount,NA,NA,NA,0
+3,don't know,,female,no,no,,83257,0,d,cannot_change,NA,NA,NA,0
+4,How people think about learning.,,female,no,yes,,92334,1.64,g,test_bad,test,NA,for_me,0.00715563506261
+4,How people think about learning.,,female,no,yes,,92334,1.64,g,show_effort,effort,NA,show,0.144901610018
+4,How people think about learning.,,female,no,yes,,92334,1.64,g,test_future,test,future,for_me,0.168157423971
+4,How people think about learning.,,female,no,yes,,92334,1.64,g,show_ability,ability,NA,show,0.171735241503
+4,How people think about learning.,,female,no,yes,,92334,1.64,g,improve,improve,NA,for_me,0.162790697674
+4,How people think about learning.,,female,no,yes,,92334,1.64,g,ability,ability,NA,for_me,0.171735241503
+4,How people think about learning.,,female,no,yes,,92334,1.64,g,test_now,test,now,for_me,0.173524150268
+4,How people think about learning.,,female,no,yes,,92334,1.64,d,can_learn,NA,NA,NA,0.35
+4,How people think about learning.,,female,no,yes,,92334,1.64,d,cannot_change,NA,NA,NA,0.66
+4,How people think about learning.,,female,no,yes,,92334,1.64,d,certain_amount,NA,NA,NA,0.63
+5,judgement,none,female,no,no,,72981,0.47,g,test_bad,test,NA,for_me,0.0127504553734
+5,judgement,none,female,no,no,,72981,0.47,g,show_ability,ability,NA,show,0.171220400729
+5,judgement,none,female,no,no,,72981,0.47,g,test_now,test,now,for_me,0.16029143898
+5,judgement,none,female,no,no,,72981,0.47,g,test_future,test,future,for_me,0.16029143898
+5,judgement,none,female,no,no,,72981,0.47,g,show_effort,effort,NA,show,0.162112932605
+5,judgement,none,female,no,no,,72981,0.47,g,ability,ability,NA,for_me,0.162112932605
+5,judgement,none,female,no,no,,72981,0.47,g,improve,improve,NA,for_me,0.171220400729
+5,judgement,none,female,no,no,,72981,0.47,d,can_learn,NA,NA,NA,0.08
+5,judgement,none,female,no,no,,72981,0.47,d,certain_amount,NA,NA,NA,0.17
+5,judgement,none,female,no,no,,72981,0.47,d,cannot_change,NA,NA,NA,0.22
+6,no idea,,male,yes,no,one that doesnt change,43763,0.95,g,show_ability,ability,NA,show,0.188811188811
+6,no idea,,male,yes,no,one that doesnt change,43763,0.95,g,test_now,test,now,for_me,0.311188811189
+6,no idea,,male,yes,no,one that doesnt change,43763,0.95,g,test_bad,test,NA,for_me,0.0454545454545
+6,no idea,,male,yes,no,one that doesnt change,43763,0.95,g,test_future,test,future,for_me,0.122377622378
+6,no idea,,male,yes,no,one that doesnt change,43763,0.95,g,ability,ability,NA,for_me,0.15034965035
+6,no idea,,male,yes,no,one that doesnt change,43763,0.95,g,improve,improve,NA,for_me,0.0839160839161
+6,no idea,,male,yes,no,one that doesnt change,43763,0.95,g,show_effort,effort,NA,show,0.0979020979021
+6,no idea,,male,yes,no,one that doesnt change,43763,0.95,d,cannot_change,NA,NA,NA,0.26
+6,no idea,,male,yes,no,one that doesnt change,43763,0.95,d,certain_amount,NA,NA,NA,0.29
+6,no idea,,male,yes,no,one that doesnt change,43763,0.95,d,can_learn,NA,NA,NA,0.4
+7,To learn more about how people relate math to intelligence.,,male,yes,no,When you are determined to do something.,178362,3,g,test_now,test,now,for_me,0.185528756957
+7,To learn more about how people relate math to intelligence.,,male,yes,no,When you are determined to do something.,178362,3,g,test_bad,test,NA,for_me,0.0
+7,To learn more about how people relate math to intelligence.,,male,yes,no,When you are determined to do something.,178362,3,g,test_future,test,future,for_me,0.185528756957
+7,To learn more about how people relate math to intelligence.,,male,yes,no,When you are determined to do something.,178362,3,g,show_effort,effort,NA,show,0.128014842301
+7,To learn more about how people relate math to intelligence.,,male,yes,no,When you are determined to do something.,178362,3,g,show_ability,ability,NA,show,0.12987012987
+7,To learn more about how people relate math to intelligence.,,male,yes,no,When you are determined to do something.,178362,3,g,ability,ability,NA,for_me,0.185528756957
+7,To learn more about how people relate math to intelligence.,,male,yes,no,When you are determined to do something.,178362,3,g,improve,improve,NA,for_me,0.185528756957
+7,To learn more about how people relate math to intelligence.,,male,yes,no,When you are determined to do something.,178362,3,d,cannot_change,NA,NA,NA,1
+7,To learn more about how people relate math to intelligence.,,male,yes,no,When you are determined to do something.,178362,3,d,certain_amount,NA,NA,NA,1
+7,To learn more about how people relate math to intelligence.,,male,yes,no,When you are determined to do something.,178362,3,d,can_learn,NA,NA,NA,1
+8,how we view learning,,male,no,yes,,67454,0.97,g,test_bad,test,NA,for_me,0.105670103093
+8,how we view learning,,male,no,yes,,67454,0.97,g,show_effort,effort,NA,show,0.15206185567
+8,how we view learning,,male,no,yes,,67454,0.97,g,improve,improve,NA,for_me,0.157216494845
+8,how we view learning,,male,no,yes,,67454,0.97,g,show_ability,ability,NA,show,0.136597938144
+8,how we view learning,,male,no,yes,,67454,0.97,g,ability,ability,NA,for_me,0.146907216495
+8,how we view learning,,male,no,yes,,67454,0.97,g,test_future,test,future,for_me,0.154639175258
+8,how we view learning,,male,no,yes,,67454,0.97,g,test_now,test,now,for_me,0.146907216495
+8,how we view learning,,male,no,yes,,67454,0.97,d,certain_amount,NA,NA,NA,0.32
+8,how we view learning,,male,no,yes,,67454,0.97,d,can_learn,NA,NA,NA,0.32
+8,how we view learning,,male,no,yes,,67454,0.97,d,cannot_change,NA,NA,NA,0.33
+9,perception of goals,,male,yes,no,a mindset you can't or won't change,92964,1.8,g,test_future,test,future,for_me,0.165275459098
+9,perception of goals,,male,yes,no,a mindset you can't or won't change,92964,1.8,g,show_effort,effort,NA,show,0.16694490818
+9,perception of goals,,male,yes,no,a mindset you can't or won't change,92964,1.8,g,test_now,test,now,for_me,0.16694490818
+9,perception of goals,,male,yes,no,a mindset you can't or won't change,92964,1.8,g,improve,improve,NA,for_me,0.16694490818
+9,perception of goals,,male,yes,no,a mindset you can't or won't change,92964,1.8,g,ability,ability,NA,for_me,0.16694490818
+9,perception of goals,,male,yes,no,a mindset you can't or won't change,92964,1.8,g,show_ability,ability,NA,show,0.16694490818
+9,perception of goals,,male,yes,no,a mindset you can't or won't change,92964,1.8,g,test_bad,test,NA,for_me,0.0
+9,perception of goals,,male,yes,no,a mindset you can't or won't change,92964,1.8,d,certain_amount,NA,NA,NA,0.36
+9,perception of goals,,male,yes,no,a mindset you can't or won't change,92964,1.8,d,cannot_change,NA,NA,NA,0.61
+9,perception of goals,,male,yes,no,a mindset you can't or won't change,92964,1.8,d,can_learn,NA,NA,NA,0.83
+10,Perceptions of intelligence.,,male,yes,yes,A specific way of thinking.,309109,1.03,g,test_bad,test,NA,for_me,0.00471698113208
+10,Perceptions of intelligence.,,male,yes,yes,A specific way of thinking.,309109,1.03,g,show_ability,ability,NA,show,0.162735849057
+10,Perceptions of intelligence.,,male,yes,yes,A specific way of thinking.,309109,1.03,g,test_future,test,future,for_me,0.167452830189
+10,Perceptions of intelligence.,,male,yes,yes,A specific way of thinking.,309109,1.03,g,show_effort,effort,NA,show,0.141509433962
+10,Perceptions of intelligence.,,male,yes,yes,A specific way of thinking.,309109,1.03,g,ability,ability,NA,for_me,0.155660377358
+10,Perceptions of intelligence.,,male,yes,yes,A specific way of thinking.,309109,1.03,g,improve,improve,NA,for_me,0.155660377358
+10,Perceptions of intelligence.,,male,yes,yes,A specific way of thinking.,309109,1.03,g,test_now,test,now,for_me,0.212264150943
+10,Perceptions of intelligence.,,male,yes,yes,A specific way of thinking.,309109,1.03,d,can_learn,NA,NA,NA,0.4
+10,Perceptions of intelligence.,,male,yes,yes,A specific way of thinking.,309109,1.03,d,certain_amount,NA,NA,NA,0.31
+10,Perceptions of intelligence.,,male,yes,yes,A specific way of thinking.,309109,1.03,d,cannot_change,NA,NA,NA,0.32
+11,see how people thing about basic intelligence,,female,yes,no,something someone believes and cannot be changed,83223,0.12,g,improve,improve,NA,for_me,0.182051282051
+11,see how people thing about basic intelligence,,female,yes,no,something someone believes and cannot be changed,83223,0.12,g,show_effort,effort,NA,show,0.194871794872
+11,see how people thing about basic intelligence,,female,yes,no,something someone believes and cannot be changed,83223,0.12,g,test_bad,test,NA,for_me,0.0641025641026
+11,see how people thing about basic intelligence,,female,yes,no,something someone believes and cannot be changed,83223,0.12,g,show_ability,ability,NA,show,0.128205128205
+11,see how people thing about basic intelligence,,female,yes,no,something someone believes and cannot be changed,83223,0.12,g,test_future,test,future,for_me,0.128205128205
+11,see how people thing about basic intelligence,,female,yes,no,something someone believes and cannot be changed,83223,0.12,g,test_now,test,now,for_me,0.148717948718
+11,see how people thing about basic intelligence,,female,yes,no,something someone believes and cannot be changed,83223,0.12,g,ability,ability,NA,for_me,0.153846153846
+11,see how people thing about basic intelligence,,female,yes,no,something someone believes and cannot be changed,83223,0.12,d,certain_amount,NA,NA,NA,0.06
+11,see how people thing about basic intelligence,,female,yes,no,something someone believes and cannot be changed,83223,0.12,d,can_learn,NA,NA,NA,0.02
+11,see how people thing about basic intelligence,,female,yes,no,something someone believes and cannot be changed,83223,0.12,d,cannot_change,NA,NA,NA,0.04
+12,Judgement of people,,female,no,no,,71210,0.96,g,test_bad,test,NA,for_me,0.0
+12,Judgement of people,,female,no,no,,71210,0.96,g,show_ability,ability,NA,show,0.166666666667
+12,Judgement of people,,female,no,no,,71210,0.96,g,show_effort,effort,NA,show,0.166666666667
+12,Judgement of people,,female,no,no,,71210,0.96,g,test_now,test,now,for_me,0.166666666667
+12,Judgement of people,,female,no,no,,71210,0.96,g,improve,improve,NA,for_me,0.166666666667
+12,Judgement of people,,female,no,no,,71210,0.96,g,ability,ability,NA,for_me,0.166666666667
+12,Judgement of people,,female,no,no,,71210,0.96,g,test_future,test,future,for_me,0.166666666667
+12,Judgement of people,,female,no,no,,71210,0.96,d,cannot_change,NA,NA,NA,0.28
+12,Judgement of people,,female,no,no,,71210,0.96,d,certain_amount,NA,NA,NA,0.25
+12,Judgement of people,,female,no,no,,71210,0.96,d,can_learn,NA,NA,NA,0.43
+13,Not Sure,,male,yes,yes,Someone set in their ways and nothing can change their way of thinking,94347,1.2,g,improve,improve,NA,for_me,0.172910662824
+13,Not Sure,,male,yes,yes,Someone set in their ways and nothing can change their way of thinking,94347,1.2,g,test_future,test,future,for_me,0.175792507205
+13,Not Sure,,male,yes,yes,Someone set in their ways and nothing can change their way of thinking,94347,1.2,g,test_bad,test,NA,for_me,0.106628242075
+13,Not Sure,,male,yes,yes,Someone set in their ways and nothing can change their way of thinking,94347,1.2,g,show_effort,effort,NA,show,0.118155619597
+13,Not Sure,,male,yes,yes,Someone set in their ways and nothing can change their way of thinking,94347,1.2,g,show_ability,ability,NA,show,0.0951008645533
+13,Not Sure,,male,yes,yes,Someone set in their ways and nothing can change their way of thinking,94347,1.2,g,ability,ability,NA,for_me,0.161383285303
+13,Not Sure,,male,yes,yes,Someone set in their ways and nothing can change their way of thinking,94347,1.2,g,test_now,test,now,for_me,0.170028818444
+13,Not Sure,,male,yes,yes,Someone set in their ways and nothing can change their way of thinking,94347,1.2,d,certain_amount,NA,NA,NA,0.19
+13,Not Sure,,male,yes,yes,Someone set in their ways and nothing can change their way of thinking,94347,1.2,d,cannot_change,NA,NA,NA,0.32
+13,Not Sure,,male,yes,yes,Someone set in their ways and nothing can change their way of thinking,94347,1.2,d,can_learn,NA,NA,NA,0.69
+14,How we view intelligence and probability.,,male,yes,no,One in which things are predetermined,115278,1.15,g,test_bad,test,NA,for_me,0.00757575757576
+14,How we view intelligence and probability.,,male,yes,no,One in which things are predetermined,115278,1.15,g,test_now,test,now,for_me,0.174242424242
+14,How we view intelligence and probability.,,male,yes,no,One in which things are predetermined,115278,1.15,g,show_ability,ability,NA,show,0.162878787879
+14,How we view intelligence and probability.,,male,yes,no,One in which things are predetermined,115278,1.15,g,ability,ability,NA,for_me,0.168560606061
+14,How we view intelligence and probability.,,male,yes,no,One in which things are predetermined,115278,1.15,g,show_effort,effort,NA,show,0.155303030303
+14,How we view intelligence and probability.,,male,yes,no,One in which things are predetermined,115278,1.15,g,improve,improve,NA,for_me,0.159090909091
+14,How we view intelligence and probability.,,male,yes,no,One in which things are predetermined,115278,1.15,g,test_future,test,future,for_me,0.172348484848
+14,How we view intelligence and probability.,,male,yes,no,One in which things are predetermined,115278,1.15,d,cannot_change,NA,NA,NA,0.38
+14,How we view intelligence and probability.,,male,yes,no,One in which things are predetermined,115278,1.15,d,can_learn,NA,NA,NA,0.34
+14,How we view intelligence and probability.,,male,yes,no,One in which things are predetermined,115278,1.15,d,certain_amount,NA,NA,NA,0.43
+15,Perception,,male,no,no,,44492,0.24,g,show_effort,effort,NA,show,0.164974619289
+15,Perception,,male,no,no,,44492,0.24,g,test_now,test,now,for_me,0.126903553299
+15,Perception,,male,no,no,,44492,0.24,g,test_bad,test,NA,for_me,0.149746192893
+15,Perception,,male,no,no,,44492,0.24,g,test_future,test,future,for_me,0.144670050761
+15,Perception,,male,no,no,,44492,0.24,g,improve,improve,NA,for_me,0.126903553299
+15,Perception,,male,no,no,,44492,0.24,g,show_ability,ability,NA,show,0.159898477157
+15,Perception,,male,no,no,,44492,0.24,g,ability,ability,NA,for_me,0.126903553299
+15,Perception,,male,no,no,,44492,0.24,d,cannot_change,NA,NA,NA,0.07
+15,Perception,,male,no,no,,44492,0.24,d,certain_amount,NA,NA,NA,0.08
+15,Perception,,male,no,no,,44492,0.24,d,can_learn,NA,NA,NA,0.09
+16,Thought,,female,no,no,,67479,0.34,g,improve,improve,NA,for_me,0.129577464789
+16,Thought,,female,no,no,,67479,0.34,g,test_bad,test,NA,for_me,0.152112676056
+16,Thought,,female,no,no,,67479,0.34,g,ability,ability,NA,for_me,0.140845070423
+16,Thought,,female,no,no,,67479,0.34,g,test_future,test,future,for_me,0.140845070423
+16,Thought,,female,no,no,,67479,0.34,g,show_ability,ability,NA,show,0.174647887324
+16,Thought,,female,no,no,,67479,0.34,g,show_effort,effort,NA,show,0.121126760563
+16,Thought,,female,no,no,,67479,0.34,g,test_now,test,now,for_me,0.140845070423
+16,Thought,,female,no,no,,67479,0.34,d,certain_amount,NA,NA,NA,0.11
+16,Thought,,female,no,no,,67479,0.34,d,cannot_change,NA,NA,NA,0.12
+16,Thought,,female,no,no,,67479,0.34,d,can_learn,NA,NA,NA,0.11
+17,choice,,male,no,no,,62405,2.22,g,test_future,test,future,for_me,0.17380952381
+17,choice,,male,no,no,,62405,2.22,g,test_bad,test,NA,for_me,0.0333333333333
+17,choice,,male,no,no,,62405,2.22,g,test_now,test,now,for_me,0.2
+17,choice,,male,no,no,,62405,2.22,g,improve,improve,NA,for_me,0.147619047619
+17,choice,,male,no,no,,62405,2.22,g,ability,ability,NA,for_me,0.138095238095
+17,choice,,male,no,no,,62405,2.22,g,show_effort,effort,NA,show,0.154761904762
+17,choice,,male,no,no,,62405,2.22,g,show_ability,ability,NA,show,0.152380952381
+17,choice,,male,no,no,,62405,2.22,d,certain_amount,NA,NA,NA,0.73
+17,choice,,male,no,no,,62405,2.22,d,can_learn,NA,NA,NA,0.9
+17,choice,,male,no,no,,62405,2.22,d,cannot_change,NA,NA,NA,0.59
+18,IQ Level,,female,yes,yes,Does not want to change,185251,2.53,g,test_future,test,future,for_me,0.1179138322
+18,IQ Level,,female,yes,yes,Does not want to change,185251,2.53,g,test_bad,test,NA,for_me,0.113378684807
+18,IQ Level,,female,yes,yes,Does not want to change,185251,2.53,g,show_effort,effort,NA,show,0.149659863946
+18,IQ Level,,female,yes,yes,Does not want to change,185251,2.53,g,show_ability,ability,NA,show,0.154195011338
+18,IQ Level,,female,yes,yes,Does not want to change,185251,2.53,g,ability,ability,NA,for_me,0.156462585034
+18,IQ Level,,female,yes,yes,Does not want to change,185251,2.53,g,test_now,test,now,for_me,0.156462585034
+18,IQ Level,,female,yes,yes,Does not want to change,185251,2.53,g,improve,improve,NA,for_me,0.151927437642
+18,IQ Level,,female,yes,yes,Does not want to change,185251,2.53,d,cannot_change,NA,NA,NA,0.83
+18,IQ Level,,female,yes,yes,Does not want to change,185251,2.53,d,certain_amount,NA,NA,NA,0.84
+18,IQ Level,,female,yes,yes,Does not want to change,185251,2.53,d,can_learn,NA,NA,NA,0.86
+19,math,,female,yes,no,i don't know how to explain it,284771,0.66,g,ability,ability,NA,for_me,0.102649006623
+19,math,,female,yes,no,i don't know how to explain it,284771,0.66,g,test_now,test,now,for_me,0.248344370861
+19,math,,female,yes,no,i don't know how to explain it,284771,0.66,g,show_effort,effort,NA,show,0.0529801324503
+19,math,,female,yes,no,i don't know how to explain it,284771,0.66,g,test_bad,test,NA,for_me,0.0562913907285
+19,math,,female,yes,no,i don't know how to explain it,284771,0.66,g,show_ability,ability,NA,show,0.0596026490066
+19,math,,female,yes,no,i don't know how to explain it,284771,0.66,g,test_future,test,future,for_me,0.264900662252
+19,math,,female,yes,no,i don't know how to explain it,284771,0.66,g,improve,improve,NA,for_me,0.215231788079
+19,math,,female,yes,no,i don't know how to explain it,284771,0.66,d,cannot_change,NA,NA,NA,0.19
+19,math,,female,yes,no,i don't know how to explain it,284771,0.66,d,can_learn,NA,NA,NA,0.24
+19,math,,female,yes,no,i don't know how to explain it,284771,0.66,d,certain_amount,NA,NA,NA,0.23
+20,Intelligence,,male,no,no,,115493,0.79,g,ability,ability,NA,for_me,0.173611111111
+20,Intelligence,,male,no,no,,115493,0.79,g,show_effort,effort,NA,show,0.118055555556
+20,Intelligence,,male,no,no,,115493,0.79,g,test_now,test,now,for_me,0.208333333333
+20,Intelligence,,male,no,no,,115493,0.79,g,test_future,test,future,for_me,0.206018518519
+20,Intelligence,,male,no,no,,115493,0.79,g,show_ability,ability,NA,show,0.157407407407
+20,Intelligence,,male,no,no,,115493,0.79,g,improve,improve,NA,for_me,0.12037037037
+20,Intelligence,,male,no,no,,115493,0.79,g,test_bad,test,NA,for_me,0.0162037037037
+20,Intelligence,,male,no,no,,115493,0.79,d,certain_amount,NA,NA,NA,0.25
+20,Intelligence,,male,no,no,,115493,0.79,d,can_learn,NA,NA,NA,0.26
+20,Intelligence,,male,no,no,,115493,0.79,d,cannot_change,NA,NA,NA,0.28
+21,Motivations about math test,,female,no,yes,,212318,0.47,g,show_ability,ability,NA,show,0.0899182561308
+21,Motivations about math test,,female,no,yes,,212318,0.47,g,test_now,test,now,for_me,0.261580381471
+21,Motivations about math test,,female,no,yes,,212318,0.47,g,test_future,test,future,for_me,0.106267029973
+21,Motivations about math test,,female,no,yes,,212318,0.47,g,show_effort,effort,NA,show,0.100817438692
+21,Motivations about math test,,female,no,yes,,212318,0.47,g,ability,ability,NA,for_me,0.264305177112
+21,Motivations about math test,,female,no,yes,,212318,0.47,g,test_bad,test,NA,for_me,0.00817438692098
+21,Motivations about math test,,female,no,yes,,212318,0.47,g,improve,improve,NA,for_me,0.1689373297
+21,Motivations about math test,,female,no,yes,,212318,0.47,d,can_learn,NA,NA,NA,0.14
+21,Motivations about math test,,female,no,yes,,212318,0.47,d,cannot_change,NA,NA,NA,0.14
+21,Motivations about math test,,female,no,yes,,212318,0.47,d,certain_amount,NA,NA,NA,0.19
+22,To determine people's perceptions about innate intelligence.,I believe this very interesting Certain people argue with statistics like IQs and that intelligence can never really increase Its a bit pessimistic really considering others even argue that the synapses in your brain stop processing after a certain age so you actually are in a downward trend Im not sure if I agree with them I feel intelligence is a culmination of experience and knowledge,male,no,yes,,183452,0.47,g,improve,improve,NA,for_me,0.196832579186
+22,To determine people's perceptions about innate intelligence.,I believe this very interesting Certain people argue with statistics like IQs and that intelligence can never really increase Its a bit pessimistic really considering others even argue that the synapses in your brain stop processing after a certain age so you actually are in a downward trend Im not sure if I agree with them I feel intelligence is a culmination of experience and knowledge,male,no,yes,,183452,0.47,g,show_ability,ability,NA,show,0.142533936652
+22,To determine people's perceptions about innate intelligence.,I believe this very interesting Certain people argue with statistics like IQs and that intelligence can never really increase Its a bit pessimistic really considering others even argue that the synapses in your brain stop processing after a certain age so you actually are in a downward trend Im not sure if I agree with them I feel intelligence is a culmination of experience and knowledge,male,no,yes,,183452,0.47,g,test_future,test,future,for_me,0.165158371041
+22,To determine people's perceptions about innate intelligence.,I believe this very interesting Certain people argue with statistics like IQs and that intelligence can never really increase Its a bit pessimistic really considering others even argue that the synapses in your brain stop processing after a certain age so you actually are in a downward trend Im not sure if I agree with them I feel intelligence is a culmination of experience and knowledge,male,no,yes,,183452,0.47,g,test_bad,test,NA,for_me,0.0633484162896
+22,To determine people's perceptions about innate intelligence.,I believe this very interesting Certain people argue with statistics like IQs and that intelligence can never really increase Its a bit pessimistic really considering others even argue that the synapses in your brain stop processing after a certain age so you actually are in a downward trend Im not sure if I agree with them I feel intelligence is a culmination of experience and knowledge,male,no,yes,,183452,0.47,g,ability,ability,NA,for_me,0.147058823529
+22,To determine people's perceptions about innate intelligence.,I believe this very interesting Certain people argue with statistics like IQs and that intelligence can never really increase Its a bit pessimistic really considering others even argue that the synapses in your brain stop processing after a certain age so you actually are in a downward trend Im not sure if I agree with them I feel intelligence is a culmination of experience and knowledge,male,no,yes,,183452,0.47,g,show_effort,effort,NA,show,0.133484162896
+22,To determine people's perceptions about innate intelligence.,I believe this very interesting Certain people argue with statistics like IQs and that intelligence can never really increase Its a bit pessimistic really considering others even argue that the synapses in your brain stop processing after a certain age so you actually are in a downward trend Im not sure if I agree with them I feel intelligence is a culmination of experience and knowledge,male,no,yes,,183452,0.47,g,test_now,test,now,for_me,0.151583710407
+22,To determine people's perceptions about innate intelligence.,I believe this very interesting Certain people argue with statistics like IQs and that intelligence can never really increase Its a bit pessimistic really considering others even argue that the synapses in your brain stop processing after a certain age so you actually are in a downward trend Im not sure if I agree with them I feel intelligence is a culmination of experience and knowledge,male,no,yes,,183452,0.47,d,cannot_change,NA,NA,NA,0.18
+22,To determine people's perceptions about innate intelligence.,I believe this very interesting Certain people argue with statistics like IQs and that intelligence can never really increase Its a bit pessimistic really considering others even argue that the synapses in your brain stop processing after a certain age so you actually are in a downward trend Im not sure if I agree with them I feel intelligence is a culmination of experience and knowledge,male,no,yes,,183452,0.47,d,certain_amount,NA,NA,NA,0.17
+22,To determine people's perceptions about innate intelligence.,I believe this very interesting Certain people argue with statistics like IQs and that intelligence can never really increase Its a bit pessimistic really considering others even argue that the synapses in your brain stop processing after a certain age so you actually are in a downward trend Im not sure if I agree with them I feel intelligence is a culmination of experience and knowledge,male,no,yes,,183452,0.47,d,can_learn,NA,NA,NA,0.12
+23,,,female,no,no,,48510,2.52,g,test_now,test,now,for_me,0.166666666667
+23,,,female,no,no,,48510,2.52,g,show_ability,ability,NA,show,0.164502164502
+23,,,female,no,no,,48510,2.52,g,show_effort,effort,NA,show,0.166666666667
+23,,,female,no,no,,48510,2.52,g,ability,ability,NA,for_me,0.134199134199
+23,,,female,no,no,,48510,2.52,g,test_future,test,future,for_me,0.155844155844
+23,,,female,no,no,,48510,2.52,g,test_bad,test,NA,for_me,0.0627705627706
+23,,,female,no,no,,48510,2.52,g,improve,improve,NA,for_me,0.149350649351
+23,,,female,no,no,,48510,2.52,d,certain_amount,NA,NA,NA,0.87
+23,,,female,no,no,,48510,2.52,d,cannot_change,NA,NA,NA,0.84
+23,,,female,no,no,,48510,2.52,d,can_learn,NA,NA,NA,0.81
+24,nice task about taking a math class. ,nice task very interesting,male,no,yes,,126067,1.87,g,test_now,test,now,for_me,0.170305676856
+24,nice task about taking a math class. ,nice task very interesting,male,no,yes,,126067,1.87,g,show_effort,effort,NA,show,0.146288209607
+24,nice task about taking a math class. ,nice task very interesting,male,no,yes,,126067,1.87,g,ability,ability,NA,for_me,0.152838427948
+24,nice task about taking a math class. ,nice task very interesting,male,no,yes,,126067,1.87,g,test_future,test,future,for_me,0.150655021834
+24,nice task about taking a math class. ,nice task very interesting,male,no,yes,,126067,1.87,g,test_bad,test,NA,for_me,0.0960698689956
+24,nice task about taking a math class. ,nice task very interesting,male,no,yes,,126067,1.87,g,improve,improve,NA,for_me,0.124454148472
+24,nice task about taking a math class. ,nice task very interesting,male,no,yes,,126067,1.87,g,show_ability,ability,NA,show,0.159388646288
+24,nice task about taking a math class. ,nice task very interesting,male,no,yes,,126067,1.87,d,can_learn,NA,NA,NA,0.76
+24,nice task about taking a math class. ,nice task very interesting,male,no,yes,,126067,1.87,d,cannot_change,NA,NA,NA,0.35
+24,nice task about taking a math class. ,nice task very interesting,male,no,yes,,126067,1.87,d,certain_amount,NA,NA,NA,0.76
+25,Opinions on learning,None thank you,male,no,yes,,393398,0,g,test_future,test,future,for_me,0.183299389002
+25,Opinions on learning,None thank you,male,no,yes,,393398,0,g,ability,ability,NA,for_me,0.152749490835
+25,Opinions on learning,None thank you,male,no,yes,,393398,0,g,test_now,test,now,for_me,0.20366598778
+25,Opinions on learning,None thank you,male,no,yes,,393398,0,g,improve,improve,NA,for_me,0.152749490835
+25,Opinions on learning,None thank you,male,no,yes,,393398,0,g,show_effort,effort,NA,show,0.152749490835
+25,Opinions on learning,None thank you,male,no,yes,,393398,0,g,test_bad,test,NA,for_me,0.0
+25,Opinions on learning,None thank you,male,no,yes,,393398,0,g,show_ability,ability,NA,show,0.154786150713
+25,Opinions on learning,None thank you,male,no,yes,,393398,0,d,can_learn,NA,NA,NA,0
+25,Opinions on learning,None thank you,male,no,yes,,393398,0,d,cannot_change,NA,NA,NA,0
+25,Opinions on learning,None thank you,male,no,yes,,393398,0,d,certain_amount,NA,NA,NA,0
+26,I'm not sure. ,,male,no,no,,38558,0.49,g,test_bad,test,NA,for_me,0.0177383592018
+26,I'm not sure. ,,male,no,no,,38558,0.49,g,test_future,test,future,for_me,0.133037694013
+26,I'm not sure. ,,male,no,no,,38558,0.49,g,test_now,test,now,for_me,0.181818181818
+26,I'm not sure. ,,male,no,no,,38558,0.49,g,show_effort,effort,NA,show,0.179600886918
+26,I'm not sure. ,,male,no,no,,38558,0.49,g,show_ability,ability,NA,show,0.144124168514
+26,I'm not sure. ,,male,no,no,,38558,0.49,g,improve,improve,NA,for_me,0.152993348115
+26,I'm not sure. ,,male,no,no,,38558,0.49,g,ability,ability,NA,for_me,0.190687361419
+26,I'm not sure. ,,male,no,no,,38558,0.49,d,can_learn,NA,NA,NA,0.17
+26,I'm not sure. ,,male,no,no,,38558,0.49,d,cannot_change,NA,NA,NA,0.15
+26,I'm not sure. ,,male,no,no,,38558,0.49,d,certain_amount,NA,NA,NA,0.17
+27,I'm not sure.,,male,no,no,,104577,0.02,g,ability,ability,NA,for_me,0.165966386555
+27,I'm not sure.,,male,no,no,,104577,0.02,g,improve,improve,NA,for_me,0.180672268908
+27,I'm not sure.,,male,no,no,,104577,0.02,g,show_effort,effort,NA,show,0.140756302521
+27,I'm not sure.,,male,no,no,,104577,0.02,g,test_bad,test,NA,for_me,0.0
+27,I'm not sure.,,male,no,no,,104577,0.02,g,test_future,test,future,for_me,0.163865546218
+27,I'm not sure.,,male,no,no,,104577,0.02,g,test_now,test,now,for_me,0.178571428571
+27,I'm not sure.,,male,no,no,,104577,0.02,g,show_ability,ability,NA,show,0.170168067227
+27,I'm not sure.,,male,no,no,,104577,0.02,d,cannot_change,NA,NA,NA,0.02
+27,I'm not sure.,,male,no,no,,104577,0.02,d,certain_amount,NA,NA,NA,0
+27,I'm not sure.,,male,no,no,,104577,0.02,d,can_learn,NA,NA,NA,0
+28,No idea,,female,yes,no,when you get determined to do something and \""train\"" your brain,71415,0.58,g,ability,ability,NA,for_me,0.168021680217
+28,No idea,,female,yes,no,when you get determined to do something and \""train\"" your brain,71415,0.58,g,test_now,test,now,for_me,0.168021680217
+28,No idea,,female,yes,no,when you get determined to do something and \""train\"" your brain,71415,0.58,g,show_effort,effort,NA,show,0.181571815718
+28,No idea,,female,yes,no,when you get determined to do something and \""train\"" your brain,71415,0.58,g,test_bad,test,NA,for_me,0.0569105691057
+28,No idea,,female,yes,no,when you get determined to do something and \""train\"" your brain,71415,0.58,g,show_ability,ability,NA,show,0.0569105691057
+28,No idea,,female,yes,no,when you get determined to do something and \""train\"" your brain,71415,0.58,g,test_future,test,future,for_me,0.184281842818
+28,No idea,,female,yes,no,when you get determined to do something and \""train\"" your brain,71415,0.58,g,improve,improve,NA,for_me,0.184281842818
+28,No idea,,female,yes,no,when you get determined to do something and \""train\"" your brain,71415,0.58,d,cannot_change,NA,NA,NA,0.18
+28,No idea,,female,yes,no,when you get determined to do something and \""train\"" your brain,71415,0.58,d,certain_amount,NA,NA,NA,0.19
+28,No idea,,female,yes,no,when you get determined to do something and \""train\"" your brain,71415,0.58,d,can_learn,NA,NA,NA,0.21
+29,Beliefs on learning.,,female,no,yes,,84867,0.32,g,test_bad,test,NA,for_me,0.0
+29,Beliefs on learning.,,female,no,yes,,84867,0.32,g,improve,improve,NA,for_me,0.176366843034
+29,Beliefs on learning.,,female,no,yes,,84867,0.32,g,show_effort,effort,NA,show,0.144620811287
+29,Beliefs on learning.,,female,no,yes,,84867,0.32,g,test_future,test,future,for_me,0.176366843034
+29,Beliefs on learning.,,female,no,yes,,84867,0.32,g,test_now,test,now,for_me,0.176366843034
+29,Beliefs on learning.,,female,no,yes,,84867,0.32,g,ability,ability,NA,for_me,0.176366843034
+29,Beliefs on learning.,,female,no,yes,,84867,0.32,g,show_ability,ability,NA,show,0.149911816578
+29,Beliefs on learning.,,female,no,yes,,84867,0.32,d,cannot_change,NA,NA,NA,0.16
+29,Beliefs on learning.,,female,no,yes,,84867,0.32,d,can_learn,NA,NA,NA,0.16
+29,Beliefs on learning.,,female,no,yes,,84867,0.32,d,certain_amount,NA,NA,NA,0

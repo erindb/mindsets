@@ -57,9 +57,9 @@ var goals = [
   "doing well on future tests",
   "being good at math",
   "improving at math",
-  "showing his teacher that he has high math ability",
-  "showing his teacher that he tries at math",
-  "doing badly on his tests"
+  "showing your teacher that you have high math ability",
+  "showing your teacher that you try at math",
+  "doing badly on your tests"
 ]
 
 /* randomization */
@@ -101,7 +101,8 @@ var experiment = {
     });
   },
   goals: function(rand_name) {
-    $(".prompt").html(rand_name + " is taking a test in this class. How likely is " + rand_name + " to have each of the following goals?");
+    //$(".prompt").html(rand_name + " is taking a test in this class. How likely is " + rand_name + " to have each of the following goals?");
+    $(".prompt").html("How likely is it that you will have each of the following goals?")
     for (var i=0; i<randomization.goals.length; i++) {
       $("#ref" + i).html(randomization.goals[i]);
       responses["target" + i] = randomization.goals[i];

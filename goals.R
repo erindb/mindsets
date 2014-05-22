@@ -12,11 +12,10 @@ upper.conf <- function(v) {
 }
 
 library(ggplot2)
-r = read.table("goals-5-21.results", header=T, sep=",")
-print(length(r))
+r = read.table("goals-other-60Ss.results", header=T, sep="\t")
+print(nrow(r))
 r = r[r$response < 0.2 | r$version != "test_bad",]
-print(length(r))
-
+print(nrow(r))
 
 med.split = median(r$dweck_sum_score)
 r$fixed = r$dweck_sum_score > med.split

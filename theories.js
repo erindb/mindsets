@@ -71,16 +71,16 @@ var Trial = function(trial_type, ability, effort, difficulty) {
   this.name = rand_name();
   if (trial_type == "performance") {
     //performance prompt
-    this.prompt = this.name + " has " + this.ability + " math ability. He puts " +
-                  this.effort + " into " + article(this.difficulty) + " " + this.difficulty +
-                  " math test. What score does " + this.name + " get?";
+    this.prompt = this.name + " has <b>" + this.ability + "</b> math ability. </br> He puts <b>" +
+                  this.effort + "</b> effort into " + article(this.difficulty) + " <b>" + this.difficulty +
+                  "</b> math test.</br></br> What score does " + this.name + " get?";
     this.left = "0th percentile";
     this.mid = "50th percentile";
     this.right = "99th percentile";
   } else if (trial_type == "improvement") {
-    this.prompt = this.name + " has " + this.ability + " math ability. He puts " +
-                  this.effort + " into some " + this.difficulty +
-                  " training. How much does " + this.name + "'s math ability improve after training?";
+    this.prompt = this.name + " has <b>" + this.ability + "</b> math ability. </br> He puts <b>" +
+                  this.effort + "</b> effort into some <b>" + this.difficulty +
+                  "</b> training.</br></br>  How much does " + this.name + "'s math ability improve after training?";
     this.left = "gets a lot worse";
     this.mid = "stays the same";
     this.right = "improves a lot";
@@ -113,10 +113,10 @@ for  (var a=0; a<ability.length; a++) {
     for (var d=0; d<difficulty.length; d++) {
       performance_trials.push(new Trial("performance", ability[a], effort[e], difficulty[d]));
       improvement_trials.push(new Trial("improvement", ability[a], effort[e], difficulty[d]));
-      performance_trials.push(new SanityTrial("performance", "right"));
-      performance_trials.push(new SanityTrial("performance", "left"));
-      improvement_trials.push(new SanityTrial("improvement", "right"));
-      improvement_trials.push(new SanityTrial("improvement", "left"));
+      //performance_trials.push(new SanityTrial("performance", "right"));
+      //performance_trials.push(new SanityTrial("performance", "left"));
+      //improvement_trials.push(new SanityTrial("improvement", "right"));
+      //improvement_trials.push(new SanityTrial("improvement", "left"));
     }
   }
 }

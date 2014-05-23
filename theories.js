@@ -79,8 +79,8 @@ var Trial = function(trial_type, ability, effort, difficulty) {
     this.right = "99th percentile";
   } else if (trial_type == "improvement") {
     this.prompt = this.name + " has <b>" + this.ability + "</b> math ability. </br> He puts <b>" +
-                  this.effort + "</b> effort into some <b>" + this.difficulty +
-                  "</b> training.</br></br>  How much does " + this.name + "'s math ability improve after training?";
+                  this.effort + "</b> effort into doing some <b>" + this.difficulty +
+                  "</b> practice problems.</br></br>  How much does " + this.name + "'s math ability improve after practicing?";
     this.left = "gets a lot worse";
     this.mid = "stays the same";
     this.right = "improves a lot";

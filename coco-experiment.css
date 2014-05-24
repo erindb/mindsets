@@ -44,6 +44,11 @@ body {
   float: right;
 }
 
+.mid_label {
+  display: inline;
+  float: center;
+}
+
 table {
   max-width: 800px;
   margin:auto auto;
@@ -198,6 +203,10 @@ form {
 .slider {
   height: 10;
   width: 300;
+}
+
+.slider_labels {
+  width: 500;
 }
 
 .ui-slider-handle {

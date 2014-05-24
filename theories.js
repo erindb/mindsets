@@ -9,8 +9,8 @@ function sample_n(v, n) {var lst=[]; var v_copy=v.slice(); for (var i=0; i<n; i+
 function rep(e, n) {var lst=[]; for (var i=0; i<n; i++) {lst.push(e);} return(lst);}
 var startTime;
 
-function article(diff) {
-  return diff == "easy" ? "an" : "a";
+function article(difficulty) {
+  return difficulty == "easy" ? "an" : "a";
 }
 
 var names = ["Adam", "Bob", "Carl", "Dave", "Evan", "Fred", "George",
@@ -19,73 +19,7 @@ var names = ["Adam", "Bob", "Carl", "Dave", "Evan", "Fred", "George",
              "Will", "Zach", "Ben", "Brian", "Colin", "Dan",
              "Edward", "Felix", "Gabe", "Greg", "Henry", "Jack", "Jeff",
              "Joe", "Josh", "Keith", "Kyle", "Matt", "Martin", "Max",
-             "Mike", "Paul", "Phillip", "Toby", "Andrew", "Charles",
-             //fix this
-             "Adam", "Bob", "Carl", "Dave", "Evan", "Fred", "George",
-             "Hank", "Ivan", "John", "Kevin", "Luke", "Mark", "Nick",
-             "Oscar", "Patrick", "Rick", "Steve", "Tom", "Vince",
-             "Will", "Zach", "Ben", "Brian", "Colin", "Dan",
-             "Edward", "Felix", "Gabe", "Greg", "Henry", "Jack", "Jeff",
-             "Joe", "Josh", "Keith", "Kyle", "Matt", "Martin", "Max",
              "Mike", "Paul", "Phillip", "Toby", "Andrew", "Charles"];
-var randomized_names = shuffle(names);
-var num_names_used = 0;
-function rand_name() {
-  var random_name = randomized_names[num_names_used];
-  num_names_used++
-  return random_name;
-}
-
-var SanityTrial = function(with_block, side) {
-  this.trial_type = "sanity"
-  this.side = side;
-  this.with_block = with_block;
-  this.name = rand_name();
-  this.correct = this.side == "left" ? 0 : 1;
-    if (with_block == "performance") {
-        this.left = "0th percentile";
-        this.mid = "50th percentile";
-        this.right = "99th percentile";
-    var right_or_wrong = this.side == "left" ? "wrong" : "right";
-    var better_or_worse = this.side == "left" ? "worse" : "better";
-    this.prompt = this.name + " got every question " + right_or_wrong +
-                  " on a math test and did " + better_or_worse +
-                  " than everyone in his class. What score did " +
-                  this.name + " get?";
-    } else if (with_block == "improvement") {
-        this.left = "gets a lot worse";
-        this.mid = "stays the same";
-        this.right = "improves a lot";
-        var side_label = this.side == "left" ? this.left : this.right;
-    this.prompt = this.name + " has some math ability, but that does't matter. Move the slider all the way to the " + this.side + " (" + side_label + ").";
-  } else {
-    console.log("ERROR 9");
-  }
-}
-
-var Trial = function(trial_type, ability, effort, difficulty) {
-  this.trial_type = trial_type;
-  this.ability = ability;
-  this.effort = effort;
-  this.difficulty = difficulty;
-  this.name = rand_name();
-  if (trial_type == "performance") {
-    //performance prompt
-    this.prompt = this.name + " has " + this.ability + " math ability. He puts " +
-                  this.effort + " into " + article(this.difficulty) + " " + this.difficulty +
-                  " math test. What score does " + this.name + " get?";
-    this.left = "0th percentile";
-    this.mid = "50th percentile";
-    this.right = "99th percentile";
-  } else if (trial_type == "improvement") {
-    this.prompt = this.name + " has " + this.ability + " math ability. He puts " +
-                  this.effort + " into some " + this.difficulty +
-                  " training. How much does " + this.name + "'s math ability improve after training?";
-    this.left = "gets a lot worse";
-    this.mid = "stays the same";
-    this.right = "improves a lot";
-  }
-}
 
 //<div id="slider0" class="slider">
 
@@ -93,62 +27,51 @@ var ability = ["high", "low"];
 var effort = ["high", "medium", "minimal"];
 var difficulty = ["difficult", "easy"];
 
-var dweck_questions = [
-                       "You have a certain amount of intelligence, and you really can't do much to change it",
-                       "Your intelligence is something about you that you can't change very much",
-                       "You can learn new things, but you can't really change your basic intelligence",
-                       "Your intelligence can change, and how much it changes is within your control",
-                       "You can learn new things, and that helps you change your intelligence",
-                       "You can change your intelligence"
-                       ];
-
 /* trial types */
-performance_trials = [ ]
-improvement_trials = [ ]
-//performance_sanity = [ ] //use these for excluding data
-//improvement_sanity = [ ] //use these for not paying people (if they get both wrong, they don't get paid.
+var performance_combos = [];
+var improvement_combos = [];
+var performance_sanity = [
+  {type:"sanity", correct:0},
+  {type:"sanity", correct:1}
+];
 
 for  (var a=0; a<ability.length; a++) {
   for (var e=0; e<effort.length; e++) {
     for (var d=0; d<difficulty.length; d++) {
-      performance_trials.push(new Trial("performance", ability[a], effort[e], difficulty[d]));
-      improvement_trials.push(new Trial("improvement", ability[a], effort[e], difficulty[d]));
-      performance_trials.push(new SanityTrial("performance", "right"));
-      performance_trials.push(new SanityTrial("performance", "left"));
-      improvement_trials.push(new SanityTrial("improvement", "right"));
-      improvement_trials.push(new SanityTrial("improvement", "left"));
+      performance_combos.push({
+        type:"performance",
+        ability:ability[a],
+        effort:effort[e],
+        difficulty:difficulty[d]
+      });
+      improvement_combos.push({
+        type:"improvement",
+        ability:ability[a],
+        effort:effort[e],
+        difficulty:difficulty[d]
+      });
     }
   }
 }
-/*var performance_trials = get_combinations("performance", true, true);
-var improvement_trials = get_combinations("improvement", true, true);
-var dweck_questionnaire_trials = [{trial_type: "dweck_questionnaire"}];
-var sanity_trials = [];
 
-var mixed_section_trials = performance_trials
-                                .concat(improvement_trials)
-                                .concat(goal_trials)
-                                .concat(failure_trials)
-                                .concat(transfer_trials)
-                                .concat(sanity_trials)*/
-
-/* randomization */
 var randomization = {
-  names: randomized_names,
-  performance: shuffle(performance_trials),
-  improvement: shuffle(improvement_trials),
+  names: shuffle(names),
+  slider_trials: shuffle([0, 6, 10]),
+  performance_trials: shuffle(shuffle(performance_combos).slice(0,6).concat(performance_sanity)),
+  improvement_trials: shuffle(improvement_combos).slice(0,6),
   block_order: shuffle(["performance", "improvement"])
- // prior_trials: shuffle(prior_trials),
-  //mixed_section_trials: shuffle(mixed_section_trials),
-  //dweck_questionnaire_trials: shuffle(dweck_questionnaire_trials),
-  //acronym: sample(novel_acronyms)
 }
 
-all_trials = randomization[randomization.block_order[0]]
-             .concat(randomization[randomization.block_order[1]])
+n_trials = randomization.slider_trials.length +
+           randomization.performance_trials.length +
+           randomization.improvement_trials.length +
+           1 //dweck
 
-/*console.log(all_trials.length);
-console.log(names.length);*/
+// WHERE ARE WE IN THE EXPERIMENT?
+n_trials_completed = 0;
+n_performance_trials_completed = 0;
+n_improvement_trials_completed = 0;
+n_slider_trials_completed = 0;
 
 $(document).ready(function() {
   showSlide("consent");
@@ -157,74 +80,109 @@ $(document).ready(function() {
 });
 
 var experiment = {
-  /*data: {
+  data: {
     "randomization": randomization
-  },*/
-  trial: function(trial_num) {
-    $('.bar').css('width', ( (trial_num / all_trials.length)*100 + "%"));
-    $(".err").hide();
-    //get trial
-    var mytrial = all_trials[trial_num];
-    //var trial_type = trial_data.trial_type;
-    //experiment[trial_type](trial_data);
-    //console.log(trial_type);
-      $(".left_label").html(mytrial.left);
-      $(".right_label").html(mytrial.right);
-    showSlide("trial");
-    $(".continue").click(function() {
-      $(".continue").unbind("click");
-      if (trial_num + 1 < all_trials.length) {
-        experiment.trial(trial_num + 1);
-      } else {
-        experiment.questionnaire();
-      }
-    });
-    //var mytrial = new Trial("performance", "high", "minimal", "difficult")
-    showSlide("trial");
-    $(".prompt").html(mytrial.prompt)
   },
-warning: function() {
-    showSlide("warning");
-    $(".continue").click(function() {
-                         $(".continue").unbind("click");
-                         experiment.intro();
-                         })
-},
   intro: function() {
-    // var introduction = "Imagine that some people are taking a class where they're learning " +
-    //                     introduce(randomization.domains[0]);
-    // if (domains_per_S == 2) {
-    //   introduction += " and some people are taking a class where they're learning " +
-    //                     introduce(randomization.domains[1]);
-    // } else if (domains_per_S == 3) {
-    //   introduction += ", some people are taking a class where they're learning " +
-    //                   introduce(randomization.domains[1]) +
-    //                   ", and some people are taking a class where they're learning " +
-    //                   introduce(randomization.domains[2])
-    // }
-    // var class_or_classes = "class";
-    // if (domains_per_S > 1) {class_or_classes += "es"};
-    // introduction += ".  We will give you some information about these people and about the " +
-    //                 class_or_classes +
-    //                 " and ask you to make some predictions.";
     showSlide("introduction");
     $(".continue").click(function() {
       $(".continue").unbind("click");
-                         experiment.trial(0);
+      experiment.slider_practice_intro();
     });
   },
-  dweck_questionnaire: function(trial_data) {
+  slider_practice_intro: function() {
+    showSlide("slider_practice_intro");
+    $(".continue").click(function() {
+      $(".continue").unbind("click");
+      experiment.slider_practice();
+    });
   },
-  sanity: function(trial_data) {
-    var rand_name = randomization.names[trial_data.name_index];
-    var domain = mention(randomization.domains[trial_data.domain_index]);
-    var ability = trial_data.ability;
-    var difficulty = trial_data.difficulty;
-    var effort = trial_data.effort;
-    var prompt = rand_name + " has " + ability + " " + domain + " ability. He puts " +
-      effort + " effort into some " + difficulty + " " + domain +
-      " training. What is " + rand_name + "'s ability?";
-    $(".prompt").html(prompt)
+  slider_practice: function() {
+    showSlide("slider_practice");
+    //how many out of 10:
+    var how_many_target = randomization.slider_trials[n_slider_trials_completed];
+    $("#slider_practice_number").html(how_many_target + "/10");
+    $(".continue").click(function() {
+      $(".continue").unbind("click");
+      if (true) {
+        //check for slider data here
+        n_slider_trials_completed++;
+        if (n_slider_trials_completed < randomization.slider_trials.length) {
+          //if more slider trials, keep going
+          experiment.slider_practice();
+        } else {
+          //else start whatever experiment block is randomized to be first.
+          experiment[randomization.block_order[0] + "_intro"]();
+        }
+      } else {
+        $(".err").show();
+      }
+    });
+  },
+  performance_intro: function() {
+    showSlide("performance_intro");
+    var first_or_next = randomization.block_order[0] == "performance" ? "First" : "Next"
+    $(".prompt").html(first_or_next + ", we will ask you about people's performance on some tests in this class.");
+    $(".continue").click(function() {
+      $(".continue").unbind("click");
+      experiment.performance();
+    })
+  },
+  performance: function() {
+    $('.bar').css('width', ( (n_trials_completed / n_trials)*100 + "%"));
+    $(".err").hide();
+    showSlide("performance");
+    var trial_data = randomization.performance_trials[n_performance_trials_completed];
+    if (trial_data.type == "sanity") {
+      $(".prompt").html(trial_data.correct);
+    } else {
+      $(".prompt").html(trial_data.ability + " " + trial_data.effort + " " + trial_data.difficulty);
+    }
+    $(".continue").click(function() {
+      $(".continue").unbind("click");
+      n_performance_trials_completed++;
+      if (n_performance_trials_completed < randomization.performance_trials.length) {
+        experiment.performance();
+      } else if (n_improvement_trials_completed == 0) {
+        experiment.improvement_intro();
+      } else {
+        experiment.dweck_questionnaire();
+      }
+    });
+  },
+  improvement_intro: function() {
+    showSlide("improvement_intro");
+    var first_or_next = randomization.block_order[0] == "improvement" ? "First" : "Next"
+    $(".prompt").html(first_or_next + ", we will ask you about people's improvement as they practice.");
+    $(".continue").click(function() {
+      $(".continue").unbind("click");
+      experiment.improvement();
+    })
+  },
+  improvement: function() {
+    $('.bar').css('width', ( (n_trials_completed / n_trials)*100 + "%"));
+    $(".err").hide();
+    var trial_data = randomization.improvement_trials[n_improvement_trials_completed];
+    $(".prompt").html(trial_data.ability + trial_data.effort + trial_data.difficulty);
+    showSlide("improvement");
+    $(".continue").click(function() {
+      $(".continue").unbind("click");
+      n_improvement_trials_completed++;
+      if (n_improvement_trials_completed < randomization.improvement_trials.length) {
+        experiment.improvement();
+      } else if (n_performance_trials_completed == 0) {
+        experiment.performance_intro();
+      } else {
+        experiment.dweck_questionnaire();
+      }
+    });
+  },
+  dweck_questionnaire: function() {
+    showSlide("dweck_questionnaire");
+    $(".continue").click(function() {
+      $(".continue").unbind("click");
+      experiment.questionnaire();
+    })
   },
   questionnaire: function() {
     //disable return key
@@ -235,7 +193,7 @@ warning: function() {
     });
     //progress bar complete
     $('.bar').css('width', ( "100%"));
-    showSlide("questionaire");
+    showSlide("questionnaire");
     //submit to turk (using mmturkey)
     $("#formsubmit").click(function() {
       rawResponse = $("#questionaireform").serialize();

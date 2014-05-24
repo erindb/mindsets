@@ -7,6 +7,7 @@ function rm(v, item) {if (v.indexOf(item) > -1) { v.splice(v.indexOf(item), 1); 
 function rm_sample(v) {var item = sample(v); rm(v, item); return item;}
 function sample_n(v, n) {var lst=[]; var v_copy=v.slice(); for (var i=0; i<n; i++) {lst.push(rm_sample(v_copy))}; return(lst);}
 function rep(e, n) {var lst=[]; for (var i=0; i<n; i++) {lst.push(e);} return(lst);}
+function b(string) {return "<b>" + string + "</b>";}
 var startTime;
 
 function article(difficulty) {
@@ -98,6 +99,7 @@ var experiment = {
     });
   },
   slider_practice: function() {
+    $('.bar').css('width', ( (n_trials_completed / n_trials)*100 + "%"));
     showSlide("slider_practice");
     //how many out of 10:
     var how_many_target = randomization.slider_trials[n_slider_trials_completed];
@@ -107,6 +109,7 @@ var experiment = {
       if (true) {
         //check for slider data here
         n_slider_trials_completed++;
+        n_trials_completed++;
         if (n_slider_trials_completed < randomization.slider_trials.length) {
           //if more slider trials, keep going
           experiment.slider_practice();
@@ -131,16 +134,31 @@ var experiment = {
   performance: function() {
     $('.bar').css('width', ( (n_trials_completed / n_trials)*100 + "%"));
     $(".err").hide();
+    var rand_name = randomization.names[n_trials_completed];
     showSlide("performance");
     var trial_data = randomization.performance_trials[n_performance_trials_completed];
     if (trial_data.type == "sanity") {
-      $(".prompt").html(trial_data.correct);
+      if (trial_data.correct == 1) {
+        var high_or_low = "high";
+        var training_prompt = "He gets all of the questions right and does better than everyone else in his class.";
+      } else {
+        var high_or_low = "low";
+        var training_prompt = "He gets all of the questions wrong and does worse than everyone else in his class.";
+      }
     } else {
-      $(".prompt").html(trial_data.ability + " " + trial_data.effort + " " + trial_data.difficulty);
+      var high_or_low = trial_data.ability;
+      var training_prompt = "He puts " + b(trial_data.effort) + " effort into "  + article(trial_data.difficulty) + 
+                            " " + b(trial_data.difficulty) + " math test."
     }
+    var ability_prompt = rand_name + " has " + b(high_or_low) + " math ability."
+    var question_prompt = "What score does " + rand_name + " get?";
+    $(".ability_prompt").html(ability_prompt);
+    $(".training_prompt").html(training_prompt);
+    $(".question_prompt").html(question_prompt);
     $(".continue").click(function() {
       $(".continue").unbind("click");
       n_performance_trials_completed++;
+      n_trials_completed++;
       if (n_performance_trials_completed < randomization.performance_trials.length) {
         experiment.performance();
       } else if (n_improvement_trials_completed == 0) {
@@ -152,7 +170,7 @@ var experiment = {
   },
   improvement_intro: function() {
     showSlide("improvement_intro");
-    var first_or_next = randomization.block_order[0] == "improvement" ? "First" : "Next"
+    var first_or_next = randomization.block_order[0] == "improvement" ? "First" : "Next";
     $(".prompt").html(first_or_next + ", we will ask you about people's improvement as they practice.");
     $(".continue").click(function() {
       $(".continue").unbind("click");
@@ -163,11 +181,19 @@ var experiment = {
     $('.bar').css('width', ( (n_trials_completed / n_trials)*100 + "%"));
     $(".err").hide();
     var trial_data = randomization.improvement_trials[n_improvement_trials_completed];
-    $(".prompt").html(trial_data.ability + " " + trial_data.effort + " " + trial_data.difficulty);
+    var rand_name = randomization.names[n_trials_completed];
+    var ability_prompt = rand_name + " has " + b(trial_data.ability) + " math ability."
+    var training_prompt = "He puts " + b(trial_data.effort) + " effort into doing some " + b(trial_data.difficulty) +
+                          " practice problems."
+    var question_prompt = "How much does " + rand_name + "'s math ability improve after practicing?";
+    $(".ability_prompt").html(ability_prompt);
+    $(".training_prompt").html(training_prompt);
+    $(".question_prompt").html(question_prompt);
     showSlide("improvement");
     $(".continue").click(function() {
       $(".continue").unbind("click");
       n_improvement_trials_completed++;
+      n_trials_completed++;
       if (n_improvement_trials_completed < randomization.improvement_trials.length) {
         experiment.improvement();
       } else if (n_performance_trials_completed == 0) {

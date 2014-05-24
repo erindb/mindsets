@@ -10,6 +10,38 @@ function rep(e, n) {var lst=[]; for (var i=0; i<n; i++) {lst.push(e);} return(ls
 function b(string) {return "<b>" + string + "</b>";}
 var startTime;
 
+//slider stuff used throughout
+var slider_response = null;
+function changeCreator(label) {
+  return function(value) {
+    $('#' + label).css({"background":"#99D6EB"});
+    $('#' + label + ' .ui-slider-handle').css({
+      "background":"#667D94",
+      "border-color": "#001F29" });
+    var slider_val = $("#" + label).slider("value");
+    slider_response = slider_val;
+  } 
+}
+function slideCreator(label) {
+  return function() {
+    $('#' + label + ' .ui-slider-handle').css({
+       "background":"#E0F5FF",
+       "border-color": "#001F29"
+    });
+  }
+}
+function create_slider(label) {
+  slider_response = null; //delete slider response from previous trial
+  $("#" + label).slider({
+    animate: true,
+    orientation: "horizontal",
+    max: 1 , min: 0, step: 0.01, value: 0.5,
+    slide: slideCreator(label),
+    change: changeCreator(label)
+  })
+}
+
+//a or an
 function article(difficulty) {
   return difficulty == "easy" ? "an" : "a";
 }
@@ -22,13 +54,10 @@ var names = ["Adam", "Bob", "Carl", "Dave", "Evan", "Fred", "George",
              "Joe", "Josh", "Keith", "Kyle", "Matt", "Martin", "Max",
              "Mike", "Paul", "Phillip", "Toby", "Andrew", "Charles"];
 
-//<div id="slider0" class="slider">
-
 var ability = ["high", "low"];
 var effort = ["high", "medium", "minimal"];
 var difficulty = ["difficult", "easy"];
 
-/* trial types */
 var performance_combos = [];
 var improvement_combos = [];
 var performance_sanity = [
@@ -82,7 +111,8 @@ $(document).ready(function() {
 
 var experiment = {
   data: {
-    "randomization": randomization
+    "randomization": randomization,
+    "trials": []
   },
   intro: function() {
     showSlide("introduction");
@@ -134,6 +164,7 @@ var experiment = {
   performance: function() {
     $('.bar').css('width', ( (n_trials_completed / n_trials)*100 + "%"));
     $(".err").hide();
+    var response_data;
     var rand_name = randomization.names[n_trials_completed];
     showSlide("performance");
     var trial_data = randomization.performance_trials[n_performance_trials_completed];
@@ -145,26 +176,45 @@ var experiment = {
         var high_or_low = "low";
         var training_prompt = "He gets all of the questions wrong and does worse than everyone else in his class.";
       }
+      response_data = {type:trial_data.type, correct: trial_data.correct}
     } else {
       var high_or_low = trial_data.ability;
       var training_prompt = "He puts " + b(trial_data.effort) + " effort into "  + article(trial_data.difficulty) + 
                             " " + b(trial_data.difficulty) + " math test."
+      response_data = {
+        type:trial_data.type,
+        ability: trial_data.ability,
+        effort: trial_data.effort,
+        difficulty: trial_data.difficulty
+      }
     }
     var ability_prompt = rand_name + " has " + b(high_or_low) + " math ability."
     var question_prompt = "What score does " + rand_name + " get?";
     $(".ability_prompt").html(ability_prompt);
     $(".training_prompt").html(training_prompt);
     $(".question_prompt").html(question_prompt);
+
+    //sliders
+    $("#performance_slider_container").html('<div id="performance_slider" class="slider">');
+    create_slider("performance_slider");
+
+    //continue button
     $(".continue").click(function() {
       $(".continue").unbind("click");
-      n_performance_trials_completed++;
-      n_trials_completed++;
-      if (n_performance_trials_completed < randomization.performance_trials.length) {
-        experiment.performance();
-      } else if (n_improvement_trials_completed == 0) {
-        experiment.improvement_intro();
+      if (slider_response != null) {
+        n_performance_trials_completed++;
+        n_trials_completed++;
+        response_data["response"] = slider_response;
+        experiment.data["trials"].push(response_data);
+        if (n_performance_trials_completed < randomization.performance_trials.length) {
+          experiment.performance();
+        } else if (n_improvement_trials_completed == 0) {
+          experiment.improvement_intro();
+        } else {
+          experiment.dweck_questionnaire();
+        }
       } else {
-        experiment.dweck_questionnaire();
+        $(".err").show();
       }
     });
   },
@@ -189,17 +239,35 @@ var experiment = {
     $(".ability_prompt").html(ability_prompt);
     $(".training_prompt").html(training_prompt);
     $(".question_prompt").html(question_prompt);
+    var response_data = {
+      type:trial_data.type,
+      ability: trial_data.ability,
+      effort: trial_data.effort,
+      difficulty: trial_data.difficulty
+    }
     showSlide("improvement");
+
+    //sliders
+    $("#improvement_slider_container").html('<div id="improvement_slider" class="slider">');
+    create_slider("improvement_slider");
+
+    //continue button
     $(".continue").click(function() {
       $(".continue").unbind("click");
-      n_improvement_trials_completed++;
-      n_trials_completed++;
-      if (n_improvement_trials_completed < randomization.improvement_trials.length) {
-        experiment.improvement();
-      } else if (n_performance_trials_completed == 0) {
-        experiment.performance_intro();
+      if (slider_response != null) {
+        n_improvement_trials_completed++;
+        n_trials_completed++;
+        response_data["response"] = slider_response;
+        experiment.data["trials"].push(response_data);
+        if (n_improvement_trials_completed < randomization.improvement_trials.length) {
+          experiment.improvement();
+        } else if (n_performance_trials_completed == 0) {
+          experiment.performance_intro();
+        } else {
+          experiment.dweck_questionnaire();
+        }
       } else {
-        experiment.dweck_questionnaire();
+        $(".err").show();
       }
     });
   },

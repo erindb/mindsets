@@ -203,10 +203,11 @@ form {
 .slider {
   height: 10;
   width: 300;
+  margin:auto auto;
 }
 
 .slider_labels {
-  width: 500;
+  width: 400;
 }
 
 .ui-slider-handle {

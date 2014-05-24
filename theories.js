@@ -163,7 +163,7 @@ var experiment = {
     $('.bar').css('width', ( (n_trials_completed / n_trials)*100 + "%"));
     $(".err").hide();
     var trial_data = randomization.improvement_trials[n_improvement_trials_completed];
-    $(".prompt").html(trial_data.ability + trial_data.effort + trial_data.difficulty);
+    $(".prompt").html(trial_data.ability + " " + trial_data.effort + " " + trial_data.difficulty);
     showSlide("improvement");
     $(".continue").click(function() {
       $(".continue").unbind("click");

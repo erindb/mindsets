@@ -10,6 +10,15 @@ function rep(e, n) {var lst=[]; for (var i=0; i<n; i++) {lst.push(e);} return(ls
 function b(string) {return "<b>" + string + "</b>";}
 var startTime;
 
+// returns selected elements and creates a new array with those elements (called 'foo')
+function range(start, end)
+{
+    var foo = [];
+    for (var i = start; i <= end; i++)
+        foo.push(i);
+    return foo;
+}
+
 //slider stuff used throughout
 var slider_response = null;
 function changeCreator(label) {
@@ -46,6 +55,21 @@ function article(difficulty) {
   return difficulty == "easy" ? "an" : "a";
 }
 
+// checks if radio buttons are empty on Dweck Questionnaire
+function validateRadioButtons() {
+    
+    if ($('input[name="q1"]:checked').val()!=null &&
+        $('input[name="q2"]:checked').val()!=null &&
+        $('input[name="q3"]:checked').val()!=null &&
+        $('input[name="q4"]:checked').val()!=null 
+        ) {
+        return true;
+    } else {
+        alert ( "Please answer all the questions." );
+        return false;    
+    }
+}
+
 var names = ["Adam", "Bob", "Carl", "Dave", "Evan", "Fred", "George",
              "Hank", "Ivan", "John", "Kevin", "Luke", "Mark", "Nick",
              "Oscar", "Patrick", "Rick", "Steve", "Tom", "Vince",
@@ -55,7 +79,7 @@ var names = ["Adam", "Bob", "Carl", "Dave", "Evan", "Fred", "George",
              "Mike", "Paul", "Phillip", "Toby", "Andrew", "Charles"];
 
 var ability = ["high", "low"];
-var effort = ["high", "medium", "minimal"];
+var effort = ["high", "medium", "low"];
 var difficulty = ["difficult", "easy"];
 
 var performance_combos = [];
@@ -84,11 +108,21 @@ for  (var a=0; a<ability.length; a++) {
   }
 }
 
+
+var dweck_prompts = ["You have a certain amount of intelligence, and you can’t really do much to change it:",
+                      "You can learn new things, but you can’t really change your basic intelligence:",
+                      "No matter who you are, you can significantly change your intelligence level:",
+                      "You can always substantially change how intelligent you are:",
+                    ];
+
+var dweck_indices = range(0,dweck_prompts.length-1);
+
 var randomization = {
   names: shuffle(names),
   slider_trials: shuffle([0, 6, 10]),
   performance_trials: shuffle(shuffle(performance_combos).slice(0,6).concat(performance_sanity)),
   improvement_trials: shuffle(improvement_combos).slice(0,6),
+  dweck_indices: shuffle(dweck_indices),
   block_order: shuffle(["performance", "improvement"])
 }
 
@@ -121,6 +155,7 @@ var experiment = {
       experiment.slider_practice_intro();
     });
   },
+
   slider_practice_intro: function() {
     showSlide("slider_practice_intro");
     $(".continue").click(function() {
@@ -128,23 +163,52 @@ var experiment = {
       experiment.slider_practice();
     });
   },
+
   slider_practice: function() {
     $('.bar').css('width', ( (n_trials_completed / n_trials)*100 + "%"));
-    showSlide("slider_practice");
-    //how many out of 10:
+    $(".err").hide();
+    // which display to show: how many out of 10?
     var how_many_target = randomization.slider_trials[n_slider_trials_completed];
-    $("#slider_practice_number").html(how_many_target + "/10");
+    // data object
+    var response_data = {
+        type:"slider_practice",
+        n_blue_dots:how_many_target
+      }
+    //get correct dot display
+    switch(how_many_target) {
+            case 0:
+                $(".slider_practice")[0].children[0].src = "slider_practice/all_red.png";
+                break;
+            case 6:
+                $(".slider_practice")[0].children[0].src = "slider_practice/60_blue.png";
+                break;
+            case 10:
+                $(".slider_practice")[0].children[0].src = "slider_practice/all_blue.png";
+                break;
+            default:
+    }
+
+    showSlide("slider_practice");
+
+    //get slider
+    $("#slider_practice_container").html('<div id="practice_slider" class="slider">');
+    create_slider("practice_slider");
+
+    //make continue button
     $(".continue").click(function() {
-      $(".continue").unbind("click");
-      if (true) {
-        //check for slider data here
+      if (slider_response != null) {
         n_slider_trials_completed++;
         n_trials_completed++;
+        //push slider data 
+        response_data["response"] = slider_response;
+        experiment.data["trials"].push(response_data);
         if (n_slider_trials_completed < randomization.slider_trials.length) {
           //if more slider trials, keep going
+          $(".continue").unbind("click");
           experiment.slider_practice();
         } else {
           //else start whatever experiment block is randomized to be first.
+          $(".continue").unbind("click");
           experiment[randomization.block_order[0] + "_intro"]();
         }
       } else {
@@ -152,6 +216,7 @@ var experiment = {
       }
     });
   },
+
   performance_intro: function() {
     showSlide("performance_intro");
     var first_or_next = randomization.block_order[0] == "performance" ? "First" : "Next"
@@ -161,6 +226,7 @@ var experiment = {
       experiment.performance();
     })
   },
+
   performance: function() {
     $('.bar').css('width', ( (n_trials_completed / n_trials)*100 + "%"));
     $(".err").hide();
@@ -200,17 +266,19 @@ var experiment = {
 
     //continue button
     $(".continue").click(function() {
-      $(".continue").unbind("click");
       if (slider_response != null) {
         n_performance_trials_completed++;
         n_trials_completed++;
         response_data["response"] = slider_response;
         experiment.data["trials"].push(response_data);
         if (n_performance_trials_completed < randomization.performance_trials.length) {
+          $(".continue").unbind("click");
           experiment.performance();
         } else if (n_improvement_trials_completed == 0) {
+          $(".continue").unbind("click");
           experiment.improvement_intro();
         } else {
+          $(".continue").unbind("click");
           experiment.dweck_questionnaire();
         }
       } else {
@@ -218,6 +286,7 @@ var experiment = {
       }
     });
   },
+
   improvement_intro: function() {
     showSlide("improvement_intro");
     var first_or_next = randomization.block_order[0] == "improvement" ? "First" : "Next";
@@ -227,6 +296,7 @@ var experiment = {
       experiment.improvement();
     })
   },
+
   improvement: function() {
     $('.bar').css('width', ( (n_trials_completed / n_trials)*100 + "%"));
     $(".err").hide();
@@ -253,17 +323,19 @@ var experiment = {
 
     //continue button
     $(".continue").click(function() {
-      $(".continue").unbind("click");
       if (slider_response != null) {
         n_improvement_trials_completed++;
         n_trials_completed++;
         response_data["response"] = slider_response;
         experiment.data["trials"].push(response_data);
         if (n_improvement_trials_completed < randomization.improvement_trials.length) {
+          $(".continue").unbind("click");
           experiment.improvement();
         } else if (n_performance_trials_completed == 0) {
+          $(".continue").unbind("click");
           experiment.performance_intro();
         } else {
+          $(".continue").unbind("click");
           experiment.dweck_questionnaire();
         }
       } else {
@@ -271,14 +343,38 @@ var experiment = {
       }
     });
   },
+
   dweck_questionnaire: function() {
     showSlide("dweck_questionnaire");
+
+    var num_prompts = randomization.dweck_indices.length;
+
+    // loop to fill in dweck prompts
+    for (i = 0; i < num_prompts; i++) {
+    $(".dweck_prompt").eq(i).html(dweck_prompts[randomization.dweck_indices[i]]);
+    } 
+    
     $(".continue").click(function() {
-      $(".continue").unbind("click");
-      experiment.questionnaire();
+        if (validateRadioButtons()) {
+        $(".continue").unbind("click");
+        // push responses to experiment object
+        response_data = {
+          type:"dweck",
+          order:randomization.dweck_indices,
+          q1: $('input[name="q1"]:checked').val(),
+          q2: $('input[name="q2"]:checked').val(),
+          q3: $('input[name="q3"]:checked').val(),
+          q4: $('input[name="q4"]:checked').val(),
+        }
+        experiment.data["trials"].push(response_data);
+
+        experiment.outgoing_questionnaire();
+      }
     })
   },
-  questionnaire: function() {
+
+  
+outgoing_questionnaire: function() {
     //disable return key
     $(document).keypress( function(event){
      if (event.which == '13') {
@@ -287,7 +383,59 @@ var experiment = {
     });
     //progress bar complete
     $('.bar').css('width', ( "100%"));
+    showSlide("outgoing_questionnaire");
+    $("#if_heard_of").hide();
+    $( "#heard_of" ).change(function() {
+      if ($("#heard_of").val() == "yes") {
+        $("#if_heard_of").show();
+      } else {
+        $("#if_heard_of").hide();
+      }
+    });
+    $(".err").hide();
+    var what_is_fixed = "";
+    //submit to turk (using mmturkey)
+    $("#formsubmit").click(function() {
+      var what_about = $("#what_about").val();
+      var comments = $("#comments").val();
+      var gender = $("#gender").val();
+      var heard_of = $("#heard_of").val();
+      var hear_more = $("#hear_more").val();
+      what_is_fixed = $("#what_is_fixed").val();
+      if (gender != "" && heard_of != "" && (heard_of == "no" || what_is_fixed != "")) {
+        experiment.data["what_about"] = what_about;
+        experiment.data["comments"] = comments;
+        experiment.data["gender"] = gender;
+        experiment.data["heard_of"] = heard_of;
+        experiment.data["hear_more"] = hear_more;
+        experiment.data["what_is_fixed"] = what_is_fixed;
+        var endTime = Date.now();
+        experiment.data["duration"] = endTime - startTime;
+        showSlide("finished");
+        setTimeout(function() { turk.submit(experiment.data) }, 1000);
+      } else {
+        $(".err").show();
+      }
+    });
+  }
+}
+
+/*
+
+
+  questionnaire: function() {
+    //disable return key
+    $(document).keypress( function(event){
+     if (event.which == '13') {
+        event.preventDefault();
+      }
+    });
+
+    //progress bar complete
+    $('.bar').css('width', ( "100%"));
+
     showSlide("questionnaire");
+
     //submit to turk (using mmturkey)
     $("#formsubmit").click(function() {
       rawResponse = $("#questionaireform").serialize();
@@ -307,3 +455,4 @@ var experiment = {
     });
   }
 }
+*/

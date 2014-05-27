@@ -290,7 +290,7 @@ var experiment = {
   improvement_intro: function() {
     showSlide("improvement_intro");
     var first_or_next = randomization.block_order[0] == "improvement" ? "First" : "Next";
-    $(".prompt").html(first_or_next + ", we will ask you about people's improvement as they practice.");
+    $(".prompt").html(first_or_next + ", we will ask you about people's improvement after practicing math.");
     $(".continue").click(function() {
       $(".continue").unbind("click");
       experiment.improvement();

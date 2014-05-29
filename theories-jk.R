@@ -1,5 +1,5 @@
 # read file
-t <- read.csv("theories_results_processed.csv")
+t <- read.csv("../theories_results_45.csv")
 
 # factors and labels
 t$effort <- factor(t$effort, levels=c("low", "medium", "high"),
@@ -8,10 +8,13 @@ t$ability <- factor(t$ability, levels=c("low", "high"),
                               labels=c("Low ability", "High ability"))
 t$difficulty <- factor(t$difficulty, levels=c("easy", "difficult"),
                        labels=c("Easy", "Difficult"))
-
 # filter
 t <- subset(t, heardOf=="no")
-t <- subset(t, sanity1 > sanity0)
+#t <- subset(t, sanity1 > sanity0)
+threshold <- 0.1
+t <- subset(t, abs(sanity1 - 1) <= threshold & abs(sanity0 - 0) <= threshold)
+# number of people left after filtering
+length(unique(t$workerID))
 
 # mindset score
 t$entityScore <- t$entity1 + t$entity2 + (7 - t$increm1) + (7 - t$increm2)
@@ -26,6 +29,15 @@ ggplot(t, aes(x=entityScore)) +
 # group people into growth and fixed
 median <- median(t$entityScore)
 t$mindset <- ifelse(t$entityScore > median, "fixed", "growth")
+t$mindset <- factor(t$mindset)
+
+
+# group people into quartiles
+# quart <- quantile(t$entityScore)
+# t$mindset <- ifelse(t$entityScore > 
+#                        quart[4], "Very fixed",
+#                      ifelse(t$entityScore > quart[3], "Kind of fixed",
+#                             ifelse(t$entityScore > quart[2], "Kind of growth", "Very growth")))
 
 # plot theory of performance
 performance <- summarySE(subset(t, theoryType=="performance"), measurevar="response",
@@ -44,6 +56,7 @@ ggplot(performance, aes(x=difficulty, y=response, fill=mindset)) +
 performance.all <- subset(t, theoryType=="performance")
 ggplot(performance.all, aes(x=entityScore, y=response, color=effort)) +
   geom_point() +
+  geom_smooth(method=lm) +
   facet_grid(difficulty ~ ability) +
   theme_bw() +
   xlab("Fixedness") +
@@ -62,12 +75,62 @@ ggplot(improvement, aes(x=difficulty, y=response, fill=mindset)) +
   xlab("") +
   ylab("Improvement")
 
-# plot theory of performance by individual subjects and continuous entity score
+# plot theory of improvement by individual subjects and continuous entity score
 improvement.all <- subset(t, theoryType=="improvement")
 ggplot(improvement.all, aes(x=entityScore, y=response, color=effort)) +
   geom_point() +
+  geom_smooth(method=lm) +
   facet_grid(difficulty ~ ability) +
   theme_bw() +
   xlab("Fixedness") +
   ylab("Improvement")
+
+#
+ggplot(improvement,
+       aes(x=effort, y=response, color=mindset)) +
+  geom_point() +
+  facet_grid(difficulty ~ ability) +
+  theme_bw() +
+  geom_errorbar(aes(ymin=response-se, ymax=response+se), width=0.2)
+
+summary(lm(data=performance.all, response ~ mindset))
+summary(lm(data=improvement.all, response ~ mindset))
+summary(lm(data=improvement.all, response ~ entityScore))
+
+#################################
+# Performance regression for fixed vs growth
+#################################
+performance.justMindset <- summarySE(performance.all, measurevar="response",
+                                     groupvars=c("mindset"))
+ggplot(performance.justMindset, aes(x=mindset, y=response, fill=mindset)) +
+  geom_bar(stat="identity", color="black") +
+  geom_errorbar(aes(ymin=response-ci, ymax=response+ci), width=0.2) +
+  theme_bw() +
+  ylab("Performance") +
+  xlab("Mindset")
+
+performance.all.fixed <- subset(performance.all, mindset=="fixed")
+performance.all.growth <- subset(performance.all, mindset=="growth")
+
+summary(lm(data=performance.all.fixed, response ~ ability + difficulty + effort))
+summary(lm(data=performance.all.growth, response ~ ability + difficulty + effort))
+
+#################################
+# Improvement regression for fixed vs growth
+#################################
+improvement.justMindset <- summarySE(improvement.all, measurevar="response",
+                                     groupvars=c("mindset"))
+ggplot(improvement.justMindset, aes(x=mindset, y=response, fill=mindset)) +
+    geom_bar(stat="identity", color="black") +
+    geom_errorbar(aes(ymin=response-ci, ymax=response+ci), width=0.2) +
+    theme_bw() +
+    ylab("Improvement") +
+    xlab("Mindset")
+
+improvement.all.fixed <- subset(improvement.all, mindset=="fixed")
+improvement.all.growth <- subset(improvement.all, mindset=="growth")
+
+summary(lm(data=improvement.all.fixed, response ~ ability + difficulty + effort))
+summary(lm(data=improvement.all.growth, response ~ ability + difficulty + effort))
+
 

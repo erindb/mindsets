@@ -1,7 +1,12 @@
 # read file
-t <- read.csv("../theories_results_45.csv")
+t <- read.csv("theories71.csv")
 
 # factors and labels
+t$n.effort <- ifelse(t$effort=="low", 0,
+                     ifelse(t$effort=="medium", 0.5, 1))
+t$n.ability <- ifelse(t$ability=="low", 0.5, 1)
+t$n.difficulty <- ifelse(t$difficulty=="easy", 0.5, 2)
+
 t$effort <- factor(t$effort, levels=c("low", "medium", "high"),
                              labels=c("Low effort", "Medium effort", "High effort"))
 t$ability <- factor(t$ability, levels=c("low", "high"),
@@ -86,12 +91,15 @@ ggplot(improvement.all, aes(x=entityScore, y=response, color=effort)) +
   ylab("Improvement")
 
 #
-ggplot(improvement,
+ggplot(performance,
        aes(x=effort, y=response, color=mindset)) +
-  geom_point() +
+  geom_errorbar(aes(ymin=response-ci, ymax=response+ci), width=0.2, color="grey") +
+  geom_point(size=3) +
   facet_grid(difficulty ~ ability) +
   theme_bw() +
-  geom_errorbar(aes(ymin=response-se, ymax=response+se), width=0.2)
+  xlab("") +
+  ylab("Performance")
+  
 
 summary(lm(data=performance.all, response ~ mindset))
 summary(lm(data=improvement.all, response ~ mindset))
@@ -112,7 +120,7 @@ ggplot(performance.justMindset, aes(x=mindset, y=response, fill=mindset)) +
 performance.all.fixed <- subset(performance.all, mindset=="fixed")
 performance.all.growth <- subset(performance.all, mindset=="growth")
 
-summary(lm(data=performance.all.fixed, response ~ ability + difficulty + effort))
+summary(lm(data=performance.all, response ~ ability * difficulty * effort * mindset))
 summary(lm(data=performance.all.growth, response ~ ability + difficulty + effort))
 
 #################################
@@ -134,3 +142,4 @@ summary(lm(data=improvement.all.fixed, response ~ ability + difficulty + effort)
 summary(lm(data=improvement.all.growth, response ~ ability + difficulty + effort))
 
 
+anova(lm(data=improvement.all, response ~ n.ability * n.difficulty * n.effort * entityScore))

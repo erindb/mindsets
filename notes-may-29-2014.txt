@@ -1,0 +1,29 @@
+compute alpha on other
+scatterplot is suboptimal
+bin and plot as heat map
+geom_tile
+
+
+model fitting exercise parametric rather than categorical model
+dropping the goal experiment versus rerunning cleaned up
+clean up confounds in goal experiment
+rerun theories WITH goals
+N=200
+clean and consistent distribution
+quartile level analyses etc.
+
+reanalyze lit review
+blackwell mediation analysis
+is this supported by this?
+
+
+interesting perspective we can now take on previous literature.
+
+
+bold puts things in focus.
+these things are already basically in focus due to the fact that those are the only thngs changing
+
+add a few more and a few more diverse mindset questions
+
+how much does effort effect improvement?
+(tag it on at the end)

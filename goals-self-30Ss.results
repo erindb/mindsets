@@ -1,0 +1,301 @@
+subject,what_about,comments,gender,heard_of,hear_more,what_is_fixed,duration,dweck_sum_score,trial_type,version,goal_variable,goal_timeline,goal_impress,response
+0,This experiment was about taking a maths class ,This is very nice and superb,male,yes,yes,It has been proven that people who believe that intelligence is fixed are less effective learners than those with a growth mindset who believe that intelligence develops with experience and practice,0321,2.34,g,test_now,test,now,for_me,0.121856866538
+0,This experiment was about taking a maths class ,This is very nice and superb,male,yes,yes,It has been proven that people who believe that intelligence is fixed are less effective learners than those with a growth mindset who believe that intelligence develops with experience and practice,0321,2.34,g,improve,improve,NA,for_me,0.160541586074
+0,This experiment was about taking a maths class ,This is very nice and superb,male,yes,yes,It has been proven that people who believe that intelligence is fixed are less effective learners than those with a growth mindset who believe that intelligence develops with experience and practice,0321,2.34,g,ability,ability,NA,for_me,0.137330754352
+0,This experiment was about taking a maths class ,This is very nice and superb,male,yes,yes,It has been proven that people who believe that intelligence is fixed are less effective learners than those with a growth mindset who believe that intelligence develops with experience and practice,0321,2.34,g,test_future,test,future,for_me,0.121856866538
+0,This experiment was about taking a maths class ,This is very nice and superb,male,yes,yes,It has been proven that people who believe that intelligence is fixed are less effective learners than those with a growth mindset who believe that intelligence develops with experience and practice,0321,2.34,g,show_effort,effort,NA,show,0.148936170213
+0,This experiment was about taking a maths class ,This is very nice and superb,male,yes,yes,It has been proven that people who believe that intelligence is fixed are less effective learners than those with a growth mindset who believe that intelligence develops with experience and practice,0321,2.34,g,show_ability,ability,NA,show,0.141199226306
+0,This experiment was about taking a maths class ,This is very nice and superb,male,yes,yes,It has been proven that people who believe that intelligence is fixed are less effective learners than those with a growth mindset who believe that intelligence develops with experience and practice,0321,2.34,g,test_bad,test,NA,for_me,0.168278529981
+0,This experiment was about taking a maths class ,This is very nice and superb,male,yes,yes,It has been proven that people who believe that intelligence is fixed are less effective learners than those with a growth mindset who believe that intelligence develops with experience and practice,0321,2.34,d,can_learn,NA,NA,NA,0.75
+0,This experiment was about taking a maths class ,This is very nice and superb,male,yes,yes,It has been proven that people who believe that intelligence is fixed are less effective learners than those with a growth mindset who believe that intelligence develops with experience and practice,0321,2.34,d,cannot_change,NA,NA,NA,0.9
+0,This experiment was about taking a maths class ,This is very nice and superb,male,yes,yes,It has been proven that people who believe that intelligence is fixed are less effective learners than those with a growth mindset who believe that intelligence develops with experience and practice,0321,2.34,d,certain_amount,NA,NA,NA,0.69
+1,Opinion about the change of intelligence,How the mindset can be changed?,male,yes,yes,Fixed mindset is an idea that expresses the way of thinking will go in a fixed direction.,8396,0.19,g,ability,ability,NA,for_me,0.163025210084
+1,Opinion about the change of intelligence,How the mindset can be changed?,male,yes,yes,Fixed mindset is an idea that expresses the way of thinking will go in a fixed direction.,8396,0.19,g,improve,improve,NA,for_me,0.168067226891
+1,Opinion about the change of intelligence,How the mindset can be changed?,male,yes,yes,Fixed mindset is an idea that expresses the way of thinking will go in a fixed direction.,8396,0.19,g,test_now,test,now,for_me,0.168067226891
+1,Opinion about the change of intelligence,How the mindset can be changed?,male,yes,yes,Fixed mindset is an idea that expresses the way of thinking will go in a fixed direction.,8396,0.19,g,show_ability,ability,NA,show,0.168067226891
+1,Opinion about the change of intelligence,How the mindset can be changed?,male,yes,yes,Fixed mindset is an idea that expresses the way of thinking will go in a fixed direction.,8396,0.19,g,test_bad,test,NA,for_me,0.00672268907563
+1,Opinion about the change of intelligence,How the mindset can be changed?,male,yes,yes,Fixed mindset is an idea that expresses the way of thinking will go in a fixed direction.,8396,0.19,g,test_future,test,future,for_me,0.164705882353
+1,Opinion about the change of intelligence,How the mindset can be changed?,male,yes,yes,Fixed mindset is an idea that expresses the way of thinking will go in a fixed direction.,8396,0.19,g,show_effort,effort,NA,show,0.161344537815
+1,Opinion about the change of intelligence,How the mindset can be changed?,male,yes,yes,Fixed mindset is an idea that expresses the way of thinking will go in a fixed direction.,8396,0.19,d,certain_amount,NA,NA,NA,0.15
+1,Opinion about the change of intelligence,How the mindset can be changed?,male,yes,yes,Fixed mindset is an idea that expresses the way of thinking will go in a fixed direction.,8396,0.19,d,cannot_change,NA,NA,NA,0.02
+1,Opinion about the change of intelligence,How the mindset can be changed?,male,yes,yes,Fixed mindset is an idea that expresses the way of thinking will go in a fixed direction.,8396,0.19,d,can_learn,NA,NA,NA,0.02
+2,Self perception of intelligence,,male,no,yes,,885,0.78,g,test_now,test,now,for_me,0.19111969112
+2,Self perception of intelligence,,male,no,yes,,885,0.78,g,test_bad,test,NA,for_me,0.0019305019305
+2,Self perception of intelligence,,male,no,yes,,885,0.78,g,improve,improve,NA,for_me,0.166023166023
+2,Self perception of intelligence,,male,no,yes,,885,0.78,g,show_effort,effort,NA,show,0.117760617761
+2,Self perception of intelligence,,male,no,yes,,885,0.78,g,test_future,test,future,for_me,0.156370656371
+2,Self perception of intelligence,,male,no,yes,,885,0.78,g,show_ability,ability,NA,show,0.179536679537
+2,Self perception of intelligence,,male,no,yes,,885,0.78,g,ability,ability,NA,for_me,0.187258687259
+2,Self perception of intelligence,,male,no,yes,,885,0.78,d,cannot_change,NA,NA,NA,0.21
+2,Self perception of intelligence,,male,no,yes,,885,0.78,d,can_learn,NA,NA,NA,0.27
+2,Self perception of intelligence,,male,no,yes,,885,0.78,d,certain_amount,NA,NA,NA,0.3
+3,ease and optimism we have before mathematics,,female,no,yes,,839,0.02,g,test_bad,test,NA,for_me,0.0521920668058
+3,ease and optimism we have before mathematics,,female,no,yes,,839,0.02,g,ability,ability,NA,for_me,0.0855949895616
+3,ease and optimism we have before mathematics,,female,no,yes,,839,0.02,g,show_effort,effort,NA,show,0.179540709812
+3,ease and optimism we have before mathematics,,female,no,yes,,839,0.02,g,test_future,test,future,for_me,0.169102296451
+3,ease and optimism we have before mathematics,,female,no,yes,,839,0.02,g,show_ability,ability,NA,show,0.156576200418
+3,ease and optimism we have before mathematics,,female,no,yes,,839,0.02,g,improve,improve,NA,for_me,0.150313152401
+3,ease and optimism we have before mathematics,,female,no,yes,,839,0.02,g,test_now,test,now,for_me,0.206680584551
+3,ease and optimism we have before mathematics,,female,no,yes,,839,0.02,d,certain_amount,NA,NA,NA,0
+3,ease and optimism we have before mathematics,,female,no,yes,,839,0.02,d,can_learn,NA,NA,NA,0.02
+3,ease and optimism we have before mathematics,,female,no,yes,,839,0.02,d,cannot_change,NA,NA,NA,0
+4,to know about importance of maths in individual's life,i enjoyed this experiment,female,no,yes,,6003,1.23,g,test_future,test,future,for_me,0.170731707317
+4,to know about importance of maths in individual's life,i enjoyed this experiment,female,no,yes,,6003,1.23,g,test_bad,test,NA,for_me,0.0731707317073
+4,to know about importance of maths in individual's life,i enjoyed this experiment,female,no,yes,,6003,1.23,g,show_effort,effort,NA,show,0.110864745011
+4,to know about importance of maths in individual's life,i enjoyed this experiment,female,no,yes,,6003,1.23,g,improve,improve,NA,for_me,0.126385809313
+4,to know about importance of maths in individual's life,i enjoyed this experiment,female,no,yes,,6003,1.23,g,ability,ability,NA,for_me,0.172949002217
+4,to know about importance of maths in individual's life,i enjoyed this experiment,female,no,yes,,6003,1.23,g,show_ability,ability,NA,show,0.155210643016
+4,to know about importance of maths in individual's life,i enjoyed this experiment,female,no,yes,,6003,1.23,g,test_now,test,now,for_me,0.190687361419
+4,to know about importance of maths in individual's life,i enjoyed this experiment,female,no,yes,,6003,1.23,d,cannot_change,NA,NA,NA,0.3
+4,to know about importance of maths in individual's life,i enjoyed this experiment,female,no,yes,,6003,1.23,d,certain_amount,NA,NA,NA,0.43
+4,to know about importance of maths in individual's life,i enjoyed this experiment,female,no,yes,,6003,1.23,d,can_learn,NA,NA,NA,0.5
+5,considering thoughts in various situations,,male,yes,no,that i'll never be able to succeed at a diet,4946,2.38,g,ability,ability,NA,for_me,0.174311926606
+5,considering thoughts in various situations,,male,yes,no,that i'll never be able to succeed at a diet,4946,2.38,g,test_now,test,now,for_me,0.229357798165
+5,considering thoughts in various situations,,male,yes,no,that i'll never be able to succeed at a diet,4946,2.38,g,test_future,test,future,for_me,0.105504587156
+5,considering thoughts in various situations,,male,yes,no,that i'll never be able to succeed at a diet,4946,2.38,g,test_bad,test,NA,for_me,0.0
+5,considering thoughts in various situations,,male,yes,no,that i'll never be able to succeed at a diet,4946,2.38,g,show_ability,ability,NA,show,0.229357798165
+5,considering thoughts in various situations,,male,yes,no,that i'll never be able to succeed at a diet,4946,2.38,g,improve,improve,NA,for_me,0.123853211009
+5,considering thoughts in various situations,,male,yes,no,that i'll never be able to succeed at a diet,4946,2.38,g,show_effort,effort,NA,show,0.137614678899
+5,considering thoughts in various situations,,male,yes,no,that i'll never be able to succeed at a diet,4946,2.38,d,certain_amount,NA,NA,NA,0.69
+5,considering thoughts in various situations,,male,yes,no,that i'll never be able to succeed at a diet,4946,2.38,d,cannot_change,NA,NA,NA,0.83
+5,considering thoughts in various situations,,male,yes,no,that i'll never be able to succeed at a diet,4946,2.38,d,can_learn,NA,NA,NA,0.86
+6,No idea,,female,yes,yes,long,2622,2.99,g,improve,improve,NA,for_me,0.166666666667
+6,No idea,,female,yes,yes,long,2622,2.99,g,test_future,test,future,for_me,0.166666666667
+6,No idea,,female,yes,yes,long,2622,2.99,g,test_now,test,now,for_me,0.166666666667
+6,No idea,,female,yes,yes,long,2622,2.99,g,show_ability,ability,NA,show,0.166666666667
+6,No idea,,female,yes,yes,long,2622,2.99,g,ability,ability,NA,for_me,0.166666666667
+6,No idea,,female,yes,yes,long,2622,2.99,g,show_effort,effort,NA,show,0.166666666667
+6,No idea,,female,yes,yes,long,2622,2.99,g,test_bad,test,NA,for_me,0.0
+6,No idea,,female,yes,yes,long,2622,2.99,d,certain_amount,NA,NA,NA,0.99
+6,No idea,,female,yes,yes,long,2622,2.99,d,can_learn,NA,NA,NA,1
+6,No idea,,female,yes,yes,long,2622,2.99,d,cannot_change,NA,NA,NA,1
+7,Maths intelligence,,male,yes,no,In fixed mindset people  believes there basic  qualities,3066,2.09,g,test_future,test,future,for_me,0.145418326693
+7,Maths intelligence,,male,yes,no,In fixed mindset people  believes there basic  qualities,3066,2.09,g,improve,improve,NA,for_me,0.159362549801
+7,Maths intelligence,,male,yes,no,In fixed mindset people  believes there basic  qualities,3066,2.09,g,show_effort,effort,NA,show,0.173306772908
+7,Maths intelligence,,male,yes,no,In fixed mindset people  believes there basic  qualities,3066,2.09,g,ability,ability,NA,for_me,0.177290836653
+7,Maths intelligence,,male,yes,no,In fixed mindset people  believes there basic  qualities,3066,2.09,g,test_now,test,now,for_me,0.151394422311
+7,Maths intelligence,,male,yes,no,In fixed mindset people  believes there basic  qualities,3066,2.09,g,show_ability,ability,NA,show,0.141434262948
+7,Maths intelligence,,male,yes,no,In fixed mindset people  believes there basic  qualities,3066,2.09,g,test_bad,test,NA,for_me,0.0517928286853
+7,Maths intelligence,,male,yes,no,In fixed mindset people  believes there basic  qualities,3066,2.09,d,can_learn,NA,NA,NA,0.73
+7,Maths intelligence,,male,yes,no,In fixed mindset people  believes there basic  qualities,3066,2.09,d,cannot_change,NA,NA,NA,0.58
+7,Maths intelligence,,male,yes,no,In fixed mindset people  believes there basic  qualities,3066,2.09,d,certain_amount,NA,NA,NA,0.78
+8,Attitudes about math aptitude,,male,no,yes,,834,1.0,g,ability,ability,NA,for_me,0.169675090253
+8,Attitudes about math aptitude,,male,no,yes,,834,1.0,g,improve,improve,NA,for_me,0.173285198556
+8,Attitudes about math aptitude,,male,no,yes,,834,1.0,g,test_now,test,now,for_me,0.171480144404
+8,Attitudes about math aptitude,,male,no,yes,,834,1.0,g,show_effort,effort,NA,show,0.140794223827
+8,Attitudes about math aptitude,,male,no,yes,,834,1.0,g,show_ability,ability,NA,show,0.160649819495
+8,Attitudes about math aptitude,,male,no,yes,,834,1.0,g,test_future,test,future,for_me,0.178700361011
+8,Attitudes about math aptitude,,male,no,yes,,834,1.0,g,test_bad,test,NA,for_me,0.00541516245487
+8,Attitudes about math aptitude,,male,no,yes,,834,1.0,d,can_learn,NA,NA,NA,0.03
+8,Attitudes about math aptitude,,male,no,yes,,834,1.0,d,cannot_change,NA,NA,NA,0.96
+8,Attitudes about math aptitude,,male,no,yes,,834,1.0,d,certain_amount,NA,NA,NA,0.01
+9,Just how much we view/think of ourselves as intelligent people and how confident we are about our individual intelligence.,None,male,yes,no,I would say it is when one believe in a particular way/path/thought/strategy and not believing otherwise/that there is another option.,6455,1.35,g,test_bad,test,NA,for_me,0.0
+9,Just how much we view/think of ourselves as intelligent people and how confident we are about our individual intelligence.,None,male,yes,no,I would say it is when one believe in a particular way/path/thought/strategy and not believing otherwise/that there is another option.,6455,1.35,g,test_now,test,now,for_me,0.166666666667
+9,Just how much we view/think of ourselves as intelligent people and how confident we are about our individual intelligence.,None,male,yes,no,I would say it is when one believe in a particular way/path/thought/strategy and not believing otherwise/that there is another option.,6455,1.35,g,show_ability,ability,NA,show,0.166666666667
+9,Just how much we view/think of ourselves as intelligent people and how confident we are about our individual intelligence.,None,male,yes,no,I would say it is when one believe in a particular way/path/thought/strategy and not believing otherwise/that there is another option.,6455,1.35,g,improve,improve,NA,for_me,0.166666666667
+9,Just how much we view/think of ourselves as intelligent people and how confident we are about our individual intelligence.,None,male,yes,no,I would say it is when one believe in a particular way/path/thought/strategy and not believing otherwise/that there is another option.,6455,1.35,g,ability,ability,NA,for_me,0.166666666667
+9,Just how much we view/think of ourselves as intelligent people and how confident we are about our individual intelligence.,None,male,yes,no,I would say it is when one believe in a particular way/path/thought/strategy and not believing otherwise/that there is another option.,6455,1.35,g,test_future,test,future,for_me,0.166666666667
+9,Just how much we view/think of ourselves as intelligent people and how confident we are about our individual intelligence.,None,male,yes,no,I would say it is when one believe in a particular way/path/thought/strategy and not believing otherwise/that there is another option.,6455,1.35,g,show_effort,effort,NA,show,0.166666666667
+9,Just how much we view/think of ourselves as intelligent people and how confident we are about our individual intelligence.,None,male,yes,no,I would say it is when one believe in a particular way/path/thought/strategy and not believing otherwise/that there is another option.,6455,1.35,d,cannot_change,NA,NA,NA,0.67
+9,Just how much we view/think of ourselves as intelligent people and how confident we are about our individual intelligence.,None,male,yes,no,I would say it is when one believe in a particular way/path/thought/strategy and not believing otherwise/that there is another option.,6455,1.35,d,can_learn,NA,NA,NA,0.68
+9,Just how much we view/think of ourselves as intelligent people and how confident we are about our individual intelligence.,None,male,yes,no,I would say it is when one believe in a particular way/path/thought/strategy and not believing otherwise/that there is another option.,6455,1.35,d,certain_amount,NA,NA,NA,0
+10,Not sure.,,male,yes,no,Inability to change your mind,303,0.34,g,show_effort,effort,NA,show,0.153846153846
+10,Not sure.,,male,yes,no,Inability to change your mind,303,0.34,g,show_ability,ability,NA,show,0.174089068826
+10,Not sure.,,male,yes,no,Inability to change your mind,303,0.34,g,test_future,test,future,for_me,0.188259109312
+10,Not sure.,,male,yes,no,Inability to change your mind,303,0.34,g,test_bad,test,NA,for_me,0.0
+10,Not sure.,,male,yes,no,Inability to change your mind,303,0.34,g,test_now,test,now,for_me,0.184210526316
+10,Not sure.,,male,yes,no,Inability to change your mind,303,0.34,g,improve,improve,NA,for_me,0.165991902834
+10,Not sure.,,male,yes,no,Inability to change your mind,303,0.34,g,ability,ability,NA,for_me,0.133603238866
+10,Not sure.,,male,yes,no,Inability to change your mind,303,0.34,d,can_learn,NA,NA,NA,0.14
+10,Not sure.,,male,yes,no,Inability to change your mind,303,0.34,d,cannot_change,NA,NA,NA,0.12
+10,Not sure.,,male,yes,no,Inability to change your mind,303,0.34,d,certain_amount,NA,NA,NA,0.08
+11,I have no idea,,female,no,yes,,310,1.34,g,test_now,test,now,for_me,0.242819843342
+11,I have no idea,,female,no,yes,,310,1.34,g,show_effort,effort,NA,show,0.151436031332
+11,I have no idea,,female,no,yes,,310,1.34,g,show_ability,ability,NA,show,0.195822454308
+11,I have no idea,,female,no,yes,,310,1.34,g,test_future,test,future,for_me,0.117493472585
+11,I have no idea,,female,no,yes,,310,1.34,g,improve,improve,NA,for_me,0.120104438642
+11,I have no idea,,female,no,yes,,310,1.34,g,ability,ability,NA,for_me,0.169712793734
+11,I have no idea,,female,no,yes,,310,1.34,g,test_bad,test,NA,for_me,0.00261096605744
+11,I have no idea,,female,no,yes,,310,1.34,d,can_learn,NA,NA,NA,0.45
+11,I have no idea,,female,no,yes,,310,1.34,d,certain_amount,NA,NA,NA,0.45
+11,I have no idea,,female,no,yes,,310,1.34,d,cannot_change,NA,NA,NA,0.44
+12,to know how one self evaluate themself.,i like the work,male,no,yes,,077,2.64,g,test_future,test,future,for_me,0.164601769912
+12,to know how one self evaluate themself.,i like the work,male,no,yes,,077,2.64,g,test_bad,test,NA,for_me,0.0070796460177
+12,to know how one self evaluate themself.,i like the work,male,no,yes,,077,2.64,g,show_effort,effort,NA,show,0.16814159292
+12,to know how one self evaluate themself.,i like the work,male,no,yes,,077,2.64,g,improve,improve,NA,for_me,0.162831858407
+12,to know how one self evaluate themself.,i like the work,male,no,yes,,077,2.64,g,show_ability,ability,NA,show,0.162831858407
+12,to know how one self evaluate themself.,i like the work,male,no,yes,,077,2.64,g,ability,ability,NA,for_me,0.16814159292
+12,to know how one self evaluate themself.,i like the work,male,no,yes,,077,2.64,g,test_now,test,now,for_me,0.166371681416
+12,to know how one self evaluate themself.,i like the work,male,no,yes,,077,2.64,d,certain_amount,NA,NA,NA,0.91
+12,to know how one self evaluate themself.,i like the work,male,no,yes,,077,2.64,d,can_learn,NA,NA,NA,0.81
+12,to know how one self evaluate themself.,i like the work,male,no,yes,,077,2.64,d,cannot_change,NA,NA,NA,0.92
+13,intelligence ,,female,no,no,,954,0,g,test_now,test,now,for_me,0.220750551876
+13,intelligence ,,female,no,no,,954,0,g,test_bad,test,NA,for_me,0.0
+13,intelligence ,,female,no,no,,954,0,g,show_effort,effort,NA,show,0.220750551876
+13,intelligence ,,female,no,no,,954,0,g,improve,improve,NA,for_me,0.116997792494
+13,intelligence ,,female,no,no,,954,0,g,test_future,test,future,for_me,0.220750551876
+13,intelligence ,,female,no,no,,954,0,g,ability,ability,NA,for_me,0.110375275938
+13,intelligence ,,female,no,no,,954,0,g,show_ability,ability,NA,show,0.110375275938
+13,intelligence ,,female,no,no,,954,0,d,certain_amount,NA,NA,NA,0
+13,intelligence ,,female,no,no,,954,0,d,cannot_change,NA,NA,NA,0
+13,intelligence ,,female,no,no,,954,0,d,can_learn,NA,NA,NA,0
+14,,,female,no,no,,468,0.07,g,improve,improve,NA,for_me,0.166666666667
+14,,,female,no,no,,468,0.07,g,test_now,test,now,for_me,0.166666666667
+14,,,female,no,no,,468,0.07,g,show_ability,ability,NA,show,0.168367346939
+14,,,female,no,no,,468,0.07,g,test_future,test,future,for_me,0.16156462585
+14,,,female,no,no,,468,0.07,g,show_effort,effort,NA,show,0.168367346939
+14,,,female,no,no,,468,0.07,g,test_bad,test,NA,for_me,0.0
+14,,,female,no,no,,468,0.07,g,ability,ability,NA,for_me,0.168367346939
+14,,,female,no,no,,468,0.07,d,can_learn,NA,NA,NA,0.02
+14,,,female,no,no,,468,0.07,d,certain_amount,NA,NA,NA,0.02
+14,,,female,no,no,,468,0.07,d,cannot_change,NA,NA,NA,0.03
+15,Views on knowledge,,male,no,yes,,0514,1.23,g,ability,ability,NA,for_me,0.162361623616
+15,Views on knowledge,,male,no,yes,,0514,1.23,g,test_future,test,future,for_me,0.167896678967
+15,Views on knowledge,,male,no,yes,,0514,1.23,g,test_now,test,now,for_me,0.162361623616
+15,Views on knowledge,,male,no,yes,,0514,1.23,g,show_effort,effort,NA,show,0.134686346863
+15,Views on knowledge,,male,no,yes,,0514,1.23,g,show_ability,ability,NA,show,0.153136531365
+15,Views on knowledge,,male,no,yes,,0514,1.23,g,improve,improve,NA,for_me,0.180811808118
+15,Views on knowledge,,male,no,yes,,0514,1.23,g,test_bad,test,NA,for_me,0.0387453874539
+15,Views on knowledge,,male,no,yes,,0514,1.23,d,certain_amount,NA,NA,NA,0.36
+15,Views on knowledge,,male,no,yes,,0514,1.23,d,cannot_change,NA,NA,NA,0.27
+15,Views on knowledge,,male,no,yes,,0514,1.23,d,can_learn,NA,NA,NA,0.6
+16,,,male,no,no,,033,2.3,g,show_ability,ability,NA,show,0.125
+16,,,male,no,no,,033,2.3,g,test_bad,test,NA,for_me,0.0
+16,,,male,no,no,,033,2.3,g,test_now,test,now,for_me,0.25
+16,,,male,no,no,,033,2.3,g,improve,improve,NA,for_me,0.125
+16,,,male,no,no,,033,2.3,g,show_effort,effort,NA,show,0.125
+16,,,male,no,no,,033,2.3,g,ability,ability,NA,for_me,0.125
+16,,,male,no,no,,033,2.3,g,test_future,test,future,for_me,0.25
+16,,,male,no,no,,033,2.3,d,cannot_change,NA,NA,NA,0.77
+16,,,male,no,no,,033,2.3,d,can_learn,NA,NA,NA,0.76
+16,,,male,no,no,,033,2.3,d,certain_amount,NA,NA,NA,0.77
+17,it is funny,thank you for this hit,male,no,yes,,2324,1.77,g,test_future,test,future,for_me,0.14025974026
+17,it is funny,thank you for this hit,male,no,yes,,2324,1.77,g,improve,improve,NA,for_me,0.109090909091
+17,it is funny,thank you for this hit,male,no,yes,,2324,1.77,g,show_effort,effort,NA,show,0.116883116883
+17,it is funny,thank you for this hit,male,no,yes,,2324,1.77,g,show_ability,ability,NA,show,0.223376623377
+17,it is funny,thank you for this hit,male,no,yes,,2324,1.77,g,test_now,test,now,for_me,0.0701298701299
+17,it is funny,thank you for this hit,male,no,yes,,2324,1.77,g,ability,ability,NA,for_me,0.251948051948
+17,it is funny,thank you for this hit,male,no,yes,,2324,1.77,g,test_bad,test,NA,for_me,0.0883116883117
+17,it is funny,thank you for this hit,male,no,yes,,2324,1.77,d,can_learn,NA,NA,NA,0.64
+17,it is funny,thank you for this hit,male,no,yes,,2324,1.77,d,cannot_change,NA,NA,NA,0.3
+17,it is funny,thank you for this hit,male,no,yes,,2324,1.77,d,certain_amount,NA,NA,NA,0.83
+18,Learning to be better at math,No,male,no,yes,,5392,0.77,g,improve,improve,NA,for_me,0.185114503817
+18,Learning to be better at math,No,male,no,yes,,5392,0.77,g,test_now,test,now,for_me,0.190839694656
+18,Learning to be better at math,No,male,no,yes,,5392,0.77,g,test_bad,test,NA,for_me,0.00763358778626
+18,Learning to be better at math,No,male,no,yes,,5392,0.77,g,ability,ability,NA,for_me,0.190839694656
+18,Learning to be better at math,No,male,no,yes,,5392,0.77,g,show_ability,ability,NA,show,0.145038167939
+18,Learning to be better at math,No,male,no,yes,,5392,0.77,g,test_future,test,future,for_me,0.190839694656
+18,Learning to be better at math,No,male,no,yes,,5392,0.77,g,show_effort,effort,NA,show,0.0896946564885
+18,Learning to be better at math,No,male,no,yes,,5392,0.77,d,can_learn,NA,NA,NA,0.26
+18,Learning to be better at math,No,male,no,yes,,5392,0.77,d,certain_amount,NA,NA,NA,0.26
+18,Learning to be better at math,No,male,no,yes,,5392,0.77,d,cannot_change,NA,NA,NA,0.25
+19,Attitudes towards learning,,male,no,yes,,1099,1.24,g,test_bad,test,NA,for_me,0.0
+19,Attitudes towards learning,,male,no,yes,,1099,1.24,g,test_future,test,future,for_me,0.185393258427
+19,Attitudes towards learning,,male,no,yes,,1099,1.24,g,show_ability,ability,NA,show,0.125468164794
+19,Attitudes towards learning,,male,no,yes,,1099,1.24,g,show_effort,effort,NA,show,0.187265917603
+19,Attitudes towards learning,,male,no,yes,,1099,1.24,g,test_now,test,now,for_me,0.187265917603
+19,Attitudes towards learning,,male,no,yes,,1099,1.24,g,improve,improve,NA,for_me,0.187265917603
+19,Attitudes towards learning,,male,no,yes,,1099,1.24,g,ability,ability,NA,for_me,0.12734082397
+19,Attitudes towards learning,,male,no,yes,,1099,1.24,d,certain_amount,NA,NA,NA,0.35
+19,Attitudes towards learning,,male,no,yes,,1099,1.24,d,can_learn,NA,NA,NA,0.53
+19,Attitudes towards learning,,male,no,yes,,1099,1.24,d,cannot_change,NA,NA,NA,0.36
+20,Fine,The experiment was really amazing,male,yes,yes,Something that i have decided and fixed in mind.,8412,0.34,g,show_effort,effort,NA,show,0.136602451839
+20,Fine,The experiment was really amazing,male,yes,yes,Something that i have decided and fixed in mind.,8412,0.34,g,test_bad,test,NA,for_me,0.00350262697023
+20,Fine,The experiment was really amazing,male,yes,yes,Something that i have decided and fixed in mind.,8412,0.34,g,ability,ability,NA,for_me,0.175131348511
+20,Fine,The experiment was really amazing,male,yes,yes,Something that i have decided and fixed in mind.,8412,0.34,g,test_now,test,now,for_me,0.175131348511
+20,Fine,The experiment was really amazing,male,yes,yes,Something that i have decided and fixed in mind.,8412,0.34,g,test_future,test,future,for_me,0.175131348511
+20,Fine,The experiment was really amazing,male,yes,yes,Something that i have decided and fixed in mind.,8412,0.34,g,show_ability,ability,NA,show,0.159369527145
+20,Fine,The experiment was really amazing,male,yes,yes,Something that i have decided and fixed in mind.,8412,0.34,g,improve,improve,NA,for_me,0.175131348511
+20,Fine,The experiment was really amazing,male,yes,yes,Something that i have decided and fixed in mind.,8412,0.34,d,can_learn,NA,NA,NA,0.04
+20,Fine,The experiment was really amazing,male,yes,yes,Something that i have decided and fixed in mind.,8412,0.34,d,cannot_change,NA,NA,NA,0.15
+20,Fine,The experiment was really amazing,male,yes,yes,Something that i have decided and fixed in mind.,8412,0.34,d,certain_amount,NA,NA,NA,0.15
+21,to know whether we think that our basintelligence can be changedc i,none,male,yes,yes,a preconceived opinion which cannot be changed,5005,1.77,g,test_bad,test,NA,for_me,0.0311355311355
+21,to know whether we think that our basintelligence can be changedc i,none,male,yes,yes,a preconceived opinion which cannot be changed,5005,1.77,g,show_ability,ability,NA,show,0.152014652015
+21,to know whether we think that our basintelligence can be changedc i,none,male,yes,yes,a preconceived opinion which cannot be changed,5005,1.77,g,test_future,test,future,for_me,0.159340659341
+21,to know whether we think that our basintelligence can be changedc i,none,male,yes,yes,a preconceived opinion which cannot be changed,5005,1.77,g,improve,improve,NA,for_me,0.164835164835
+21,to know whether we think that our basintelligence can be changedc i,none,male,yes,yes,a preconceived opinion which cannot be changed,5005,1.77,g,ability,ability,NA,for_me,0.163003663004
+21,to know whether we think that our basintelligence can be changedc i,none,male,yes,yes,a preconceived opinion which cannot be changed,5005,1.77,g,show_effort,effort,NA,show,0.166666666667
+21,to know whether we think that our basintelligence can be changedc i,none,male,yes,yes,a preconceived opinion which cannot be changed,5005,1.77,g,test_now,test,now,for_me,0.163003663004
+21,to know whether we think that our basintelligence can be changedc i,none,male,yes,yes,a preconceived opinion which cannot be changed,5005,1.77,d,can_learn,NA,NA,NA,0.46
+21,to know whether we think that our basintelligence can be changedc i,none,male,yes,yes,a preconceived opinion which cannot be changed,5005,1.77,d,certain_amount,NA,NA,NA,0.62
+21,to know whether we think that our basintelligence can be changedc i,none,male,yes,yes,a preconceived opinion which cannot be changed,5005,1.77,d,cannot_change,NA,NA,NA,0.69
+22,Great,I would love to improve the level of my smartness ,male,no,yes,,7712,1.02,g,improve,improve,NA,for_me,0.188764044944
+22,Great,I would love to improve the level of my smartness ,male,no,yes,,7712,1.02,g,test_future,test,future,for_me,0.2
+22,Great,I would love to improve the level of my smartness ,male,no,yes,,7712,1.02,g,test_now,test,now,for_me,0.179775280899
+22,Great,I would love to improve the level of my smartness ,male,no,yes,,7712,1.02,g,show_ability,ability,NA,show,0.00674157303371
+22,Great,I would love to improve the level of my smartness ,male,no,yes,,7712,1.02,g,ability,ability,NA,for_me,0.00674157303371
+22,Great,I would love to improve the level of my smartness ,male,no,yes,,7712,1.02,g,show_effort,effort,NA,show,0.21797752809
+22,Great,I would love to improve the level of my smartness ,male,no,yes,,7712,1.02,g,test_bad,test,NA,for_me,0.2
+22,Great,I would love to improve the level of my smartness ,male,no,yes,,7712,1.02,d,cannot_change,NA,NA,NA,0.03
+22,Great,I would love to improve the level of my smartness ,male,no,yes,,7712,1.02,d,can_learn,NA,NA,NA,0.04
+22,Great,I would love to improve the level of my smartness ,male,no,yes,,7712,1.02,d,certain_amount,NA,NA,NA,0.95
+23,To study how people take the matter of studying maths.,It was an interesting and thoughtful study Thanks All the best,male,yes,yes,Fixed mindset is the situation where you sternly believe about something and don't want to change that opinion ever.,0508,0.24,g,test_now,test,now,for_me,0.170515097691
+23,To study how people take the matter of studying maths.,It was an interesting and thoughtful study Thanks All the best,male,yes,yes,Fixed mindset is the situation where you sternly believe about something and don't want to change that opinion ever.,0508,0.24,g,show_ability,ability,NA,show,0.16163410302
+23,To study how people take the matter of studying maths.,It was an interesting and thoughtful study Thanks All the best,male,yes,yes,Fixed mindset is the situation where you sternly believe about something and don't want to change that opinion ever.,0508,0.24,g,ability,ability,NA,for_me,0.147424511545
+23,To study how people take the matter of studying maths.,It was an interesting and thoughtful study Thanks All the best,male,yes,yes,Fixed mindset is the situation where you sternly believe about something and don't want to change that opinion ever.,0508,0.24,g,test_future,test,future,for_me,0.170515097691
+23,To study how people take the matter of studying maths.,It was an interesting and thoughtful study Thanks All the best,male,yes,yes,Fixed mindset is the situation where you sternly believe about something and don't want to change that opinion ever.,0508,0.24,g,show_effort,effort,NA,show,0.172291296625
+23,To study how people take the matter of studying maths.,It was an interesting and thoughtful study Thanks All the best,male,yes,yes,Fixed mindset is the situation where you sternly believe about something and don't want to change that opinion ever.,0508,0.24,g,test_bad,test,NA,for_me,0.0
+23,To study how people take the matter of studying maths.,It was an interesting and thoughtful study Thanks All the best,male,yes,yes,Fixed mindset is the situation where you sternly believe about something and don't want to change that opinion ever.,0508,0.24,g,improve,improve,NA,for_me,0.177619893428
+23,To study how people take the matter of studying maths.,It was an interesting and thoughtful study Thanks All the best,male,yes,yes,Fixed mindset is the situation where you sternly believe about something and don't want to change that opinion ever.,0508,0.24,d,cannot_change,NA,NA,NA,0.07
+23,To study how people take the matter of studying maths.,It was an interesting and thoughtful study Thanks All the best,male,yes,yes,Fixed mindset is the situation where you sternly believe about something and don't want to change that opinion ever.,0508,0.24,d,certain_amount,NA,NA,NA,0.09
+23,To study how people take the matter of studying maths.,It was an interesting and thoughtful study Thanks All the best,male,yes,yes,Fixed mindset is the situation where you sternly believe about something and don't want to change that opinion ever.,0508,0.24,d,can_learn,NA,NA,NA,0.08
+24,Social perceptions,,female,yes,no,A person (mind) that cannot be changed.,7447,1.25,g,test_bad,test,NA,for_me,0.00213675213675
+24,Social perceptions,,female,yes,no,A person (mind) that cannot be changed.,7447,1.25,g,test_future,test,future,for_me,0.106837606838
+24,Social perceptions,,female,yes,no,A person (mind) that cannot be changed.,7447,1.25,g,show_ability,ability,NA,show,0.209401709402
+24,Social perceptions,,female,yes,no,A person (mind) that cannot be changed.,7447,1.25,g,ability,ability,NA,for_me,0.138888888889
+24,Social perceptions,,female,yes,no,A person (mind) that cannot be changed.,7447,1.25,g,test_now,test,now,for_me,0.160256410256
+24,Social perceptions,,female,yes,no,A person (mind) that cannot be changed.,7447,1.25,g,show_effort,effort,NA,show,0.207264957265
+24,Social perceptions,,female,yes,no,A person (mind) that cannot be changed.,7447,1.25,g,improve,improve,NA,for_me,0.175213675214
+24,Social perceptions,,female,yes,no,A person (mind) that cannot be changed.,7447,1.25,d,certain_amount,NA,NA,NA,0.39
+24,Social perceptions,,female,yes,no,A person (mind) that cannot be changed.,7447,1.25,d,cannot_change,NA,NA,NA,0.36
+24,Social perceptions,,female,yes,no,A person (mind) that cannot be changed.,7447,1.25,d,can_learn,NA,NA,NA,0.5
+25,To know student's opinion about math,,female,no,yes,,1723,2.0,g,ability,ability,NA,for_me,0.25
+25,To know student's opinion about math,,female,no,yes,,1723,2.0,g,test_bad,test,NA,for_me,0.0
+25,To know student's opinion about math,,female,no,yes,,1723,2.0,g,test_future,test,future,for_me,0.125
+25,To know student's opinion about math,,female,no,yes,,1723,2.0,g,test_now,test,now,for_me,0.125
+25,To know student's opinion about math,,female,no,yes,,1723,2.0,g,show_ability,ability,NA,show,0.125
+25,To know student's opinion about math,,female,no,yes,,1723,2.0,g,show_effort,effort,NA,show,0.125
+25,To know student's opinion about math,,female,no,yes,,1723,2.0,g,improve,improve,NA,for_me,0.25
+25,To know student's opinion about math,,female,no,yes,,1723,2.0,d,certain_amount,NA,NA,NA,0.5
+25,To know student's opinion about math,,female,no,yes,,1723,2.0,d,can_learn,NA,NA,NA,1
+25,To know student's opinion about math,,female,no,yes,,1723,2.0,d,cannot_change,NA,NA,NA,0.5
+26,showing knowlegde,none,male,yes,yes,i am only good at one thing,162,0.38,g,show_ability,ability,NA,show,0.170777988615
+26,showing knowlegde,none,male,yes,yes,i am only good at one thing,162,0.38,g,ability,ability,NA,for_me,0.138519924099
+26,showing knowlegde,none,male,yes,yes,i am only good at one thing,162,0.38,g,test_bad,test,NA,for_me,0.011385199241
+26,showing knowlegde,none,male,yes,yes,i am only good at one thing,162,0.38,g,improve,improve,NA,for_me,0.189753320683
+26,showing knowlegde,none,male,yes,yes,i am only good at one thing,162,0.38,g,test_future,test,future,for_me,0.159392789374
+26,showing knowlegde,none,male,yes,yes,i am only good at one thing,162,0.38,g,test_now,test,now,for_me,0.165085388994
+26,showing knowlegde,none,male,yes,yes,i am only good at one thing,162,0.38,g,show_effort,effort,NA,show,0.165085388994
+26,showing knowlegde,none,male,yes,yes,i am only good at one thing,162,0.38,d,can_learn,NA,NA,NA,0.1
+26,showing knowlegde,none,male,yes,yes,i am only good at one thing,162,0.38,d,cannot_change,NA,NA,NA,0.12
+26,showing knowlegde,none,male,yes,yes,i am only good at one thing,162,0.38,d,certain_amount,NA,NA,NA,0.16
+27,People's perception of permanance of IQ,,male,yes,yes,someone who's views on a topic are not changeable,2046,2.46,g,test_bad,test,NA,for_me,0.0
+27,People's perception of permanance of IQ,,male,yes,yes,someone who's views on a topic are not changeable,2046,2.46,g,test_now,test,now,for_me,0.193798449612
+27,People's perception of permanance of IQ,,male,yes,yes,someone who's views on a topic are not changeable,2046,2.46,g,test_future,test,future,for_me,0.193798449612
+27,People's perception of permanance of IQ,,male,yes,yes,someone who's views on a topic are not changeable,2046,2.46,g,show_effort,effort,NA,show,0.139534883721
+27,People's perception of permanance of IQ,,male,yes,yes,someone who's views on a topic are not changeable,2046,2.46,g,show_ability,ability,NA,show,0.131782945736
+27,People's perception of permanance of IQ,,male,yes,yes,someone who's views on a topic are not changeable,2046,2.46,g,ability,ability,NA,for_me,0.147286821705
+27,People's perception of permanance of IQ,,male,yes,yes,someone who's views on a topic are not changeable,2046,2.46,g,improve,improve,NA,for_me,0.193798449612
+27,People's perception of permanance of IQ,,male,yes,yes,someone who's views on a topic are not changeable,2046,2.46,d,cannot_change,NA,NA,NA,0.71
+27,People's perception of permanance of IQ,,male,yes,yes,someone who's views on a topic are not changeable,2046,2.46,d,can_learn,NA,NA,NA,0.88
+27,People's perception of permanance of IQ,,male,yes,yes,someone who's views on a topic are not changeable,2046,2.46,d,certain_amount,NA,NA,NA,0.87
+28,I think this study is about how a person thinks they can perform and what they actually end up doing in a given situation.,Thanks,male,yes,yes,A mindset is like a thought process. It is things that you mentally tell yourself.,9040,0.51,g,ability,ability,NA,for_me,0.135775862069
+28,I think this study is about how a person thinks they can perform and what they actually end up doing in a given situation.,Thanks,male,yes,yes,A mindset is like a thought process. It is things that you mentally tell yourself.,9040,0.51,g,improve,improve,NA,for_me,0.14224137931
+28,I think this study is about how a person thinks they can perform and what they actually end up doing in a given situation.,Thanks,male,yes,yes,A mindset is like a thought process. It is things that you mentally tell yourself.,9040,0.51,g,show_effort,effort,NA,show,0.215517241379
+28,I think this study is about how a person thinks they can perform and what they actually end up doing in a given situation.,Thanks,male,yes,yes,A mindset is like a thought process. It is things that you mentally tell yourself.,9040,0.51,g,test_bad,test,NA,for_me,0.073275862069
+28,I think this study is about how a person thinks they can perform and what they actually end up doing in a given situation.,Thanks,male,yes,yes,A mindset is like a thought process. It is things that you mentally tell yourself.,9040,0.51,g,test_now,test,now,for_me,0.148706896552
+28,I think this study is about how a person thinks they can perform and what they actually end up doing in a given situation.,Thanks,male,yes,yes,A mindset is like a thought process. It is things that you mentally tell yourself.,9040,0.51,g,show_ability,ability,NA,show,0.140086206897
+28,I think this study is about how a person thinks they can perform and what they actually end up doing in a given situation.,Thanks,male,yes,yes,A mindset is like a thought process. It is things that you mentally tell yourself.,9040,0.51,g,test_future,test,future,for_me,0.144396551724
+28,I think this study is about how a person thinks they can perform and what they actually end up doing in a given situation.,Thanks,male,yes,yes,A mindset is like a thought process. It is things that you mentally tell yourself.,9040,0.51,d,cannot_change,NA,NA,NA,0.18
+28,I think this study is about how a person thinks they can perform and what they actually end up doing in a given situation.,Thanks,male,yes,yes,A mindset is like a thought process. It is things that you mentally tell yourself.,9040,0.51,d,can_learn,NA,NA,NA,0.17
+28,I think this study is about how a person thinks they can perform and what they actually end up doing in a given situation.,Thanks,male,yes,yes,A mindset is like a thought process. It is things that you mentally tell yourself.,9040,0.51,d,certain_amount,NA,NA,NA,0.16
+29,very nice,thank you very much,male,yes,,good and interesting,300,1.81,g,test_now,test,now,for_me,0.141196013289
+29,very nice,thank you very much,male,yes,,good and interesting,300,1.81,g,show_ability,ability,NA,show,0.146179401993
+29,very nice,thank you very much,male,yes,,good and interesting,300,1.81,g,ability,ability,NA,for_me,0.147840531561
+29,very nice,thank you very much,male,yes,,good and interesting,300,1.81,g,improve,improve,NA,for_me,0.146179401993
+29,very nice,thank you very much,male,yes,,good and interesting,300,1.81,g,test_bad,test,NA,for_me,0.134551495017
+29,very nice,thank you very much,male,yes,,good and interesting,300,1.81,g,show_effort,effort,NA,show,0.136212624585
+29,very nice,thank you very much,male,yes,,good and interesting,300,1.81,g,test_future,test,future,for_me,0.147840531561
+29,very nice,thank you very much,male,yes,,good and interesting,300,1.81,d,cannot_change,NA,NA,NA,0.43
+29,very nice,thank you very much,male,yes,,good and interesting,300,1.81,d,can_learn,NA,NA,NA,0.7
+29,very nice,thank you very much,male,yes,,good and interesting,300,1.81,d,certain_amount,NA,NA,NA,0.68

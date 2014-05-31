@@ -31,6 +31,8 @@ function changeCreator(label) {
     slider_response = slider_val;
   } 
 }
+
+//creator functions for theories expt
 function slideCreator(label) {
   return function() {
     $('#' + label + ' .ui-slider-handle').css({
@@ -50,18 +52,63 @@ function create_slider(label) {
   })
 }
 
+//creator functions for goals section
+var enough_responses;
+var n_responses = 0;
+var responses = {};
+
+function changeCreatorGoals(i) {
+  return function(value) {
+    $('#goals_slider' + i).css({"background":"#99D6EB"});
+    $('#goals_slider' + i + ' .ui-slider-handle').css({
+      "background":"#667D94",
+      "border-color": "#001F29" });
+    if (responses["response" + i] == null) {
+      n_responses++;
+      responses["response" + i] = [];
+    }
+    var slider_val = $("#goals_slider"+i).slider("value");
+    responses["response" + i] = slider_val;
+  } 
+}
+function slideCreatorGoals(i) {
+  return function() {
+    $('#goals_slider' + i + ' .ui-slider-handle').css({
+       "background":"#E0F5FF",
+       "border-color": "#001F29"
+    });
+  }
+}
+
 //a or an
 function article(difficulty) {
   return difficulty == "easy" ? "an" : "a";
 }
 
-// checks if radio buttons are empty on Dweck Questionnaire
-function validateRadioButtons() {
+// checks if radio buttons on Dweck Questionnaire are empty
+function validateRadioButtonsDweck() {
     
-    if ($('input[name="q1"]:checked').val()!=null &&
+    if ($('input[name="q0"]:checked').val()!=null &&
+        $('input[name="q1"]:checked').val()!=null &&
+        $('input[name="q2"]:checked').val()!=null &&
+        $('input[name="q3"]:checked').val()!=null 
+        ) {
+        return true;
+    } else {
+        alert ( "Please answer all the questions." );
+        return false;    
+    }
+}
+
+// checks if radio buttons on Blackwell Questionnaire are empty
+function validateRadioButtonsBlackwell() {
+    
+    if ($('input[name="q0"]:checked').val()!=null &&
+        $('input[name="q1"]:checked').val()!=null &&
         $('input[name="q2"]:checked').val()!=null &&
         $('input[name="q3"]:checked').val()!=null &&
-        $('input[name="q4"]:checked').val()!=null 
+        $('input[name="q4"]:checked').val()!=null &&
+        $('input[name="q5"]:checked').val()!=null 
         ) {
         return true;
     } else {
@@ -108,6 +155,15 @@ for  (var a=0; a<ability.length; a++) {
   }
 }
 
+var goals = [
+  "doing well on this test",
+  "doing well on future tests",
+  "being good at math",
+  "improving at math",
+  "showing your teacher that you have high math ability",
+  "showing your teacher that you try at math",
+  "doing badly on this test"
+]
 
 var dweck_prompts = ["You have a certain amount of intelligence, and you can’t really do much to change it:",
                       "You can learn new things, but you can’t really change your basic intelligence:",
@@ -117,25 +173,39 @@ var dweck_prompts = ["You have a certain amount of intelligence, and you can’t
 
 var dweck_indices = range(0,dweck_prompts.length-1);
 
+var blackwell_prompts = ["The harder you work at something, the better you will be at it",
+                          "When I work hard at something, it makes me feel like I’m not very smart",
+                          "If you’re not good at something, working hard won’t make you good at it",
+                          "An important reason why I choose tasks is because I like to learn new things",
+                          "I like tasks best when they make me think hard",
+                          "I like tasks that I’ll learn from even if I make a lot of mistakes",
+                         ]
+
+var blackwell_indices = range(0,blackwell_prompts.length-1);
+
 var randomization = {
   names: shuffle(names),
   slider_trials: shuffle([0, 6, 10]),
   performance_trials: shuffle(shuffle(performance_combos).slice(0,6).concat(performance_sanity)),
   improvement_trials: shuffle(improvement_combos).slice(0,6),
   dweck_indices: shuffle(dweck_indices),
-  block_order: shuffle(["performance", "improvement"])
+  goals: shuffle(goals),
+  blackwell_indices: shuffle(blackwell_indices),
+  block_order: shuffle(["performance", "improvement", "goals"]),
 }
 
 n_trials = randomization.slider_trials.length +
            randomization.performance_trials.length +
            randomization.improvement_trials.length +
-           1 //dweck
+           1 + // goals trial
+           1  // dweck trial
 
 // WHERE ARE WE IN THE EXPERIMENT?
 n_trials_completed = 0;
 n_performance_trials_completed = 0;
 n_improvement_trials_completed = 0;
 n_slider_trials_completed = 0;
+n_goals_trials_completed=0;
 
 $(document).ready(function() {
   showSlide("consent");
@@ -194,7 +264,7 @@ var experiment = {
     $("#slider_practice_container").html('<div id="practice_slider" class="slider">');
     create_slider("practice_slider");
 
-    //make continue button
+    // continue button
     $(".continue").click(function() {
       if (slider_response != null) {
         n_slider_trials_completed++;
@@ -217,10 +287,72 @@ var experiment = {
     });
   },
 
+  goals_intro: function() {
+    showSlide("goals_intro");
+    var first_or_next = randomization.block_order[0] == "goals" ? "First" : "Next"
+    $(".prompt").html(first_or_next + ", we will ask you to reason about <b>your</b> goals on a test in this class.");
+     $(".continue").click(function() {
+      $(".continue").unbind("click");
+      experiment.goals();
+    })
+  },
+
+  goals: function () {
+    $('.bar').css('width', ( (n_trials_completed / n_trials)*100 + "%"));
+    $(".err").hide();
+    $(".prompt").html("How likely is it that you will have each of the following goals?")
+
+    //loop to create sliders
+    for (var i = 0; i<randomization.goals.length; i++) {
+      // display goals prompt
+      $("#ref" + i).html(randomization.goals[i]);
+      responses["target" + i] = randomization.goals[i];
+      $('#goals_slider' + i).slider({
+        animate: true,
+        orientation: "horizontal",
+        max: 1 , min: 0, step: 0.01, value: 0.5,
+        slide: slideCreatorGoals(i),
+        change: changeCreatorGoals(i)
+      });
+    }
+    
+    showSlide("goals");
+
+    // checks if subs answered all questions
+    enough_responses = function() {
+      return n_responses == randomization.goals.length;
+    };
+
+    // continue button
+    $(".continue").click(function() {
+      if (enough_responses()) {
+        n_goals_trials_completed++;
+        n_trials_completed++;
+        experiment.data["goals_responses"] = responses;
+        if (n_improvement_trials_completed == 0 & n_goals_trials_completed == 0) {
+            //must be in the first block, so start whatever block is randomized to be second.
+            $(".continue").unbind("click");
+           experiment[randomization.block_order[1] + "_intro"]();
+        } else if (n_improvement_trials_completed == 0) {
+            $(".continue").unbind("click");
+            experiment.improvement_intro();  
+        } else if (n_performance_trials_completed == 0) {
+            $(".continue").unbind("click");
+            experiment.performance_intro();  
+        } else {
+          $(".continue").unbind("click");
+          experiment.dweck_questionnaire();
+        }
+      } else {
+        $(".err").show();
+      }
+    });
+  },
+
   performance_intro: function() {
     showSlide("performance_intro");
     var first_or_next = randomization.block_order[0] == "performance" ? "First" : "Next"
-    $(".prompt").html(first_or_next + ", we will ask you about people's performance on some tests in this class.");
+    $(".prompt").html(first_or_next + ", we will ask you to predict students' performance on some tests in this class.");
     $(".continue").click(function() {
       $(".continue").unbind("click");
       experiment.performance();
@@ -274,9 +406,16 @@ var experiment = {
         if (n_performance_trials_completed < randomization.performance_trials.length) {
           $(".continue").unbind("click");
           experiment.performance();
+        } else if (n_improvement_trials_completed == 0 & n_goals_trials_completed == 0) {
+            //must be in the first block, so start whatever block is randomized to be second.
+            $(".continue").unbind("click");
+           experiment[randomization.block_order[1] + "_intro"]();
         } else if (n_improvement_trials_completed == 0) {
-          $(".continue").unbind("click");
-          experiment.improvement_intro();
+            $(".continue").unbind("click");
+            experiment.improvement_intro();  
+        } else if (n_goals_trials_completed == 0) {
+            $(".continue").unbind("click");
+            experiment.goals_intro();  
         } else {
           $(".continue").unbind("click");
           experiment.dweck_questionnaire();
@@ -290,7 +429,7 @@ var experiment = {
   improvement_intro: function() {
     showSlide("improvement_intro");
     var first_or_next = randomization.block_order[0] == "improvement" ? "First" : "Next";
-    $(".prompt").html(first_or_next + ", we will ask you about people's improvement after practicing math.");
+    $(".prompt").html(first_or_next + ", we will ask you to predict students' improvement after practicing math problems.");
     $(".continue").click(function() {
       $(".continue").unbind("click");
       experiment.improvement();
@@ -331,9 +470,16 @@ var experiment = {
         if (n_improvement_trials_completed < randomization.improvement_trials.length) {
           $(".continue").unbind("click");
           experiment.improvement();
+        } else if (n_performance_trials_completed == 0 & n_goals_trials_completed == 0) {
+            //must be in the first block, so start whatever block is randomized to be second.
+            $(".continue").unbind("click");
+           experiment[randomization.block_order[1] + "_intro"]();
         } else if (n_performance_trials_completed == 0) {
-          $(".continue").unbind("click");
-          experiment.performance_intro();
+            $(".continue").unbind("click");
+            experiment.performance_intro();  
+        } else if (n_goals_trials_completed == 0) {
+            $(".continue").unbind("click");
+            experiment.goals_intro();  
         } else {
           $(".continue").unbind("click");
           experiment.dweck_questionnaire();
@@ -348,23 +494,58 @@ var experiment = {
     showSlide("dweck_questionnaire");
 
     var num_prompts = randomization.dweck_indices.length;
-
+    var responses = {}
     // loop to fill in dweck prompts
     for (i = 0; i < num_prompts; i++) {
-    $(".dweck_prompt").eq(i).html(dweck_prompts[randomization.dweck_indices[i]]);
+      $(".dweck_prompt").eq(i).html(dweck_prompts[randomization.dweck_indices[i]]);
+            responses["question" + i] = dweck_prompts[i];
     } 
     
     $(".continue").click(function() {
-        if (validateRadioButtons()) {
+        if (validateRadioButtonsDweck()) {
         $(".continue").unbind("click");
         // push responses to experiment object
         response_data = {
           type:"dweck",
           order:randomization.dweck_indices,
+          question_order: responses,
+          q0: $('input[name="q0"]:checked').val(),
+          q1: $('input[name="q1"]:checked').val(),
+          q2: $('input[name="q2"]:checked').val(),
+          q3: $('input[name="q3"]:checked').val(),
+        }
+        experiment.data["trials"].push(response_data);
+
+        experiment.blackwell_questionnaire();
+      }
+    })
+  },
+
+  blackwell_questionnaire: function() {
+    showSlide("blackwell_questionnaire");
+
+    var num_prompts = randomization.blackwell_indices.length;
+    var responses = {}
+    // loop to fill in blackwell prompts
+    for (i = 0; i < num_prompts; i++) {
+      $(".blackwell_prompt").eq(i).html(blackwell_prompts[randomization.blackwell_indices[i]]);
+      responses["question" + i] = blackwell_prompts[i];
+    } 
+
+    $(".continue").click(function() {
+        if (validateRadioButtonsBlackwell()) {
+        $(".continue").unbind("click");
+        // push responses to experiment object
+        response_data = {
+          type:"blackwell",
+          index_order:randomization.blackwell_indices,
+          question_order: responses,
+          q0: $('input[name="q0"]:checked').val(),
           q1: $('input[name="q1"]:checked').val(),
           q2: $('input[name="q2"]:checked').val(),
           q3: $('input[name="q3"]:checked').val(),
           q4: $('input[name="q4"]:checked').val(),
+          q5: $('input[name="q5"]:checked').val(),
         }
         experiment.data["trials"].push(response_data);
 
@@ -374,7 +555,7 @@ var experiment = {
   },
 
   
-outgoing_questionnaire: function() {
+  outgoing_questionnaire: function() {
     //disable return key
     $(document).keypress( function(event){
      if (event.which == '13') {
@@ -420,39 +601,3 @@ outgoing_questionnaire: function() {
   }
 }
 
-/*
-
-
-  questionnaire: function() {
-    //disable return key
-    $(document).keypress( function(event){
-     if (event.which == '13') {
-        event.preventDefault();
-      }
-    });
-
-    //progress bar complete
-    $('.bar').css('width', ( "100%"));
-
-    showSlide("questionnaire");
-
-    //submit to turk (using mmturkey)
-    $("#formsubmit").click(function() {
-      rawResponse = $("#questionaireform").serialize();
-      pieces = rawResponse.split("&");
-      var age = pieces[0].split("=")[1];
-      var lang = pieces[1].split("=")[1];
-      var comments = pieces[2].split("=")[1];
-      if (lang.length > 0) {
-        experiment.data["language"] = lang;
-        experiment.data["comments"] = comments;
-        experiment.data["age"] = age;
-        var endTime = Date.now();
-        experiment.data["duration"] = endTime - startTime;
-        showSlide("finished");
-        setTimeout(function() { turk.submit(experiment.data) }, 1000);
-      }
-    });
-  }
-}
-*/

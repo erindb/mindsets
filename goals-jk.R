@@ -1,9 +1,22 @@
+rm(list=ls())
+
+library(ggplot2)
+
 r = read.table("goals-other-60Ss.results", header=T, sep="\t")
 
 # sort
 r.sorted <- r[with(r, order(subject, trial_type, -response)), ]
 r.sorted$rank <- c(-1, -1, -1, 1, 2, 3, 4, 5, 6, 7)
 r.sorted.top <- subset(r.sorted, rank==6)
+
+# Histogram with density instead of count on y-axis
+ggplot(r, aes(x=dweck_sum_score)) + 
+  geom_histogram(aes(y=..density..),      # Histogram with density instead of count on y-axis
+                 binwidth=0.5,
+                 colour="black", fill="white") +
+  geom_density(alpha=.2, fill="#FF6666") +
+  theme_bw()
+
 
 # find median dweck score
 med <- median(r.sorted.top$dweck_sum_score)

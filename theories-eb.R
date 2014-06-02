@@ -45,7 +45,8 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
 
 # read filesu
 #t = read.csv("theories69.csv")
-t = read.csv("theories71.csv")
+#t = read.csv("theories71.csv")
+t = read.csv("theories-theories-goals-rep.results")
 #t = t[t$workerID < 31,]
 #t <- read.csv("theories_results_processed.csv")
 
@@ -58,11 +59,38 @@ t$difficulty <- factor(t$difficulty, levels=c("easy", "difficult"),
                        labels=c("Easy", "Difficult"))
 
 # filter
-#t <- subset(t, heardOf=="no")
-t <- subset(t, sanity1 > sanity0)
+t <- subset(t, heardOf=="no")
+t <- subset(t, sanity1 >= .9 & sanity0 <= 0.1)
 
 # mindset score
 t$entityScore <- t$entity1 + t$entity2 + (7 - t$increm1) + (7 - t$increm2)
+
+endorsements = data.frame(
+  type=c(rep("entity", length(t$entity1)),
+         rep("incremental", length(t$increm1))),
+  q1 = c(t$entity1, t$increm1),
+  q2 = c(t$entity2, t$increm2)
+)
+ggplot(endorsements, aes(x=q1, y=q2, colour=type)) +
+  geom_point() + stat_smooth(method="lm")  +
+  theme_bw(24) + ggtitle("endorsements of entity and incremental questions")
+
+entity.vs.increm = data.frame(
+  question=c(rep("question 1", length(t$entity1) + length(t$increm1)),
+         rep("question 2", length(t$entity2) + length(t$increm2))),
+  entity = c(t$entity1, t$entity2),
+  incremental = c(t$increm1, t$increm2)
+)
+ggplot(entity.vs.increm, aes(x=entity, y=incremental#, colour=question
+                             )) +
+  geom_point() + stat_smooth(method="lm")  +
+  #facet_grid(. ~ question) +
+  theme_bw(24) + ggtitle("endorsements of entity vs. incremental questions")
+
+# ggplot(t, aes(x=entity1, y=entity2)) +
+#   geom_point() +theme_bw(24) +
+#   ggtitle("entity responses") +
+#   stat_smooth(method="lm")
 
 # group people into growth and fixed
 med.split = median(t$entityScore)
@@ -227,7 +255,7 @@ plot(x=c(1,2,3,4,1,2,3,4), y=c(g.conf), col="blue", pch=19, ylim=c(-0.3,0.5))
 par(new=T)
 plot(x=c(1,2,3,4,1,2,3,4), y=c(f.conf), col="red", pch=19, ylim=c(-0.3,0.5))
 
-f.impr = lm(response~e.effort*e.difficulty*e.ability*entityScore, data=improvement.all)
-f.perf = lm(response~e.effort*e.difficulty*e.ability*entityScore, data=performance.all)
+f.impr = lm(response~e.effort*e.difficulty*e.ability*mindset, data=improvement.all)
+f.perf = lm(response~e.effort*e.difficulty*e.ability*mindset, data=performance.all)
 print(anova(f.impr))
 print(anova(f.perf))

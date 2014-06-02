@@ -12,16 +12,16 @@ upper.conf <- function(v) {
 }
 
 library(ggplot2)
-r = read.table("goals-other-60Ss.results", header=T, sep="\t")
+r = read.table("goals-theories-goals-rep.results", header=T, sep=",", quote="")
 print(nrow(r))
-r = r[r$response < 0.2 | r$version != "test_bad",]
+r = r[r$response < 0.1 | r$version != "test_bad",]
 print(nrow(r))
 
 med.split = median(r$dweck_sum_score)
 r$fixed = r$dweck_sum_score > med.split
 up.quart = median(r$dweck_sum_score[r$dweck_sum_score > med.split])
 low.quart = median(r$dweck_sum_score[r$dweck_sum_score < med.split])
-r = r[r$dweck_sum_score < low.quart | r$dweck_sum_score > up.quart,]
+#r = r[r$dweck_sum_score < low.quart | r$dweck_sum_score > up.quart,]
 
 ggplot(r, aes(x=dweck_sum_score)) +
   geom_histogram(binwidth = 0.1)

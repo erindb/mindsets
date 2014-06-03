@@ -21,7 +21,8 @@ goal_variable = {
 	"show_effort": "effort",
 	"show_ability": "ability",
 	"improve": "improve",
-	"ability": "ability"
+	"ability": "ability",
+	"NA":"NA"
 }
 goal_timeline = {
 	"test_bad": "NA",
@@ -30,7 +31,8 @@ goal_timeline = {
 	"show_effort": "NA",
 	"show_ability": "NA",
 	"improve": "NA",
-	"ability": "NA"
+	"ability": "NA",
+	"NA":"NA"
 }
 goal_impress = {
 	"test_bad": "for_me",
@@ -39,7 +41,8 @@ goal_impress = {
 	"show_effort": "show",
 	"show_ability": "show",
 	"improve": "for_me",
-	"ability": "for_me"
+	"ability": "for_me",
+	"NA":"NA"
 }
 
 def short_dweck(dq):
@@ -60,6 +63,9 @@ def short_goals(g):
 		"showing your teacher that you have high math ability":"show_ability",
 		"improving at math":"improve",
 		"being good at math":"ability",
+		"NA":"NA",
+		"doing well on the upcoming test":"test_now",
+		"doing badly on the upcoming test":"test_bad"
 	}
 	return gs[g]
 
@@ -109,23 +115,60 @@ for line in f:
 			elif label == "Answer.randomization":
 				elem = re.sub("\"\"", "\"", elem)
 				elem = json.loads(elem)
+				block_order = elem["block_order"]
+				subject_data["performance_first"] = str(block_order.index("performance") < block_order.index("goals"))
+				subject_data["improvement_first"] = str(block_order.index("improvement") < block_order.index("goals"))
+				conditions = elem["goal_conditions"]
+				subject_data["prompt_wording"] = conditions["prompt_wording"]
+				subject_data["goal_wording"] = conditions["goal_wording"]
+				subject_data["dependent_measure"] = conditions["dependent_measure"]
+				#performance_first = block_order.index("performance") > block_order.index("goals")
+				#improvment_first = block_order.index("improvement") > block_order.index("goals")
 			elif label == "Answer.goals_responses":
 				elem = re.sub("\"\"", "\"", elem)
 				elem = json.loads(elem)
-				subj_goals_responses.append(elem["response0"])
-				subj_goals_responses.append(elem["response1"])
-				subj_goals_responses.append(elem["response2"])
-				subj_goals_responses.append(elem["response3"])
-				subj_goals_responses.append(elem["response4"])
-				subj_goals_responses.append(elem["response5"])
-				subj_goals_responses.append(elem["response6"])
-				subj_goals_targets.append(elem["target0"])
-				subj_goals_targets.append(elem["target1"])
-				subj_goals_targets.append(elem["target2"])
-				subj_goals_targets.append(elem["target3"])
-				subj_goals_targets.append(elem["target4"])
-				subj_goals_targets.append(elem["target5"])
-				subj_goals_targets.append(elem["target6"])
+				if len(elem) == 3:
+					subject_data["goal1"] = elem[0]
+					subject_data["goal2"] = elem[1]
+					subject_data["goal3"] = elem[2]
+					subj_goals_responses.append("NA")
+					subj_goals_responses.append("NA")
+					subj_goals_responses.append("NA")
+					subj_goals_responses.append("NA")
+					subj_goals_responses.append("NA")
+					subj_goals_responses.append("NA")
+					subj_goals_responses.append("NA")
+					subj_goals_targets.append("NA")
+					subj_goals_targets.append("NA")
+					subj_goals_targets.append("NA")
+					subj_goals_targets.append("NA")
+					subj_goals_targets.append("NA")
+					subj_goals_targets.append("NA")
+					subj_goals_targets.append("NA")
+				else:
+					#print elem
+					subject_data["goal1"] = "NA"
+					subject_data["goal2"] = "NA"
+					subject_data["goal3"] = "NA"
+					subj_goals_responses.append(elem["response0"])
+					#print elem["response0"]
+					subj_goals_responses.append(elem["response1"])
+					subj_goals_responses.append(elem["response2"])
+					subj_goals_responses.append(elem["response3"])
+					subj_goals_responses.append(elem["response4"])
+					subj_goals_responses.append(elem["response5"])
+					subj_goals_targets.append(elem["target0"])
+					subj_goals_targets.append(elem["target1"])
+					subj_goals_targets.append(elem["target2"])
+					subj_goals_targets.append(elem["target3"])
+					subj_goals_targets.append(elem["target4"])
+					subj_goals_targets.append(elem["target5"])
+					if "response6" in elem.keys():
+						subj_goals_responses.append(elem["response6"])
+						subj_goals_targets.append(elem["target6"])
+					else:
+						subj_goals_responses.append("NA")
+						subj_goals_targets.append("NA")
 			elif label == "Answer.trials":
 				elem = re.sub("\"\"", "\"", elem)
 				elem = json.loads(elem)
@@ -221,7 +264,7 @@ for line in f:
 			"g",
 			"d", "d", "d", "d"
 		]
-		subj_goals_sum = sum(map(int, subj_goals_responses))
+		#subj_goals_sum = sum(map(int, subj_goals_responses))
 		#subj_goals_responses = [float(x)/subj_goals_sum for x in subj_goals_responses]
 		subject_data["version"] = []
 		subject_data["goal_variable"] = []
@@ -241,7 +284,7 @@ for line in f:
 			if target[:-1] == "entity":
 				dweck_sum_score += response
 			else:
-				dweck_sum_score -= response
+				dweck_sum_score += (7 - response)
 		subject_data["dweck_sum_score"] = str(dweck_sum_score)
 		for i in range(len(subj_goals_targets)):
 			target = short_goals(subj_goals_targets[i])
@@ -260,6 +303,8 @@ for line in f:
 			subject_data["goal_timeline"].append("NA")
 			subject_data["goal_impress"].append("NA")
 		data_from_subjects.append(subject_data)
+		print subject_data["version"]
+		print subject_data["response"]
 	line_num += 1
 #print data_from_subjects
 
@@ -268,7 +313,9 @@ f.close()
 between_subj_labels = [
 	"subject", "what_about", "comments",
 	"gender", "heard_of",
-	"hear_more", "what_is_fixed", "duration", "dweck_sum_score"
+	"hear_more", "what_is_fixed", "duration", "dweck_sum_score",
+	"goal1", "goal2", "goal3", "goal_wording", "prompt_wording", "dependent_measure"
+	#"performance_first", "improvement_first"
 ]
 within_subj_labels = [
 	"trial_type", #dweck or goal
@@ -298,36 +345,36 @@ for i in range(len(data_from_subjects)):
 w.write("\n".join(lines_to_save))
 w.close()
 
-theories_between_subj_labels = [
-	"entity1", "entity2", "increm1", "increm2",
-	"practice0", "practice6", "practice10",
-	"sanity0", "sanity1",
-	"workerID", "gender", "heardOf"
-]
-theories_within_subj_labels = [
-	"theoryType",
-	"ability",
-	"effort",
-	"difficulty",
-	"response"
-]
-# #print data_from_subjects
-w = open("theories-" + sys.argv[1][6:], "w")
-lines_to_save = [",".join(theories_between_subj_labels + theories_within_subj_labels)]
-for i in range(len(data_from_subjects)):
-	subj_data = data_from_subjects[i]
-	subj_data["heardOf"] = subj_data["heard_of"]
-	subj_data["response"] = subj_data["theory_response"] ####DANGER!!!!!!!!
-	subj_line_elements = []
-	for j in range(len(theories_between_subj_labels)):
-		label = theories_between_subj_labels[j]
-		subj_line_elements.append(subj_data[label])
-	for j in range(len(subj_data["theoryType"])):
-		line_elements = [x for x in subj_line_elements]
-		for k in range(len(theories_within_subj_labels)):
-			label = theories_within_subj_labels[k]
-			#print subj_data
-			line_elements.append(subj_data[label][j])
-		lines_to_save.append(",".join(line_elements))
-w.write("\n".join(lines_to_save))
-w.close()
+# theories_between_subj_labels = [
+# 	"entity1", "entity2", "increm1", "increm2",
+# 	"practice0", "practice6", "practice10",
+# 	"sanity0", "sanity1",
+# 	"workerID", "gender", "heardOf", "performance_first", "improvement_first"
+# ]
+# theories_within_subj_labels = [
+# 	"theoryType",
+# 	"ability",
+# 	"effort",
+# 	"difficulty",
+# 	"response"
+# ]
+# # #print data_from_subjects
+# w = open("theories-" + sys.argv[1][6:], "w")
+# lines_to_save = [",".join(theories_between_subj_labels + theories_within_subj_labels)]
+# for i in range(len(data_from_subjects)):
+# 	subj_data = data_from_subjects[i]
+# 	subj_data["heardOf"] = subj_data["heard_of"]
+# 	subj_data["response"] = subj_data["theory_response"] ####DANGER!!!!!!!!
+# 	subj_line_elements = []
+# 	for j in range(len(theories_between_subj_labels)):
+# 		label = theories_between_subj_labels[j]
+# 		subj_line_elements.append(subj_data[label])
+# 	for j in range(len(subj_data["theoryType"])):
+# 		line_elements = [x for x in subj_line_elements]
+# 		for k in range(len(theories_within_subj_labels)):
+# 			label = theories_within_subj_labels[k]
+# 			#print subj_data
+# 			line_elements.append(subj_data[label][j])
+# 		lines_to_save.append(",".join(line_elements))
+# w.write("\n".join(lines_to_save))
+# w.close()

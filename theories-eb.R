@@ -1,4 +1,4 @@
-split = "quartile"
+split = "median"
 
 ## Summarizes data.
 ## Gives count, mean, standard deviation, standard error of the mean, and confidence interval (default 95%).
@@ -131,7 +131,7 @@ ggplot(t, aes(x=entityScore)) +
   theme_bw()
 
 # plot theory of performance
-performance <- summarySE(subset(t, theoryType=="performance"), measurevar="response",
+performance <- summarySE(subset(t, theoryType=="performance" & performance_first=="True"), measurevar="response",
                          groupvars=c("ability", "effort", "difficulty", "mindset"))
 
 ggplot(performance, aes(x=difficulty, y=response, fill=mindset)) +
@@ -144,7 +144,7 @@ ggplot(performance, aes(x=difficulty, y=response, fill=mindset)) +
   ylab("Performance")
 
 # plot theory of performance by individual subjects and continuous entity score
-performance.all <- subset(t, theoryType=="performance")
+performance.all <- subset(t, theoryType=="performance" & performance_first=="True")
 ggplot(performance.all, aes(x=entityScore, y=response, color=effort)) +
   geom_point() +
   facet_grid(difficulty ~ ability) +
@@ -153,7 +153,7 @@ ggplot(performance.all, aes(x=entityScore, y=response, color=effort)) +
   ylab("Performance")
 
 # plot theory of improvement
-improvement <- summarySE(subset(t, theoryType=="improvement"), measurevar="response",
+improvement <- summarySE(subset(t, theoryType=="improvement" & improvement_first=="True"), measurevar="response",
                          groupvars=c("ability", "effort", "difficulty", "mindset"))
 
 ggplot(improvement, aes(x=difficulty, y=response, fill=mindset)) +
@@ -166,7 +166,7 @@ ggplot(improvement, aes(x=difficulty, y=response, fill=mindset)) +
   ylab("Improvement")
 
 # plot theory of performance by individual subjects and continuous entity score
-improvement.all <- subset(t, theoryType=="improvement")
+improvement.all <- subset(t, theoryType=="improvement" & improvement_first=="True")
 ggplot(improvement.all, aes(x=entityScore, y=response, color=effort)) +
   geom_point() +
   facet_grid(difficulty ~ ability) +
@@ -255,7 +255,9 @@ plot(x=c(1,2,3,4,1,2,3,4), y=c(g.conf), col="blue", pch=19, ylim=c(-0.3,0.5))
 par(new=T)
 plot(x=c(1,2,3,4,1,2,3,4), y=c(f.conf), col="red", pch=19, ylim=c(-0.3,0.5))
 
-f.impr = lm(response~e.effort*e.difficulty*e.ability*mindset, data=improvement.all)
-f.perf = lm(response~e.effort*e.difficulty*e.ability*mindset, data=performance.all)
+f.impr = lm(response~e.effort*e.difficulty*e.ability*entityScore, data=improvement.all)
+f.perf = lm(response~e.effort*e.difficulty*e.ability*entityScore, data=performance.all)
 print(anova(f.impr))
 print(anova(f.perf))
+
+length(unique(t$workerID))

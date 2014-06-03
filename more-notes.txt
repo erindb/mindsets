@@ -1,0 +1,67 @@
+if judge can't figure out success, then judge can use effort
+
+figure out participants and cars
+henry coe and 9am
+skyline
+
+
+filling in the because iteratively
+katz csil
+question answering
+he and josh
+
+20 mins
+here's what we ran
+here's some results
+introduce new people as they come in
+
+
+
+I also ran an anova for what things are significant predictors of response.
+
+For improvement, the significant predictors are effort, difficulty, entityScore, effort-difficulty interaction, and ability-difficulty interaction
+
+For performance, the signifcant predictors are effort, difficulty, and ability.
+
+I have no idea if that's a reasonable analysis, but I'm pretty happy entityScore came out as significant for improvement.
+
+facet by question
+plot trendline
+dweck sum score
+
+chrone box alpha
+average of correlation of the questions (dweck questionnaire)
+
+reverse code one of the questions
+
+do a density plot
+
+two groups: some measure of clumpiness and then bootstrapping it
+
+how likely is it that this person will accomplish these goals
+
+switch the order and put improvement/theory in blocks
+
+attention checks: 0, 50, and 99 within each block
+
+can people get worse at stuff?
+
+gets a lot worse
+stays the same
+gets a lot better
+
+malleable lay theory
+
+photo of person
+normal looking people on a normal background
+this is john
+
+noah gone a lot of july
+noah here most of june
+can have meetings without noah
+in a couple weeks, 
+17th
+brainstorming sessions
+someone should have a topic and organize and lead a discussion
+10 or 11
+j

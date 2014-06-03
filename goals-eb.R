@@ -12,11 +12,11 @@ upper.conf <- function(v) {
 }
 
 library(ggplot2)
-r = read.table("goals-goals-take2.results", header=T, sep=",", quote="")
+r = read.table("goals-goals_june3.results", header=T, sep=",", quote="")
 #r = r[r$goal_wording == "original" & r$prompt_wording == "training" & r$dependent_measure == "original",]
 #print(nrow(r))
-r = r[r$goal_wording == "original" & r$prompt_wording == "training" & r$dependent_measure == "original",]
-#r = r[r$goal_wording == "achieve" & r$prompt_wording == "orignal" & r$dependent_measure == "original",]
+#r = r[r$goal_wording == "original" & r$prompt_wording == "training" & r$dependent_measure == "original",]
+r = r[r$goal_wording == "achieve" & r$prompt_wording == "orignal" & r$dependent_measure == "original",]
 r = r[r$response < 0.1 | r$version != "test_bad",]
 r = r[r$heard_of == "no",]
 r = r[!is.na(r$response),]
@@ -52,6 +52,7 @@ dodge <- position_dodge(width=0.9)
 ggplot(mean.goals, aes(x=version, y=response, fill=mindset, group=mindset)) +
   geom_bar(binwidth=.1,position=dodge, stat="identity") +
   theme_bw(24) +
+  ggtitle("probability of success (unnormalized)") +
   #scale_colour_brewer(palette="Pastel2") +
   geom_errorbar(aes(ymax = upper.goals$response, ymin=lower.goals$response),
                 position=dodge, binwidth=.1, width=0.25)  #+
@@ -62,17 +63,18 @@ ggplot(mean.goals, aes(x=version, y=response, fill=mindset, group=mindset)) +
 fit = lm(response ~ goal_variable * goal_impress * dweck_sum_score, data=r)
 print(anova(fit))
 
-mean.goals = aggregate(normed_resp~version+mindset, data=r2[r2$trial_type == "g",], FUN=mean)
-upper.goals = aggregate(normed_resp~version+mindset, data=r2[r2$trial_type == "g",], FUN=upper.conf)
-lower.goals = aggregate(normed_resp~version+mindset, data=r2[r2$trial_type == "g",], FUN=lower.conf)
+mean.goals2 = aggregate(normed_resp~version+mindset, data=r2[r2$trial_type == "g",], FUN=mean)
+upper.goals2 = aggregate(normed_resp~version+mindset, data=r2[r2$trial_type == "g",], FUN=upper.conf)
+lower.goals2 = aggregate(normed_resp~version+mindset, data=r2[r2$trial_type == "g",], FUN=lower.conf)
 
 #1000x600
 dodge <- position_dodge(width=0.9)
-ggplot(mean.goals, aes(x=version, y=normed_resp, fill=mindset, group=mindset)) +
+ggplot(mean.goals2, aes(x=version, y=normed_resp, fill=mindset, group=mindset)) +
   geom_bar(binwidth=.1,position=dodge, stat="identity") +
   theme_bw(24) +
   #scale_colour_brewer(palette="Pastel2") +
-  geom_errorbar(aes(ymax = upper.goals$normed_resp, ymin=lower.goals$normed_resp),
+  ggtitle("training goals") +
+  geom_errorbar(aes(ymax = upper.goals2$normed_resp, ymin=lower.goals2$normed_resp),
                 position=dodge, binwidth=.1, width=0.25)  #+
 #   scale_fill_discrete(name="mindset",
 #                       breaks=c(F, T),

@@ -4,7 +4,7 @@ library(ggplot2)
 r = read.table("replication-theories.results", header=T, sep=",", quote="")
 r$subject = r$workerID
 print(length(unique(r$subject)))
-r = r[r$heardOf == "no",]
+r = r[r$can_describe_fixed == "no",]
 print(length(unique(r$subject)))
 good.subjects = unique(as.character(r$subject)[sapply(as.character(r$subject), function(subj) {
   r$sanity0[r$subject==subj][1] <= 0.1 & r$sanity1[r$subject==subj][1] >= 0.9
@@ -73,7 +73,7 @@ ggplot(performance.all, aes(x=entityScore, y=response, color=effort)) +
   theme_bw(24) +
   xlab("Fixedness") +
   ylab("Performance") +
-  ggtitle("Pilot Theories - Performance")
+  ggtitle("Theories - Performance")
 
 # plot theory of improvement by individual subjects and continuous entity score
 improvement.all <- subset(t, theoryType=="improvement")
@@ -84,7 +84,7 @@ ggplot(improvement.all, aes(x=entityScore, y=response, color=effort)) +
   theme_bw(24) +
   xlab("Fixedness") +
   ylab("Improvement") +
-  ggtitle("Pilot Theories - Improvement")
+  ggtitle("Theories - Improvement")
 
 ggplot(performance,
        aes(x=effort, y=response, color=mindset)) +
@@ -94,7 +94,7 @@ ggplot(performance,
   theme_bw(24) +
   xlab("") +
   ylab("Performance") +
-  ggtitle("Pilot Theories - Performance")
+  ggtitle("Theories - Performance")
 
 ggplot(improvement,
        aes(x=effort, y=response, color=mindset)) +
@@ -104,7 +104,7 @@ ggplot(improvement,
   theme_bw(24) +
   xlab("") +
   ylab("Improvement") +
-  ggtitle("Pilot Theories - Improvement")
+  ggtitle("Theories - Improvement")
 
 ggplot(t, aes(x=d, y=response, color=mindset)) +
   geom_point() +
@@ -142,7 +142,7 @@ ggplot(performance.justMindset, aes(x=mindset, y=response, fill=mindset)) +
   theme_bw(24) +
   ylab("Performance") +
   xlab("Mindset") +
-  ggtitle("Pilot Theories - Performance (all conditions)")
+  ggtitle("Theories - Performance (all conditions)")
 
 improvement.justMindset <- summarySE(improvement.all, measurevar="response",
                                      groupvars=c("mindset"))
@@ -152,7 +152,7 @@ ggplot(improvement.justMindset, aes(x=mindset, y=response, fill=mindset)) +
   theme_bw(24) +
   ylab("Improvement") +
   xlab("Mindset") +
-  ggtitle("Pilot Theories - Improvement  (all conditions)")
+  ggtitle("Theories - Improvement  (all conditions)")
 
 # # endorsements = data.frame(
 # #   type=c(rep("entity", length(t$entity1)),

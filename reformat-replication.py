@@ -92,7 +92,7 @@ line_num = 0;
 for line in f:
 	elems = line[:-1].split("\t")
 	if line_num == 0:
-		header =  map(cutone, elems)
+		header =  elems#map(cutone, elems)
 	else:
 		subject_data = {}
 		subj_dweck_targets = []
@@ -107,11 +107,14 @@ for line in f:
 		for i in range(len(elems)):
 			elem = cutone(elems[i])
 			label = header[i]
+			#print label
 			if label == "workerid":
 				subject_data["subject"] = symb(elem)
 				subject_data["workerID"] = symb(elem)
 			if label == "gender":
 				subject_data["gender"] = symb(elem)
+			if label == "can_describe_fixed":
+				subject_data["can_describe_fixed"] = cutquotes(elem,2)
 			elif label == "Answer.randomization":
 				elem = re.sub("\"\"", "\"", elem)
 				elem = json.loads(elem)
@@ -349,7 +352,9 @@ theories_between_subj_labels = [
 	"entity1", "entity2", "increm1", "increm2",
 	"practice0", "practice6", "practice10",
 	"sanity0", "sanity1",
-	"workerID", "gender", "heardOf", "performance_first", "improvement_first"
+	"workerID", "gender", "heardOf",
+	"performance_first", "improvement_first",
+	"can_describe_fixed"
 ]
 theories_within_subj_labels = [
 	"theoryType",

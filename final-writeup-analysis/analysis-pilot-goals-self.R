@@ -14,7 +14,7 @@ upper.conf <- function(v) {
 }
 
 library(ggplot2)
-r = read.table("pilot-goals-other.results", header=T, sep=",", quote="")
+r = read.table("pilot-goals-self.results", header=T, sep=",", quote="")
 #r = r[r$goal_wording == "original" & r$prompt_wording == "training" & r$dependent_measure == "original",]
 #print(nrow(r))
 #r = r[r$goal_wording == "original" & r$prompt_wording == "training" & r$dependent_measure == "original",]
@@ -23,7 +23,6 @@ r = read.table("pilot-goals-other.results", header=T, sep=",", quote="")
 print(length(unique(r$subject)))
 #r = r[r$heard_of == "no",]
 r = r[r$can_describe_fixed == "no",]
-print(length(unique(r$subject)))
 good.subjects = unique(as.character(r$subject)[sapply(as.character(r$subject), function(subj) {
   r$response[r$subject==subj & r$version=="test_bad"] <= 0.1
 })])
@@ -36,7 +35,7 @@ r$fixed = r$dweck_sum_score > med.split
 up.quart = median(r$dweck_sum_score[r$dweck_sum_score > med.split])
 low.quart = median(r$dweck_sum_score[r$dweck_sum_score < med.split])
 #r = r[r$dweck_sum_score < low.quart | r$dweck_sum_score > up.quart,]
-#print(length(unique(r$subject)))
+print(length(unique(r$subject)))
 
 ggplot(r, aes(x=dweck_sum_score)) +
   geom_histogram(binwidth = 0.1)
@@ -55,7 +54,7 @@ ggplot(mean.goals, aes(x=version, y=response, fill=mindset, group=mindset)) +
   geom_bar(binwidth=.1,position=dodge, stat="identity") +
   theme_bw(24) +
   #scale_colour_brewer(palette="Pastel2") +
-  ggtitle("Pilot Goals (other) - Raw Data") +
+  ggtitle("Pilot Goals (self) - Raw Data") +
   geom_errorbar(aes(ymax = upper.goals$response, ymin=lower.goals$response),
                 position=dodge, binwidth=.1, width=0.25)  #+
 #   scale_fill_discrete(name="mindset",
@@ -82,7 +81,7 @@ dodge <- position_dodge(width=0.9)
 ggplot(mean.goals2, aes(x=version, y=normed_resp, fill=mindset, group=mindset)) +
   geom_bar(binwidth=.1,position=dodge, stat="identity") +
   theme_bw(24) +
-  ggtitle("Pilot Goals (other) - Normalized Data") +
+  ggtitle("Pilot Goals (self) - Normalized Data") +
   #scale_colour_brewer(palette="Pastel2") +
   geom_errorbar(aes(ymax = upper.goals2$normed_resp, ymin=lower.goals2$normed_resp),
                 position=dodge, binwidth=.1, width=0.25)  #+

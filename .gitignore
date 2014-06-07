@@ -1,3 +1,5 @@
 mturk*.results
 *mturk*/*.results
 .RData
+HIT*
+*/.R*

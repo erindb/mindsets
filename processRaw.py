@@ -2,9 +2,9 @@ import sys, re, string
 
 f = open(sys.argv[1], "r")
 
-print "d1,d2,d3,d4,theoryType,ability,effort,difficulty,response,practice0,practice6,practice10,sanity0,sanity1,workerID,gender,heardOf"
+print "entity1,entity2,increm1,increm2,theoryType,ability,effort,difficulty,response,practice0,practice6,practice10,sanity0,sanity1,workerID,gender,heardOf"
 
-fields = ["WorkerId", "Gender", "HeardOf"]
+fields = ["WorkerId", "Gender", "ActuallyHeardOf"]
 indices = []
 firstline = 0
 for l in f:

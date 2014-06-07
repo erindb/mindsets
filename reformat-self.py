@@ -107,7 +107,12 @@ for line in f:
 				subj_dweck_responses.append(elem["response8"])
 				subj_dweck_responses.append(elem["response9"])
 			if label == "Answer.what_about":
-				subject_data["what_about"] = cutquotes(elem, 2)
+				elem = re.sub("\.", "", elem)
+				elem = re.sub(",", "", elem)
+				elem = re.sub("'", "", elem)
+				elem = re.sub("\"", "", elem)
+				subject_data["what_about"] = elem
+				print elem
 			if label == "Answer.comments":
 				elem = re.sub("\.", "", elem)
 				elem = re.sub(",", "", elem)
@@ -120,6 +125,9 @@ for line in f:
 			if label == "Answer.hear_more":
 				subject_data["hear_more"] = cutquotes(elem, 2)
 			if label == "Answer.what_is_fixed":
+				elem = re.sub("\.", "", elem)
+				elem = re.sub(",", "", elem)
+				elem = re.sub("'", "", elem)
 				subject_data["what_is_fixed"] = cutquotes(elem, 2)
 			if label == "Answer.duration":
 				subject_data["duration"] = elem

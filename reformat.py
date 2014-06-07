@@ -106,23 +106,15 @@ for line in f:
 				subj_dweck_responses.append(elem["response7"])
 				subj_dweck_responses.append(elem["response8"])
 				subj_dweck_responses.append(elem["response9"])
-			if label == "Answer.what_about":
-				subject_data["what_about"] = cutquotes(elem, 2)
-			if label == "Answer.comments":
+			if label == "Answer.duration":
+				subject_data["duration"] = elem
+			if label in ["Answer.comments", "Answer.what_about", 'Answer.gender', 'Answer.heard_of', 'Answer.hear_more', 'Answer.what_is_fixed']:
 				elem = re.sub("\.", "", elem)
 				elem = re.sub(",", "", elem)
 				elem = re.sub("'", "", elem)
-				subject_data["comments"] = cutquotes(elem, 2)
-			if label == "Answer.gender":
-				subject_data["gender"] = cutquotes(elem, 2)
-			if label == "Answer.heard_of":
-				subject_data["heard_of"] = cutquotes(elem, 2)
-			if label == "Answer.hear_more":
-				subject_data["hear_more"] = cutquotes(elem, 2)
-			if label == "Answer.what_is_fixed":
-				subject_data["what_is_fixed"] = cutquotes(elem, 2)
-			if label == "Answer.duration":
-				subject_data["duration"] = elem
+				elem = re.sub("\"", "", elem)
+				print elem
+				subject_data[label[7:]] = elem
 		#subject_data[""]
 		subject_data["trial_type"] = [
 			"g", "g", "g",
@@ -130,8 +122,8 @@ for line in f:
 			"g",
 			"d", "d", "d"
 		]
-		subj_goals_sum = sum(subj_goals_responses)
-		subj_goals_responses = [float(x)/subj_goals_sum for x in subj_goals_responses]
+		#subj_goals_sum = sum(subj_goals_responses)
+		#subj_goals_responses = [float(x)/subj_goals_sum for x in subj_goals_responses]
 		subject_data["version"] = []
 		subject_data["goal_variable"] = []
 		subject_data["goal_timeline"] = []

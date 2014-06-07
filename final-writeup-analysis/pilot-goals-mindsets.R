@@ -1,4 +1,5 @@
 library(plyr)
+library(bear)
 library(ggplot2)
 other = read.table("pilot-goals-other.results", header=T, sep=",", quote="")
 self = read.table("pilot-goals-self.results", header=T, sep=",", quote="")
@@ -26,7 +27,7 @@ ggplot(r, aes(x=dweck_sum_score)) +
                  binwidth=0.03,
                  #colour=mindset_colors
                  #colour="black",
-                 #colour="black"
+                 colour="black"
                  ) +
   geom_density(alpha=.2, #fill="#FF6666"
                fill="#080808") +

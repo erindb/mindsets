@@ -12,26 +12,25 @@ good.subjects = unique(as.character(r$subject)[sapply(as.character(r$subject), f
 r = r[r$subject %in% good.subjects,]
 r = r[!is.na(r$response),]
 print(length(unique(r$subject)))
+
+med.split = median(r$dweck_sum_score)
+r$fixed = r$dweck_sum_score > med.split
+r$mindset = r$fixed
+r$mindset[r$fixed] = "fixed"
+r$mindset[!r$fixed] = "growth"
+
+mindset_colors = sapply(seq(0,1.02,by=0.03), function(x) {x > med.split})
+
 ggplot(r, aes(x=dweck_sum_score)) + 
-  geom_histogram(aes(y=..density..),      # Histogram with density instead of count on y-axis
+  geom_histogram(aes(y=..density.., fill=factor(mindset)),      # Histogram with density instead of count on y-axis
                  binwidth=0.03,
-                 colour="black", fill="white") +
-  geom_density(alpha=.2, fill="#FF6666") +
-  theme_bw()
-# 
-# med.split = median(r$dweck_sum_score)
-# r$fixed = r$dweck_sum_score > med.split
-# up.quart = median(r$dweck_sum_score[r$dweck_sum_score > med.split])
-# low.quart = median(r$dweck_sum_score[r$dweck_sum_score < med.split])
-# #r = r[r$dweck_sum_score < low.quart | r$dweck_sum_score > up.quart,]
-# print(length(unique(r$subject)))
-# 
-# ggplot(r, aes(x=dweck_sum_score)) +
-#   geom_histogram(binwidth = 0.1)
-# 
-# r$mindset = r$fixed
-# r$mindset[r$fixed] = "fixed"
-# r$mindset[!r$fixed] = "growth"
+                 #colour=mindset_colors
+                 #colour="black",
+                 #colour="black"
+                 ) +
+  geom_density(alpha=.2, #fill="#FF6666"
+               fill="#080808") +
+  theme_bw(24)
 # 
 # mean.goals = aggregate(response~version+mindset, data=r[r$trial_type == "g",], FUN=mean)
 # upper.goals = aggregate(response~version+mindset, data=r[r$trial_type == "g",], FUN=upper.conf)

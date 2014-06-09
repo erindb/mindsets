@@ -6,9 +6,11 @@ r$subject = r$workerID
 print(length(unique(r$subject)))
 r = r[r$can_describe_fixed == "no",]
 print(length(unique(r$subject)))
+goals.good.subjects = c(2, 3, 6, 7, 10, 12, 13, 14, 15, 20, 21, 22, 23, 25, 26, 27, 28, 30, 31, 32, 34, 35, 37, 38, 41, 42, 45, 47, 49, 51, 52, 53, 54, 56, 57, 58, 59, 60, 62, 63, 64, 65, 66, 68, 69, 70, 75, 76, 77, 78, 79, 81, 82, 83, 84, 85, 87, 88, 89, 91, 93, 95, 96, 98, 99, 100, 101, 102, 103, 104, 105, 107, 108, 109, 110, 111, 112, 114, 115, 116, 117, 118, 119, 120, 121, 123, 124, 126, 127, 128, 129, 130, 131, 132, 134, 135, 136, 137, 138, 139, 140, 142, 144, 146, 148, 149, 150, 153, 154, 156, 157, 158, 159, 160, 161, 162, 163, 164, 167, 169, 171, 175, 177, 178, 180, 181, 182, 187, 188, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199)
 good.subjects = unique(as.character(r$subject)[sapply(as.character(r$subject), function(subj) {
   r$sanity0[r$subject==subj][1] <= 0.1 & r$sanity1[r$subject==subj][1] >= 0.9
 })])
+good.subjects = good.subjects[good.subjects %in% goals.good.subjects]
 r = r[r$subject %in% good.subjects,]
 r = r[!is.na(r$response),]
 print(length(unique(r$subject)))

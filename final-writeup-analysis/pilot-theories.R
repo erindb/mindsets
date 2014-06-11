@@ -181,4 +181,8 @@ ggplot(improvement.justMindset, aes(x=mindset, y=response, fill=mindset)) +
 # # #   ggtitle("entity responses") +
 # # #   stat_smooth(method="lm")
 # # 
-# # 
+# #
+fit = lm(response ~ ability * difficulty * effort * mindset, data=improvement.all)
+print(anova(fit))
+fit = lm(response ~ ability * difficulty * effort * mindset, data=performance.all)
+print(anova(fit))

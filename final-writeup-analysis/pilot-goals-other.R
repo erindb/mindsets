@@ -89,3 +89,11 @@ ggplot(mean.goals2, aes(x=version, y=normed_resp, fill=mindset, group=mindset)) 
 #   scale_fill_discrete(name="mindset",
 #                       breaks=c(F, T),
 #                       labels=c("growth", "fixed"))
+
+high_ability_fixed = r$response[r$version == "ability" & r$mindset == "fixed"]
+high_ability_growth = r$response[r$version == "ability" & r$mindset == "growth"]
+print(t.test(high_ability_growth, high_ability_fixed))
+
+show_ability_growth = r$response[r$version == "show_ability" & r$mindset == "fixed"]
+show_ability_fixed = r$response[r$version == "show_ability" & r$mindset == "growth"]
+print(t.test(show_ability_growth, show_ability_fixed))

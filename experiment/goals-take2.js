@@ -69,7 +69,7 @@ function changeCreatorGoals(i) {
         }
         var slider_val = $("#goals_slider"+i).slider("value");
         responses["response" + i] = slider_val;
-    }
+    };
 }
 function slideCreatorGoals(i) {
     return function() {
@@ -77,7 +77,7 @@ function slideCreatorGoals(i) {
             "background":"#E0F5FF",
             "border-color": "#001F29"
         });
-    }
+    };
 }
 
 //a or an
@@ -187,7 +187,7 @@ var blackwell_prompts = ["The harder you work at something, the better you will 
                          "If you’re not good at something, working hard won’t make you good at it",
                          "An important reason why I choose tasks is because I like to learn new things",
                          "I like tasks best when they make me think hard",
-                         "I like tasks that I’ll learn from even if I make a lot of mistakes",
+                         "I like tasks that I’ll learn from even if I make a lot of mistakes"
                         ];
 
 var blackwell_indices = range(0,blackwell_prompts.length-1);
@@ -324,7 +324,7 @@ var experiment = {
 
     goals_intro: function() {
         showSlide("goals_intro");
-        var first_or_next = randomization.block_order[0] == "goals" ? "First" : "Next"
+        var first_or_next = randomization.block_order[0] == "goals" ? "First" : "Next";
         $(".prompt").html(first_or_next + ", we will ask you to reason about <b>your</b> goals on a test in this class.");
         $(".continue").click(function() {
             $(".continue").unbind("click");
@@ -464,12 +464,12 @@ var experiment = {
 
     performance_intro: function() {
         showSlide("performance_intro");
-        var first_or_next = randomization.block_order[0] == "performance" ? "First" : "Next"
+        var first_or_next = randomization.block_order[0] == "performance" ? "First" : "Next";
         $(".prompt").html(first_or_next + ", we will ask you to predict students' performance on some tests in this class.");
         $(".continue").click(function() {
             $(".continue").unbind("click");
             experiment.performance();
-        })
+        });
     },
 
     performance: function() {
@@ -497,9 +497,9 @@ var experiment = {
                 ability: trial_data.ability,
                 effort: trial_data.effort,
                 difficulty: trial_data.difficulty
-            }
+            };
         }
-        var ability_prompt = rand_name + " has " + b(high_or_low) + " math ability."
+        var ability_prompt = rand_name + " has " + b(high_or_low) + " math ability.";
         var question_prompt = "What score does " + rand_name + " get?";
         $(".ability_prompt").html(ability_prompt);
         $(".training_prompt").html(training_prompt);
@@ -706,7 +706,7 @@ var experiment = {
                 var endTime = Date.now();
                 experiment.data["duration"] = endTime - startTime;
                 showSlide("finished");
-                setTimeout(function() { turk.submit(experiment.data) }, 1000);
+                setTimeout(function() { turk.submit(experiment.data); }, 1000);
             } else {
                 $(".err").show();
             }

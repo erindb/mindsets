@@ -3,3 +3,4 @@ mturk*.results
 .RData
 HIT*
 */.R*
+.Rhistory

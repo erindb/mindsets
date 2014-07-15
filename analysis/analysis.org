@@ -1,0 +1,205 @@
+ #+TITLE:Mindsets!
+ #+INFOJS_OPT: view:showall toc:t ltoc:nil
+ #+EXPORT_EXCLUDE_TAGS: noexport
+ #+SEQ_TODO: FIXME FIXED
+ #+OPTIONS: ^:nil H:10 \n:nil
+ #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/worg.css"/>
+ #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/mystyle.css"/>
+ #+STARTUP: hidestars entitiespretty
+ ------
+
+* Mindsets
+:PROPERTIES:
+:session:  *R:mind*
+:cache:    no
+:END:
+** Prep
+#+begin_src R
+conf <- function(v) {
+  v <- v[is.na(v) == F]
+  nsubj=length(v)
+  sample.means <- replicate(100, mean(sample(v, nsubj, replace=TRUE)))
+  return(quantile(sample.means, c(0.025, 0.975)))
+}
+lower.conf <- function(v) {
+  conf(v)[["2.5%"]]
+}
+upper.conf <- function(v) {
+  conf(v)[["97.5%"]]
+}
+
+library(ggplot2)
+#+end_src
+
+#+RESULTS[4e8e05d61f049a2a3006c4df0497ac98db97895a]:
+
+** Conditions
+1. "original" goal phrasing, original cover story (test), forced choice X
+2. "original" goal phrasing, new cover story (training), original dependent measure (sliders) X
+Counter
+3. "achieve" goal phrasing, original cover story (test), original dependent measure (sliders) X
+4. "original" goal phrasing, new cover story (training), forced choice
+Counter
+5. "value" goal phrasing, original cover story (test), forced choice
+sswqaq
+*** Original-Original                                            :original:
+*** Original-Achieve                                             :original:
+Main effect of Growth people are more optimistic about accomplishing anything. No distinctions between particular goals.
+
+#+begin_src R :exports results :results output graphics replace :file plots/292.png :width 1000
+  r = read.table("goals-goals-take2.results", header=T, sep=",", quote="")
+  #r = r[r$goal_wording == "original" & r$prompt_wording == "training" & r$dependent_measure == "original",]
+  #print(nrow(r))
+  #r = r[r$goal_wording == "original" & r$prompt_wording == "training" & r$dependent_measure == "original",]
+  r = r[r$goal_wording == "achieve" & r$prompt_wording == "orignal" & r$dependent_measure == "original",]
+  r = r[r$response < 0.1 | r$version != "test_bad",]
+  r = r[r$heard_of == "no",]
+  r = r[!is.na(r$response),]
+  print(nrow(r))
+
+  med.split = median(r$dweck_sum_score)
+  r$fixed = r$dweck_sum_score > med.split
+  up.quart = median(r$dweck_sum_score[r$dweck_sum_score > med.split])
+  low.quart = median(r$dweck_sum_score[r$dweck_sum_score < med.split])
+  #r = r[r$dweck_sum_score < low.quart | r$dweck_sum_score > up.quart,]
+
+  ggplot(r, aes(x=dweck_sum_score)) +
+    geom_histogram(binwidth = 0.1)
+
+  mean.goals = aggregate(response~version+fixed, data=r[r$trial_type == "g",], FUN=mean)
+  upper.goals = aggregate(response~version+fixed, data=r[r$trial_type == "g",], FUN=upper.conf)
+  lower.goals = aggregate(response~version+fixed, data=r[r$trial_type == "g",], FUN=lower.conf)
+
+  mean.goals$mindset = mean.goals$fixed
+  mean.goals$mindset[mean.goals$fixed] = "fixed"
+  mean.goals$mindset[!mean.goals$fixed] = "growth"
+
+  r$mindset = r$fixed
+  r$mindset[r$fixed] = "fixed"
+  r$mindset[!r$fixed] = "growth"
+
+  print(length(unique(r$subject)))
+
+  #1000x600
+  dodge <- position_dodge(width=0.9)
+  ggplot(mean.goals, aes(x=version, y=response, fill=mindset, group=mindset)) +
+    geom_bar(binwidth=.1,position=dodge, stat="identity") +
+    theme_bw(24) +
+    #scale_colour_brewer(palette="Pastel2") +
+    geom_errorbar(aes(ymax = upper.goals$response, ymin=lower.goals$response),
+                  position=dodge, binwidth=.1, width=0.25)  #+
+  #   scale_fill_discrete(name="mindset",
+  #                       breaks=c(F, T),
+  #                       labels=c("growth", "fixed"))
+
+  #fit = lm(response ~ goal_variable * goal_impress * dweck_sum_score, data=r)
+  #print(anova(fit))
+#+end_src
+
+#+RESULTS[b178700adb752ca358c530c9d85b76f5a6c39af7]:
+[[file:plots/292.png]]
+
+*** Original-Value                                                          :f-c:
+Opposite of predicted
+#+begin_src R :exports results :results output graphics replace :file plots/281.png
+  r = read.table("goals-goals-take2.results", header=T, sep=",", quote="")
+  #r = r[r$goal_wording == "original" & r$prompt_wording == "training" & r$dependent_measure == "original",]
+  #print(nrow(r))
+  #r = r[r$goal_wording == "original" & r$prompt_wording == "training" & r$dependent_measure == "original",]
+  r = r[r$goal_wording == "achieve" & r$prompt_wording == "orignal" & r$dependent_measure == "original",]
+  r = r[r$response < 0.1 | r$version != "test_bad",]
+  r = r[r$heard_of == "no",]
+  r = r[!is.na(r$response),]
+  print(nrow(r))
+
+  med.split = median(r$dweck_sum_score)
+  r$fixed = r$dweck_sum_score > med.split
+  up.quart = median(r$dweck_sum_score[r$dweck_sum_score > med.split])
+  low.quart = median(r$dweck_sum_score[r$dweck_sum_score < med.split])
+  #r = r[r$dweck_sum_score < low.quart | r$dweck_sum_score > up.quart,]
+
+  ggplot(r, aes(x=dweck_sum_score)) +
+    geom_histogram(binwidth = 0.1)
+
+  mean.goals = aggregate(response~version+fixed, data=r[r$trial_type == "g",], FUN=mean)
+  upper.goals = aggregate(response~version+fixed, data=r[r$trial_type == "g",], FUN=upper.conf)
+  lower.goals = aggregate(response~version+fixed, data=r[r$trial_type == "g",], FUN=lower.conf)
+
+  mean.goals$mindset = mean.goals$fixed
+  mean.goals$mindset[mean.goals$fixed] = "fixed"
+  mean.goals$mindset[!mean.goals$fixed] = "growth"
+
+  r$mindset = r$fixed
+  r$mindset[r$fixed] = "fixed"
+  r$mindset[!r$fixed] = "growth"
+
+  print(length(unique(r$subject)))
+
+  #1000x600
+  dodge <- position_dodge(width=0.9)
+  ggplot(mean.goals, aes(x=version, y=response, fill=mindset, group=mindset)) +
+    geom_bar(binwidth=.1,position=dodge, stat="identity") +
+    theme_bw(24) +
+    #scale_colour_brewer(palette="Pastel2") +
+    geom_errorbar(aes(ymax = upper.goals$response, ymin=lower.goals$response),
+                  position=dodge, binwidth=.1, width=0.25)  #+
+  #   scale_fill_discrete(name="mindset",
+  #                       breaks=c(F, T),
+  #                       labels=c("growth", "fixed"))
+
+  #fit = lm(response ~ goal_variable * goal_impress * dweck_sum_score, data=r)
+  #print(anova(fit))
+#+end_src
+
+
+*** Training-Original                                            :original:
+Growth people were more likely to want to pursue improvement.
+
+
+#+begin_src R :exports results :results output graphics replace :file plots/35.png
+  r = read.table("goals-goals-take2.results", header=T, sep=",", quote="")
+
+  r =g r[r$goal_wording == "achieve" & r$prompt_wording == "orignal" & r$dependent_measure == "original",]
+  r = r[r$response < 0.1 | r$version != "test_bad",]
+  r = r[r$heard_of == "no",]
+  r = r[!is.na(r$response),]
+  print(nrow(r))
+
+  med.split = median(r$dweck_sum_score)
+  r$fixed = r$dweck_sum_score > med.split
+  up.quart = median(r$dweck_sum_score[r$dweck_sum_score > med.split])
+  low.quart = median(r$dweck_sum_score[r$dweck_sum_score < med.split])
+  #r = r[r$dweck_sum_score < low.quart | r$dweck_sum_score > up.quart,]
+
+  ggplot(r, aes(x=dweck_sum_score)) +
+    geom_histogram(binwidth = 0.1)
+
+  mean.goals = aggregate(response~version+fixed, data=r[r$trial_type == "g",], FUN=mean)
+  upper.goals = aggregate(response~version+fixed, data=r[r$trial_type == "g",], FUN=upper.conf)
+  lower.goals = aggregate(response~version+fixed, data=r[r$trial_type == "g",], FUN=lower.conf)
+
+  mean.goals$mindset = mean.goals$fixed
+  mean.goals$mindset[mean.goals$fixed] = "fixed"
+  mean.goals$mindset[!mean.goals$fixed] = "growth"
+
+  r$mindset = r$fixed
+  r$mindset[r$fixed] = "fixed"
+  r$mindset[!r$fixed] = "growth"
+
+  print(length(unique(r$subject)))
+
+  #1000x600
+  dodge <- position_dodge(width=0.9)
+  ggplot(mean.goals, aes(x=version, y=response, fill=mindset, group=mindset)) +
+    geom_bar(binwidth=.1,position=dodge, stat="identity") +
+    theme_bw(24) +
+    #scale_colour_brewer(palette="Pastel2") +
+    geom_errorbar(aes(ymax = upper.goals$response, ymin=lower.goals$response),
+                  position=dodge, binwidth=.1, width=0.25)  #+
+  #   scale_fill_discrete(name="mindset",
+  #                       breaks=c(F, T),
+  #                       labels=c("growth", "fixed"))
+
+  #fit = lm(response ~ goal_variable * goal_impress * dweck_sum_score, data=r)
+  #print(anova(fit))
+#+end_src

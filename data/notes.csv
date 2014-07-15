@@ -1,0 +1,4 @@
+theories-r0.csv,,pilot,worked
+theories-r1.csv,,replication,worked
+theories-with-goals.csv,,replication (with goals),failed
+goals-r0.csv,6/3/14,last goals exp,kinda maybe worked

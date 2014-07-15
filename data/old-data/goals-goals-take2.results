@@ -1,0 +1,727 @@
+subject,what_about,comments,gender,heard_of,hear_more,what_is_fixed,duration,dweck_sum_score,goal1,goal2,goal3,goal_wording,prompt_wording,dependent_measure,trial_type,version,goal_variable,goal_timeline,goal_impress,response
+0,Its about math class,nice task,male,no,yes,,116857,14,NA,NA,NA,achieve,orignal,original,g,ability,ability,NA,for_me,0.59
+0,Its about math class,nice task,male,no,yes,,116857,14,NA,NA,NA,achieve,orignal,original,g,show_effort,effort,NA,show,0.84
+0,Its about math class,nice task,male,no,yes,,116857,14,NA,NA,NA,achieve,orignal,original,g,improve,improve,NA,for_me,0.54
+0,Its about math class,nice task,male,no,yes,,116857,14,NA,NA,NA,achieve,orignal,original,g,test_bad,test,NA,for_me,0.7
+0,Its about math class,nice task,male,no,yes,,116857,14,NA,NA,NA,achieve,orignal,original,g,test_now,test,now,for_me,0.34
+0,Its about math class,nice task,male,no,yes,,116857,14,NA,NA,NA,achieve,orignal,original,g,show_ability,ability,NA,show,0.86
+0,Its about math class,nice task,male,no,yes,,116857,14,NA,NA,NA,achieve,orignal,original,g,test_future,test,future,for_me,0.7
+0,Its about math class,nice task,male,no,yes,,116857,14,NA,NA,NA,achieve,orignal,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,5
+0,Its about math class,nice task,male,no,yes,,116857,14,NA,NA,NA,achieve,orignal,original,d,You can always substantially change how intelligent you are,NA,NA,NA,6
+0,Its about math class,nice task,male,no,yes,,116857,14,NA,NA,NA,achieve,orignal,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,5
+0,Its about math class,nice task,male,no,yes,,116857,14,NA,NA,NA,achieve,orignal,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,6
+1,to see how people feel about education,thank you that was interesting,female,no,no,,83856,4,improving at math,being good at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+1,to see how people feel about education,thank you that was interesting,female,no,no,,83856,4,improving at math,being good at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+1,to see how people feel about education,thank you that was interesting,female,no,no,,83856,4,improving at math,being good at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+1,to see how people feel about education,thank you that was interesting,female,no,no,,83856,4,improving at math,being good at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+1,to see how people feel about education,thank you that was interesting,female,no,no,,83856,4,improving at math,being good at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+1,to see how people feel about education,thank you that was interesting,female,no,no,,83856,4,improving at math,being good at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+1,to see how people feel about education,thank you that was interesting,female,no,no,,83856,4,improving at math,being good at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+1,to see how people feel about education,thank you that was interesting,female,no,no,,83856,4,improving at math,being good at math,doing well on future tests,value,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,1
+1,to see how people feel about education,thank you that was interesting,female,no,no,,83856,4,improving at math,being good at math,doing well on future tests,value,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,6
+1,to see how people feel about education,thank you that was interesting,female,no,no,,83856,4,improving at math,being good at math,doing well on future tests,value,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,6
+1,to see how people feel about education,thank you that was interesting,female,no,no,,83856,4,improving at math,being good at math,doing well on future tests,value,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,1
+2,no idea,,male,no,yes,,90371,5,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,1
+2,no idea,,male,no,yes,,90371,5,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,1
+2,no idea,,male,no,yes,,90371,5,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.36
+2,no idea,,male,no,yes,,90371,5,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.5
+2,no idea,,male,no,yes,,90371,5,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,0.87
+2,no idea,,male,no,yes,,90371,5,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0
+2,no idea,,male,no,yes,,90371,5,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+2,no idea,,male,no,yes,,90371,5,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+2,no idea,,male,no,yes,,90371,5,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,1
+2,no idea,,male,no,yes,,90371,5,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,6
+2,no idea,,male,no,yes,,90371,5,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,1
+3,Attitudes about learning,,male,no,no,,82627,12,being good at math,doing well on this test,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+3,Attitudes about learning,,male,no,no,,82627,12,being good at math,doing well on this test,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+3,Attitudes about learning,,male,no,no,,82627,12,being good at math,doing well on this test,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+3,Attitudes about learning,,male,no,no,,82627,12,being good at math,doing well on this test,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+3,Attitudes about learning,,male,no,no,,82627,12,being good at math,doing well on this test,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+3,Attitudes about learning,,male,no,no,,82627,12,being good at math,doing well on this test,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+3,Attitudes about learning,,male,no,no,,82627,12,being good at math,doing well on this test,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+3,Attitudes about learning,,male,no,no,,82627,12,being good at math,doing well on this test,doing well on future tests,value,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,3
+3,Attitudes about learning,,male,no,no,,82627,12,being good at math,doing well on this test,doing well on future tests,value,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+3,Attitudes about learning,,male,no,no,,82627,12,being good at math,doing well on this test,doing well on future tests,value,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,3
+3,Attitudes about learning,,male,no,no,,82627,12,being good at math,doing well on this test,doing well on future tests,value,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+4,Showing opinions on how rewarding hard work is,,male,no,no,,147850,8,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.81
+4,Showing opinions on how rewarding hard work is,,male,no,no,,147850,8,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.74
+4,Showing opinions on how rewarding hard work is,,male,no,no,,147850,8,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0.13
+4,Showing opinions on how rewarding hard work is,,male,no,no,,147850,8,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0.67
+4,Showing opinions on how rewarding hard work is,,male,no,no,,147850,8,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.66
+4,Showing opinions on how rewarding hard work is,,male,no,no,,147850,8,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,0.9
+4,Showing opinions on how rewarding hard work is,,male,no,no,,147850,8,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+4,Showing opinions on how rewarding hard work is,,male,no,no,,147850,8,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,5
+4,Showing opinions on how rewarding hard work is,,male,no,no,,147850,8,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+4,Showing opinions on how rewarding hard work is,,male,no,no,,147850,8,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+4,Showing opinions on how rewarding hard work is,,male,no,no,,147850,8,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+5,Im not sure,,female,yes,no,It means that you cannot change how you are,113809,11,doing well on this test,improving at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+5,Im not sure,,female,yes,no,It means that you cannot change how you are,113809,11,doing well on this test,improving at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+5,Im not sure,,female,yes,no,It means that you cannot change how you are,113809,11,doing well on this test,improving at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+5,Im not sure,,female,yes,no,It means that you cannot change how you are,113809,11,doing well on this test,improving at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+5,Im not sure,,female,yes,no,It means that you cannot change how you are,113809,11,doing well on this test,improving at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+5,Im not sure,,female,yes,no,It means that you cannot change how you are,113809,11,doing well on this test,improving at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+5,Im not sure,,female,yes,no,It means that you cannot change how you are,113809,11,doing well on this test,improving at math,doing well on future tests,value,original,forced-choice,g,NA,NA,NA,NA,NA
+5,Im not sure,,female,yes,no,It means that you cannot change how you are,113809,11,doing well on this test,improving at math,doing well on future tests,value,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,3
+5,Im not sure,,female,yes,no,It means that you cannot change how you are,113809,11,doing well on this test,improving at math,doing well on future tests,value,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+5,Im not sure,,female,yes,no,It means that you cannot change how you are,113809,11,doing well on this test,improving at math,doing well on future tests,value,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,3
+5,Im not sure,,female,yes,no,It means that you cannot change how you are,113809,11,doing well on this test,improving at math,doing well on future tests,value,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+6,Seeing how we feel about intelligence,Very fun thank you,male,no,no,,140933,9,doing well on this test,improving at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+6,Seeing how we feel about intelligence,Very fun thank you,male,no,no,,140933,9,doing well on this test,improving at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+6,Seeing how we feel about intelligence,Very fun thank you,male,no,no,,140933,9,doing well on this test,improving at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+6,Seeing how we feel about intelligence,Very fun thank you,male,no,no,,140933,9,doing well on this test,improving at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+6,Seeing how we feel about intelligence,Very fun thank you,male,no,no,,140933,9,doing well on this test,improving at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+6,Seeing how we feel about intelligence,Very fun thank you,male,no,no,,140933,9,doing well on this test,improving at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+6,Seeing how we feel about intelligence,Very fun thank you,male,no,no,,140933,9,doing well on this test,improving at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+6,Seeing how we feel about intelligence,Very fun thank you,male,no,no,,140933,9,doing well on this test,improving at math,being good at math,value,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+6,Seeing how we feel about intelligence,Very fun thank you,male,no,no,,140933,9,doing well on this test,improving at math,being good at math,value,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+6,Seeing how we feel about intelligence,Very fun thank you,male,no,no,,140933,9,doing well on this test,improving at math,being good at math,value,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+6,Seeing how we feel about intelligence,Very fun thank you,male,no,no,,140933,9,doing well on this test,improving at math,being good at math,value,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+7,How people feel about math,Very easy love doing your guys surveys thank you,female,no,no,,116620,6,showing your teacher that you have high math ability,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+7,How people feel about math,Very easy love doing your guys surveys thank you,female,no,no,,116620,6,showing your teacher that you have high math ability,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+7,How people feel about math,Very easy love doing your guys surveys thank you,female,no,no,,116620,6,showing your teacher that you have high math ability,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+7,How people feel about math,Very easy love doing your guys surveys thank you,female,no,no,,116620,6,showing your teacher that you have high math ability,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+7,How people feel about math,Very easy love doing your guys surveys thank you,female,no,no,,116620,6,showing your teacher that you have high math ability,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+7,How people feel about math,Very easy love doing your guys surveys thank you,female,no,no,,116620,6,showing your teacher that you have high math ability,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+7,How people feel about math,Very easy love doing your guys surveys thank you,female,no,no,,116620,6,showing your teacher that you have high math ability,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+7,How people feel about math,Very easy love doing your guys surveys thank you,female,no,no,,116620,6,showing your teacher that you have high math ability,being good at math,doing well on this test,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,1
+7,How people feel about math,Very easy love doing your guys surveys thank you,female,no,no,,116620,6,showing your teacher that you have high math ability,being good at math,doing well on this test,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,6
+7,How people feel about math,Very easy love doing your guys surveys thank you,female,no,no,,116620,6,showing your teacher that you have high math ability,being good at math,doing well on this test,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+7,How people feel about math,Very easy love doing your guys surveys thank you,female,no,no,,116620,6,showing your teacher that you have high math ability,being good at math,doing well on this test,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,1
+8,Unsure,This was odd,male,no,no,,211379,11,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0
+8,Unsure,This was odd,male,no,no,,211379,11,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.68
+8,Unsure,This was odd,male,no,no,,211379,11,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.72
+8,Unsure,This was odd,male,no,no,,211379,11,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0
+8,Unsure,This was odd,male,no,no,,211379,11,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0
+8,Unsure,This was odd,male,no,no,,211379,11,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,1
+8,Unsure,This was odd,male,no,no,,211379,11,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+8,Unsure,This was odd,male,no,no,,211379,11,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+8,Unsure,This was odd,male,no,no,,211379,11,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,3
+8,Unsure,This was odd,male,no,no,,211379,11,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+8,Unsure,This was odd,male,no,no,,211379,11,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+9,how i view intelligence ,interesting study,male,no,yes,,235323,11,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+9,how i view intelligence ,interesting study,male,no,yes,,235323,11,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+9,how i view intelligence ,interesting study,male,no,yes,,235323,11,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+9,how i view intelligence ,interesting study,male,no,yes,,235323,11,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+9,how i view intelligence ,interesting study,male,no,yes,,235323,11,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+9,how i view intelligence ,interesting study,male,no,yes,,235323,11,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+9,how i view intelligence ,interesting study,male,no,yes,,235323,11,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+9,how i view intelligence ,interesting study,male,no,yes,,235323,11,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+9,how i view intelligence ,interesting study,male,no,yes,,235323,11,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+9,how i view intelligence ,interesting study,male,no,yes,,235323,11,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+9,how i view intelligence ,interesting study,male,no,yes,,235323,11,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,2
+10,math,,male,no,no,,61454,8,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0.32
+10,math,,male,no,no,,61454,8,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.69
+10,math,,male,no,no,,61454,8,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0.28
+10,math,,male,no,no,,61454,8,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,0.8
+10,math,,male,no,no,,61454,8,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.72
+10,math,,male,no,no,,61454,8,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.33
+10,math,,male,no,no,,61454,8,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+10,math,,male,no,no,,61454,8,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+10,math,,male,no,no,,61454,8,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+10,math,,male,no,no,,61454,8,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+10,math,,male,no,no,,61454,8,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,5
+11,perception,none,male,no,no,,78483,10,doing well on future tests,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+11,perception,none,male,no,no,,78483,10,doing well on future tests,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+11,perception,none,male,no,no,,78483,10,doing well on future tests,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+11,perception,none,male,no,no,,78483,10,doing well on future tests,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+11,perception,none,male,no,no,,78483,10,doing well on future tests,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+11,perception,none,male,no,no,,78483,10,doing well on future tests,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+11,perception,none,male,no,no,,78483,10,doing well on future tests,being good at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+11,perception,none,male,no,no,,78483,10,doing well on future tests,being good at math,doing well on this test,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,5
+11,perception,none,male,no,no,,78483,10,doing well on future tests,being good at math,doing well on this test,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+11,perception,none,male,no,no,,78483,10,doing well on future tests,being good at math,doing well on this test,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+11,perception,none,male,no,no,,78483,10,doing well on future tests,being good at math,doing well on this test,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,6
+12,I dont know,No comment,female,no,no,,82295,7,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0.09
+12,I dont know,No comment,female,no,no,,82295,7,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.67
+12,I dont know,No comment,female,no,no,,82295,7,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0.69
+12,I dont know,No comment,female,no,no,,82295,7,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,0.26
+12,I dont know,No comment,female,no,no,,82295,7,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.13
+12,I dont know,No comment,female,no,no,,82295,7,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.13
+12,I dont know,No comment,female,no,no,,82295,7,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+12,I dont know,No comment,female,no,no,,82295,7,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,5
+12,I dont know,No comment,female,no,no,,82295,7,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+12,I dont know,No comment,female,no,no,,82295,7,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,1
+12,I dont know,No comment,female,no,no,,82295,7,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+13,how i view challenging tasks,interesting study,female,no,yes,,218431,7,doing well on future tests,improving at math,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+13,how i view challenging tasks,interesting study,female,no,yes,,218431,7,doing well on future tests,improving at math,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+13,how i view challenging tasks,interesting study,female,no,yes,,218431,7,doing well on future tests,improving at math,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+13,how i view challenging tasks,interesting study,female,no,yes,,218431,7,doing well on future tests,improving at math,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+13,how i view challenging tasks,interesting study,female,no,yes,,218431,7,doing well on future tests,improving at math,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+13,how i view challenging tasks,interesting study,female,no,yes,,218431,7,doing well on future tests,improving at math,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+13,how i view challenging tasks,interesting study,female,no,yes,,218431,7,doing well on future tests,improving at math,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+13,how i view challenging tasks,interesting study,female,no,yes,,218431,7,doing well on future tests,improving at math,being good at math,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+13,how i view challenging tasks,interesting study,female,no,yes,,218431,7,doing well on future tests,improving at math,being good at math,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+13,how i view challenging tasks,interesting study,female,no,yes,,218431,7,doing well on future tests,improving at math,being good at math,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+13,how i view challenging tasks,interesting study,female,no,yes,,218431,7,doing well on future tests,improving at math,being good at math,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,6
+14,People opinions on trying hard,,male,no,no,,175888,4,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0.25
+14,People opinions on trying hard,,male,no,no,,175888,4,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,0.62
+14,People opinions on trying hard,,male,no,no,,175888,4,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0.95
+14,People opinions on trying hard,,male,no,no,,175888,4,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.83
+14,People opinions on trying hard,,male,no,no,,175888,4,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.57
+14,People opinions on trying hard,,male,no,no,,175888,4,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.74
+14,People opinions on trying hard,,male,no,no,,175888,4,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+14,People opinions on trying hard,,male,no,no,,175888,4,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,6
+14,People opinions on trying hard,,male,no,no,,175888,4,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,1
+14,People opinions on trying hard,,male,no,no,,175888,4,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,1
+14,People opinions on trying hard,,male,no,no,,175888,4,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,6
+15,Perception about own intelligence level and probability of improving it,,male,yes,yes,A person with single mindset that wont change what ever happens around him,279627,13,improving at math,showing your teacher that you try at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+15,Perception about own intelligence level and probability of improving it,,male,yes,yes,A person with single mindset that wont change what ever happens around him,279627,13,improving at math,showing your teacher that you try at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+15,Perception about own intelligence level and probability of improving it,,male,yes,yes,A person with single mindset that wont change what ever happens around him,279627,13,improving at math,showing your teacher that you try at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+15,Perception about own intelligence level and probability of improving it,,male,yes,yes,A person with single mindset that wont change what ever happens around him,279627,13,improving at math,showing your teacher that you try at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+15,Perception about own intelligence level and probability of improving it,,male,yes,yes,A person with single mindset that wont change what ever happens around him,279627,13,improving at math,showing your teacher that you try at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+15,Perception about own intelligence level and probability of improving it,,male,yes,yes,A person with single mindset that wont change what ever happens around him,279627,13,improving at math,showing your teacher that you try at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+15,Perception about own intelligence level and probability of improving it,,male,yes,yes,A person with single mindset that wont change what ever happens around him,279627,13,improving at math,showing your teacher that you try at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+15,Perception about own intelligence level and probability of improving it,,male,yes,yes,A person with single mindset that wont change what ever happens around him,279627,13,improving at math,showing your teacher that you try at math,doing well on this test,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,4
+15,Perception about own intelligence level and probability of improving it,,male,yes,yes,A person with single mindset that wont change what ever happens around him,279627,13,improving at math,showing your teacher that you try at math,doing well on this test,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+15,Perception about own intelligence level and probability of improving it,,male,yes,yes,A person with single mindset that wont change what ever happens around him,279627,13,improving at math,showing your teacher that you try at math,doing well on this test,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+15,Perception about own intelligence level and probability of improving it,,male,yes,yes,A person with single mindset that wont change what ever happens around him,279627,13,improving at math,showing your teacher that you try at math,doing well on this test,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,5
+16,how i view intelligence levels,interesting would like to hear more,male,no,yes,,269777,15,improving at math,doing well on this test,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+16,how i view intelligence levels,interesting would like to hear more,male,no,yes,,269777,15,improving at math,doing well on this test,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+16,how i view intelligence levels,interesting would like to hear more,male,no,yes,,269777,15,improving at math,doing well on this test,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+16,how i view intelligence levels,interesting would like to hear more,male,no,yes,,269777,15,improving at math,doing well on this test,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+16,how i view intelligence levels,interesting would like to hear more,male,no,yes,,269777,15,improving at math,doing well on this test,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+16,how i view intelligence levels,interesting would like to hear more,male,no,yes,,269777,15,improving at math,doing well on this test,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+16,how i view intelligence levels,interesting would like to hear more,male,no,yes,,269777,15,improving at math,doing well on this test,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+16,how i view intelligence levels,interesting would like to hear more,male,no,yes,,269777,15,improving at math,doing well on this test,being good at math,value,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+16,how i view intelligence levels,interesting would like to hear more,male,no,yes,,269777,15,improving at math,doing well on this test,being good at math,value,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+16,how i view intelligence levels,interesting would like to hear more,male,no,yes,,269777,15,improving at math,doing well on this test,being good at math,value,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,1
+16,how i view intelligence levels,interesting would like to hear more,male,no,yes,,269777,15,improving at math,doing well on this test,being good at math,value,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,5
+17,math,none,female,no,no,,111114,14,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+17,math,none,female,no,no,,111114,14,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+17,math,none,female,no,no,,111114,14,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+17,math,none,female,no,no,,111114,14,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+17,math,none,female,no,no,,111114,14,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+17,math,none,female,no,no,,111114,14,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+17,math,none,female,no,no,,111114,14,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+17,math,none,female,no,no,,111114,14,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,5
+17,math,none,female,no,no,,111114,14,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,3
+17,math,none,female,no,no,,111114,14,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+17,math,none,female,no,no,,111114,14,improving at math,doing well on the upcoming test,being good at math,original,training,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,3
+18,I havent a clue,none,female,no,no,,135643,17,NA,NA,NA,achieve,orignal,original,g,ability,ability,NA,for_me,0.17
+18,I havent a clue,none,female,no,no,,135643,17,NA,NA,NA,achieve,orignal,original,g,test_bad,test,NA,for_me,0.5
+18,I havent a clue,none,female,no,no,,135643,17,NA,NA,NA,achieve,orignal,original,g,show_effort,effort,NA,show,0.5
+18,I havent a clue,none,female,no,no,,135643,17,NA,NA,NA,achieve,orignal,original,g,test_future,test,future,for_me,0.5
+18,I havent a clue,none,female,no,no,,135643,17,NA,NA,NA,achieve,orignal,original,g,improve,improve,NA,for_me,0.42
+18,I havent a clue,none,female,no,no,,135643,17,NA,NA,NA,achieve,orignal,original,g,test_now,test,now,for_me,0.5
+18,I havent a clue,none,female,no,no,,135643,17,NA,NA,NA,achieve,orignal,original,g,show_ability,ability,NA,show,0
+18,I havent a clue,none,female,no,no,,135643,17,NA,NA,NA,achieve,orignal,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,3
+18,I havent a clue,none,female,no,no,,135643,17,NA,NA,NA,achieve,orignal,original,d,You can always substantially change how intelligent you are,NA,NA,NA,3
+18,I havent a clue,none,female,no,no,,135643,17,NA,NA,NA,achieve,orignal,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,4
+18,I havent a clue,none,female,no,no,,135643,17,NA,NA,NA,achieve,orignal,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+19,How we see ourselves in school,None I thought it was very clear ,female,no,no,,100114,19,being good at math,doing well on the upcoming test,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+19,How we see ourselves in school,None I thought it was very clear ,female,no,no,,100114,19,being good at math,doing well on the upcoming test,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+19,How we see ourselves in school,None I thought it was very clear ,female,no,no,,100114,19,being good at math,doing well on the upcoming test,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+19,How we see ourselves in school,None I thought it was very clear ,female,no,no,,100114,19,being good at math,doing well on the upcoming test,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+19,How we see ourselves in school,None I thought it was very clear ,female,no,no,,100114,19,being good at math,doing well on the upcoming test,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+19,How we see ourselves in school,None I thought it was very clear ,female,no,no,,100114,19,being good at math,doing well on the upcoming test,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+19,How we see ourselves in school,None I thought it was very clear ,female,no,no,,100114,19,being good at math,doing well on the upcoming test,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+19,How we see ourselves in school,None I thought it was very clear ,female,no,no,,100114,19,being good at math,doing well on the upcoming test,showing your teacher that you try at math,original,training,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,4
+19,How we see ourselves in school,None I thought it was very clear ,female,no,no,,100114,19,being good at math,doing well on the upcoming test,showing your teacher that you try at math,original,training,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,2
+19,How we see ourselves in school,None I thought it was very clear ,female,no,no,,100114,19,being good at math,doing well on the upcoming test,showing your teacher that you try at math,original,training,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+19,How we see ourselves in school,None I thought it was very clear ,female,no,no,,100114,19,being good at math,doing well on the upcoming test,showing your teacher that you try at math,original,training,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,2
+20,To see how people feel about learning,Thank you,male,no,yes,,130334,14,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+20,To see how people feel about learning,Thank you,male,no,yes,,130334,14,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+20,To see how people feel about learning,Thank you,male,no,yes,,130334,14,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+20,To see how people feel about learning,Thank you,male,no,yes,,130334,14,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+20,To see how people feel about learning,Thank you,male,no,yes,,130334,14,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+20,To see how people feel about learning,Thank you,male,no,yes,,130334,14,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+20,To see how people feel about learning,Thank you,male,no,yes,,130334,14,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+20,To see how people feel about learning,Thank you,male,no,yes,,130334,14,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+20,To see how people feel about learning,Thank you,male,no,yes,,130334,14,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+20,To see how people feel about learning,Thank you,male,no,yes,,130334,14,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,4
+20,To see how people feel about learning,Thank you,male,no,yes,,130334,14,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,4
+21,difference between hard work and ability,,male,no,no,,170155,17,being good at math,improving at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+21,difference between hard work and ability,,male,no,no,,170155,17,being good at math,improving at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+21,difference between hard work and ability,,male,no,no,,170155,17,being good at math,improving at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+21,difference between hard work and ability,,male,no,no,,170155,17,being good at math,improving at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+21,difference between hard work and ability,,male,no,no,,170155,17,being good at math,improving at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+21,difference between hard work and ability,,male,no,no,,170155,17,being good at math,improving at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+21,difference between hard work and ability,,male,no,no,,170155,17,being good at math,improving at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+21,difference between hard work and ability,,male,no,no,,170155,17,being good at math,improving at math,showing your teacher that you have high math ability,value,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+21,difference between hard work and ability,,male,no,no,,170155,17,being good at math,improving at math,showing your teacher that you have high math ability,value,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,2
+21,difference between hard work and ability,,male,no,no,,170155,17,being good at math,improving at math,showing your teacher that you have high math ability,value,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,5
+21,difference between hard work and ability,,male,no,no,,170155,17,being good at math,improving at math,showing your teacher that you have high math ability,value,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,5
+22,opinions on intelligence,,female,no,no,,162241,13,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.5
+22,opinions on intelligence,,female,no,no,,162241,13,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0.37
+22,opinions on intelligence,,female,no,no,,162241,13,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0.61
+22,opinions on intelligence,,female,no,no,,162241,13,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.58
+22,opinions on intelligence,,female,no,no,,162241,13,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,0.68
+22,opinions on intelligence,,female,no,no,,162241,13,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.73
+22,opinions on intelligence,,female,no,no,,162241,13,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+22,opinions on intelligence,,female,no,no,,162241,13,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,3
+22,opinions on intelligence,,female,no,no,,162241,13,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,3
+22,opinions on intelligence,,female,no,no,,162241,13,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+22,opinions on intelligence,,female,no,no,,162241,13,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,3
+23,evaluvation of mindsets,none,female,yes,,It means intelligence is fixed and do develop with practice or experience,652239,4,NA,NA,NA,achieve,orignal,original,g,show_ability,ability,NA,show,0.82
+23,evaluvation of mindsets,none,female,yes,,It means intelligence is fixed and do develop with practice or experience,652239,4,NA,NA,NA,achieve,orignal,original,g,test_bad,test,NA,for_me,0.16
+23,evaluvation of mindsets,none,female,yes,,It means intelligence is fixed and do develop with practice or experience,652239,4,NA,NA,NA,achieve,orignal,original,g,test_now,test,now,for_me,0.86
+23,evaluvation of mindsets,none,female,yes,,It means intelligence is fixed and do develop with practice or experience,652239,4,NA,NA,NA,achieve,orignal,original,g,test_future,test,future,for_me,0.92
+23,evaluvation of mindsets,none,female,yes,,It means intelligence is fixed and do develop with practice or experience,652239,4,NA,NA,NA,achieve,orignal,original,g,ability,ability,NA,for_me,0.82
+23,evaluvation of mindsets,none,female,yes,,It means intelligence is fixed and do develop with practice or experience,652239,4,NA,NA,NA,achieve,orignal,original,g,show_effort,effort,NA,show,0.95
+23,evaluvation of mindsets,none,female,yes,,It means intelligence is fixed and do develop with practice or experience,652239,4,NA,NA,NA,achieve,orignal,original,g,improve,improve,NA,for_me,0.99
+23,evaluvation of mindsets,none,female,yes,,It means intelligence is fixed and do develop with practice or experience,652239,4,NA,NA,NA,achieve,orignal,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,1
+23,evaluvation of mindsets,none,female,yes,,It means intelligence is fixed and do develop with practice or experience,652239,4,NA,NA,NA,achieve,orignal,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,1
+23,evaluvation of mindsets,none,female,yes,,It means intelligence is fixed and do develop with practice or experience,652239,4,NA,NA,NA,achieve,orignal,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,6
+23,evaluvation of mindsets,none,female,yes,,It means intelligence is fixed and do develop with practice or experience,652239,4,NA,NA,NA,achieve,orignal,original,d,You can always substantially change how intelligent you are,NA,NA,NA,6
+24,self esteem,none,female,no,no,,83477,13,being good at math,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+24,self esteem,none,female,no,no,,83477,13,being good at math,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+24,self esteem,none,female,no,no,,83477,13,being good at math,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+24,self esteem,none,female,no,no,,83477,13,being good at math,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+24,self esteem,none,female,no,no,,83477,13,being good at math,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+24,self esteem,none,female,no,no,,83477,13,being good at math,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+24,self esteem,none,female,no,no,,83477,13,being good at math,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+24,self esteem,none,female,no,no,,83477,13,being good at math,doing well on this test,doing well on future tests,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+24,self esteem,none,female,no,no,,83477,13,being good at math,doing well on this test,doing well on future tests,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+24,self esteem,none,female,no,no,,83477,13,being good at math,doing well on this test,doing well on future tests,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+24,self esteem,none,female,no,no,,83477,13,being good at math,doing well on this test,doing well on future tests,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,3
+25,Im not sure,,male,no,yes,,134777,16,improving at math,doing well on future tests,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+25,Im not sure,,male,no,yes,,134777,16,improving at math,doing well on future tests,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+25,Im not sure,,male,no,yes,,134777,16,improving at math,doing well on future tests,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+25,Im not sure,,male,no,yes,,134777,16,improving at math,doing well on future tests,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+25,Im not sure,,male,no,yes,,134777,16,improving at math,doing well on future tests,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+25,Im not sure,,male,no,yes,,134777,16,improving at math,doing well on future tests,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+25,Im not sure,,male,no,yes,,134777,16,improving at math,doing well on future tests,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+25,Im not sure,,male,no,yes,,134777,16,improving at math,doing well on future tests,showing your teacher that you try at math,value,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,4
+25,Im not sure,,male,no,yes,,134777,16,improving at math,doing well on future tests,showing your teacher that you try at math,value,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,3
+25,Im not sure,,male,no,yes,,134777,16,improving at math,doing well on future tests,showing your teacher that you try at math,value,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,2
+25,Im not sure,,male,no,yes,,134777,16,improving at math,doing well on future tests,showing your teacher that you try at math,value,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,3
+26,math questions,no,female,no,yes,,106841,14,NA,NA,NA,achieve,orignal,original,g,ability,ability,NA,for_me,0.72
+26,math questions,no,female,no,yes,,106841,14,NA,NA,NA,achieve,orignal,original,g,test_now,test,now,for_me,0.71
+26,math questions,no,female,no,yes,,106841,14,NA,NA,NA,achieve,orignal,original,g,test_future,test,future,for_me,0.89
+26,math questions,no,female,no,yes,,106841,14,NA,NA,NA,achieve,orignal,original,g,show_ability,ability,NA,show,0.79
+26,math questions,no,female,no,yes,,106841,14,NA,NA,NA,achieve,orignal,original,g,show_effort,effort,NA,show,0.76
+26,math questions,no,female,no,yes,,106841,14,NA,NA,NA,achieve,orignal,original,g,improve,improve,NA,for_me,0.84
+26,math questions,no,female,no,yes,,106841,14,NA,NA,NA,achieve,orignal,original,g,test_bad,test,NA,for_me,0.21
+26,math questions,no,female,no,yes,,106841,14,NA,NA,NA,achieve,orignal,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+26,math questions,no,female,no,yes,,106841,14,NA,NA,NA,achieve,orignal,original,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+26,math questions,no,female,no,yes,,106841,14,NA,NA,NA,achieve,orignal,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,5
+26,math questions,no,female,no,yes,,106841,14,NA,NA,NA,achieve,orignal,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,5
+27,if you think intelligence is something you can improve,Thank you,female,no,no,,95785,12,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0
+27,if you think intelligence is something you can improve,Thank you,female,no,no,,95785,12,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0.76
+27,if you think intelligence is something you can improve,Thank you,female,no,no,,95785,12,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.78
+27,if you think intelligence is something you can improve,Thank you,female,no,no,,95785,12,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,1
+27,if you think intelligence is something you can improve,Thank you,female,no,no,,95785,12,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.72
+27,if you think intelligence is something you can improve,Thank you,female,no,no,,95785,12,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.69
+27,if you think intelligence is something you can improve,Thank you,female,no,no,,95785,12,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+27,if you think intelligence is something you can improve,Thank you,female,no,no,,95785,12,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+27,if you think intelligence is something you can improve,Thank you,female,no,no,,95785,12,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+27,if you think intelligence is something you can improve,Thank you,female,no,no,,95785,12,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,3
+27,if you think intelligence is something you can improve,Thank you,female,no,no,,95785,12,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,3
+28,Gauging peoples responses toward work,,male,no,no,,193646,8,doing well on this test,doing well on future tests,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+28,Gauging peoples responses toward work,,male,no,no,,193646,8,doing well on this test,doing well on future tests,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+28,Gauging peoples responses toward work,,male,no,no,,193646,8,doing well on this test,doing well on future tests,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+28,Gauging peoples responses toward work,,male,no,no,,193646,8,doing well on this test,doing well on future tests,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+28,Gauging peoples responses toward work,,male,no,no,,193646,8,doing well on this test,doing well on future tests,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+28,Gauging peoples responses toward work,,male,no,no,,193646,8,doing well on this test,doing well on future tests,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+28,Gauging peoples responses toward work,,male,no,no,,193646,8,doing well on this test,doing well on future tests,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+28,Gauging peoples responses toward work,,male,no,no,,193646,8,doing well on this test,doing well on future tests,showing your teacher that you try at math,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+28,Gauging peoples responses toward work,,male,no,no,,193646,8,doing well on this test,doing well on future tests,showing your teacher that you try at math,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,5
+28,Gauging peoples responses toward work,,male,no,no,,193646,8,doing well on this test,doing well on future tests,showing your teacher that you try at math,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+28,Gauging peoples responses toward work,,male,no,no,,193646,8,doing well on this test,doing well on future tests,showing your teacher that you try at math,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+29,to studt people,,male,no,,,210568,12,NA,NA,NA,achieve,orignal,original,g,test_future,test,future,for_me,0.61
+29,to studt people,,male,no,,,210568,12,NA,NA,NA,achieve,orignal,original,g,test_now,test,now,for_me,0.82
+29,to studt people,,male,no,,,210568,12,NA,NA,NA,achieve,orignal,original,g,show_ability,ability,NA,show,0.81
+29,to studt people,,male,no,,,210568,12,NA,NA,NA,achieve,orignal,original,g,show_effort,effort,NA,show,0.94
+29,to studt people,,male,no,,,210568,12,NA,NA,NA,achieve,orignal,original,g,improve,improve,NA,for_me,0.74
+29,to studt people,,male,no,,,210568,12,NA,NA,NA,achieve,orignal,original,g,test_bad,test,NA,for_me,0.31
+29,to studt people,,male,no,,,210568,12,NA,NA,NA,achieve,orignal,original,g,ability,ability,NA,for_me,0.58
+29,to studt people,,male,no,,,210568,12,NA,NA,NA,achieve,orignal,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,3
+29,to studt people,,male,no,,,210568,12,NA,NA,NA,achieve,orignal,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,4
+29,to studt people,,male,no,,,210568,12,NA,NA,NA,achieve,orignal,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,5
+29,to studt people,,male,no,,,210568,12,NA,NA,NA,achieve,orignal,original,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+30,no idea,,male,no,no,,117825,12,improving at math,doing well on future tests,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+30,no idea,,male,no,no,,117825,12,improving at math,doing well on future tests,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+30,no idea,,male,no,no,,117825,12,improving at math,doing well on future tests,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+30,no idea,,male,no,no,,117825,12,improving at math,doing well on future tests,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+30,no idea,,male,no,no,,117825,12,improving at math,doing well on future tests,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+30,no idea,,male,no,no,,117825,12,improving at math,doing well on future tests,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+30,no idea,,male,no,no,,117825,12,improving at math,doing well on future tests,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+30,no idea,,male,no,no,,117825,12,improving at math,doing well on future tests,being good at math,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+30,no idea,,male,no,no,,117825,12,improving at math,doing well on future tests,being good at math,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+30,no idea,,male,no,no,,117825,12,improving at math,doing well on future tests,being good at math,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+30,no idea,,male,no,no,,117825,12,improving at math,doing well on future tests,being good at math,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+31,opinions,I found it very interesting thanks,female,no,no,,1177335,9,doing well on this test,improving at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+31,opinions,I found it very interesting thanks,female,no,no,,1177335,9,doing well on this test,improving at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+31,opinions,I found it very interesting thanks,female,no,no,,1177335,9,doing well on this test,improving at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+31,opinions,I found it very interesting thanks,female,no,no,,1177335,9,doing well on this test,improving at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+31,opinions,I found it very interesting thanks,female,no,no,,1177335,9,doing well on this test,improving at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+31,opinions,I found it very interesting thanks,female,no,no,,1177335,9,doing well on this test,improving at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+31,opinions,I found it very interesting thanks,female,no,no,,1177335,9,doing well on this test,improving at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+31,opinions,I found it very interesting thanks,female,no,no,,1177335,9,doing well on this test,improving at math,showing your teacher that you have high math ability,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,6
+31,opinions,I found it very interesting thanks,female,no,no,,1177335,9,doing well on this test,improving at math,showing your teacher that you have high math ability,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,1
+31,opinions,I found it very interesting thanks,female,no,no,,1177335,9,doing well on this test,improving at math,showing your teacher that you have high math ability,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,1
+31,opinions,I found it very interesting thanks,female,no,no,,1177335,9,doing well on this test,improving at math,showing your teacher that you have high math ability,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,1
+32,opinions,thanks,female,no,no,,1229553,9,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+32,opinions,thanks,female,no,no,,1229553,9,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+32,opinions,thanks,female,no,no,,1229553,9,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+32,opinions,thanks,female,no,no,,1229553,9,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+32,opinions,thanks,female,no,no,,1229553,9,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+32,opinions,thanks,female,no,no,,1229553,9,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+32,opinions,thanks,female,no,no,,1229553,9,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+32,opinions,thanks,female,no,no,,1229553,9,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,1
+32,opinions,thanks,female,no,no,,1229553,9,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,1
+32,opinions,thanks,female,no,no,,1229553,9,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,6
+32,opinions,thanks,female,no,no,,1229553,9,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,1
+33,unsure,,male,no,yes,,90477,17,doing well on this test,doing well on future tests,improving at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+33,unsure,,male,no,yes,,90477,17,doing well on this test,doing well on future tests,improving at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+33,unsure,,male,no,yes,,90477,17,doing well on this test,doing well on future tests,improving at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+33,unsure,,male,no,yes,,90477,17,doing well on this test,doing well on future tests,improving at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+33,unsure,,male,no,yes,,90477,17,doing well on this test,doing well on future tests,improving at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+33,unsure,,male,no,yes,,90477,17,doing well on this test,doing well on future tests,improving at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+33,unsure,,male,no,yes,,90477,17,doing well on this test,doing well on future tests,improving at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+33,unsure,,male,no,yes,,90477,17,doing well on this test,doing well on future tests,improving at math,value,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,3
+33,unsure,,male,no,yes,,90477,17,doing well on this test,doing well on future tests,improving at math,value,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,4
+33,unsure,,male,no,yes,,90477,17,doing well on this test,doing well on future tests,improving at math,value,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,3
+33,unsure,,male,no,yes,,90477,17,doing well on this test,doing well on future tests,improving at math,value,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+34,Im not sure ,No comment ,male,no,no,,56734,10,doing well on this test,improving at math,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+34,Im not sure ,No comment ,male,no,no,,56734,10,doing well on this test,improving at math,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+34,Im not sure ,No comment ,male,no,no,,56734,10,doing well on this test,improving at math,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+34,Im not sure ,No comment ,male,no,no,,56734,10,doing well on this test,improving at math,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+34,Im not sure ,No comment ,male,no,no,,56734,10,doing well on this test,improving at math,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+34,Im not sure ,No comment ,male,no,no,,56734,10,doing well on this test,improving at math,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+34,Im not sure ,No comment ,male,no,no,,56734,10,doing well on this test,improving at math,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+34,Im not sure ,No comment ,male,no,no,,56734,10,doing well on this test,improving at math,doing well on future tests,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+34,Im not sure ,No comment ,male,no,no,,56734,10,doing well on this test,improving at math,doing well on future tests,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+34,Im not sure ,No comment ,male,no,no,,56734,10,doing well on this test,improving at math,doing well on future tests,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+34,Im not sure ,No comment ,male,no,no,,56734,10,doing well on this test,improving at math,doing well on future tests,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+35,I have no idea,,male,no,yes,,400359,20,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+35,I have no idea,,male,no,yes,,400359,20,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+35,I have no idea,,male,no,yes,,400359,20,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+35,I have no idea,,male,no,yes,,400359,20,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+35,I have no idea,,male,no,yes,,400359,20,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+35,I have no idea,,male,no,yes,,400359,20,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+35,I have no idea,,male,no,yes,,400359,20,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+35,I have no idea,,male,no,yes,,400359,20,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,2
+35,I have no idea,,male,no,yes,,400359,20,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,5
+35,I have no idea,,male,no,yes,,400359,20,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,2
+35,I have no idea,,male,no,yes,,400359,20,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+36,no idea,,male,no,no,,75891,10,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+36,no idea,,male,no,no,,75891,10,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+36,no idea,,male,no,no,,75891,10,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+36,no idea,,male,no,no,,75891,10,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+36,no idea,,male,no,no,,75891,10,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+36,no idea,,male,no,no,,75891,10,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+36,no idea,,male,no,no,,75891,10,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+36,no idea,,male,no,no,,75891,10,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+36,no idea,,male,no,no,,75891,10,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+36,no idea,,male,no,no,,75891,10,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+36,no idea,,male,no,no,,75891,10,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+37,If we believe we can change our intelligence,None,male,no,no,,319382,12,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+37,If we believe we can change our intelligence,None,male,no,no,,319382,12,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+37,If we believe we can change our intelligence,None,male,no,no,,319382,12,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+37,If we believe we can change our intelligence,None,male,no,no,,319382,12,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+37,If we believe we can change our intelligence,None,male,no,no,,319382,12,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+37,If we believe we can change our intelligence,None,male,no,no,,319382,12,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+37,If we believe we can change our intelligence,None,male,no,no,,319382,12,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+37,If we believe we can change our intelligence,None,male,no,no,,319382,12,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+37,If we believe we can change our intelligence,None,male,no,no,,319382,12,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,3
+37,If we believe we can change our intelligence,None,male,no,no,,319382,12,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+37,If we believe we can change our intelligence,None,male,no,no,,319382,12,doing well on the upcoming test,improving at math,being good at math,original,training,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,3
+38,,,male,no,no,,227695,12,showing your teacher that you try at math,doing well on the upcoming test,improving at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+38,,,male,no,no,,227695,12,showing your teacher that you try at math,doing well on the upcoming test,improving at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+38,,,male,no,no,,227695,12,showing your teacher that you try at math,doing well on the upcoming test,improving at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+38,,,male,no,no,,227695,12,showing your teacher that you try at math,doing well on the upcoming test,improving at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+38,,,male,no,no,,227695,12,showing your teacher that you try at math,doing well on the upcoming test,improving at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+38,,,male,no,no,,227695,12,showing your teacher that you try at math,doing well on the upcoming test,improving at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+38,,,male,no,no,,227695,12,showing your teacher that you try at math,doing well on the upcoming test,improving at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+38,,,male,no,no,,227695,12,showing your teacher that you try at math,doing well on the upcoming test,improving at math,original,training,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+38,,,male,no,no,,227695,12,showing your teacher that you try at math,doing well on the upcoming test,improving at math,original,training,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+38,,,male,no,no,,227695,12,showing your teacher that you try at math,doing well on the upcoming test,improving at math,original,training,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,3
+38,,,male,no,no,,227695,12,showing your teacher that you try at math,doing well on the upcoming test,improving at math,original,training,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,3
+39,what we believe about mistakes,,female,no,yes,,546028,4,improving at math,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+39,what we believe about mistakes,,female,no,yes,,546028,4,improving at math,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+39,what we believe about mistakes,,female,no,yes,,546028,4,improving at math,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+39,what we believe about mistakes,,female,no,yes,,546028,4,improving at math,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+39,what we believe about mistakes,,female,no,yes,,546028,4,improving at math,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+39,what we believe about mistakes,,female,no,yes,,546028,4,improving at math,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+39,what we believe about mistakes,,female,no,yes,,546028,4,improving at math,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+39,what we believe about mistakes,,female,no,yes,,546028,4,improving at math,being good at math,doing well on the upcoming test,original,training,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,6
+39,what we believe about mistakes,,female,no,yes,,546028,4,improving at math,being good at math,doing well on the upcoming test,original,training,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,6
+39,what we believe about mistakes,,female,no,yes,,546028,4,improving at math,being good at math,doing well on the upcoming test,original,training,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,1
+39,what we believe about mistakes,,female,no,yes,,546028,4,improving at math,being good at math,doing well on the upcoming test,original,training,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,1
+40,survey about people,nil,male,no,yes,,178564,12,doing well on this test,doing well on future tests,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+40,survey about people,nil,male,no,yes,,178564,12,doing well on this test,doing well on future tests,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+40,survey about people,nil,male,no,yes,,178564,12,doing well on this test,doing well on future tests,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+40,survey about people,nil,male,no,yes,,178564,12,doing well on this test,doing well on future tests,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+40,survey about people,nil,male,no,yes,,178564,12,doing well on this test,doing well on future tests,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+40,survey about people,nil,male,no,yes,,178564,12,doing well on this test,doing well on future tests,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+40,survey about people,nil,male,no,yes,,178564,12,doing well on this test,doing well on future tests,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+40,survey about people,nil,male,no,yes,,178564,12,doing well on this test,doing well on future tests,doing well on future tests,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,6
+40,survey about people,nil,male,no,yes,,178564,12,doing well on this test,doing well on future tests,doing well on future tests,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,4
+40,survey about people,nil,male,no,yes,,178564,12,doing well on this test,doing well on future tests,doing well on future tests,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,6
+40,survey about people,nil,male,no,yes,,178564,12,doing well on this test,doing well on future tests,doing well on future tests,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,6
+41,judgments on imporving intelect,,male,no,no,,101670,13,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0.17
+41,judgments on imporving intelect,,male,no,no,,101670,13,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,0.87
+41,judgments on imporving intelect,,male,no,no,,101670,13,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.8
+41,judgments on imporving intelect,,male,no,no,,101670,13,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.63
+41,judgments on imporving intelect,,male,no,no,,101670,13,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0.28
+41,judgments on imporving intelect,,male,no,no,,101670,13,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.88
+41,judgments on imporving intelect,,male,no,no,,101670,13,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+41,judgments on imporving intelect,,male,no,no,,101670,13,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+41,judgments on imporving intelect,,male,no,no,,101670,13,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+41,judgments on imporving intelect,,male,no,no,,101670,13,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+41,judgments on imporving intelect,,male,no,no,,101670,13,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+42,It was an experiment to learn about people who are taking math class,no,male,no,yes,,183015,10,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0.1
+42,It was an experiment to learn about people who are taking math class,no,male,no,yes,,183015,10,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.98
+42,It was an experiment to learn about people who are taking math class,no,male,no,yes,,183015,10,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0.91
+42,It was an experiment to learn about people who are taking math class,no,male,no,yes,,183015,10,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.98
+42,It was an experiment to learn about people who are taking math class,no,male,no,yes,,183015,10,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.95
+42,It was an experiment to learn about people who are taking math class,no,male,no,yes,,183015,10,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,0.99
+42,It was an experiment to learn about people who are taking math class,no,male,no,yes,,183015,10,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+42,It was an experiment to learn about people who are taking math class,no,male,no,yes,,183015,10,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,5
+42,It was an experiment to learn about people who are taking math class,no,male,no,yes,,183015,10,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,4
+42,It was an experiment to learn about people who are taking math class,no,male,no,yes,,183015,10,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,1
+42,It was an experiment to learn about people who are taking math class,no,male,no,yes,,183015,10,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+43,Useful for those who taking class and for the students,Interesting,female,no,yes,,189223,12,improving at math,being good at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+43,Useful for those who taking class and for the students,Interesting,female,no,yes,,189223,12,improving at math,being good at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+43,Useful for those who taking class and for the students,Interesting,female,no,yes,,189223,12,improving at math,being good at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+43,Useful for those who taking class and for the students,Interesting,female,no,yes,,189223,12,improving at math,being good at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+43,Useful for those who taking class and for the students,Interesting,female,no,yes,,189223,12,improving at math,being good at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+43,Useful for those who taking class and for the students,Interesting,female,no,yes,,189223,12,improving at math,being good at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+43,Useful for those who taking class and for the students,Interesting,female,no,yes,,189223,12,improving at math,being good at math,showing your teacher that you have high math ability,original,original,forced-choice,g,NA,NA,NA,NA,NA
+43,Useful for those who taking class and for the students,Interesting,female,no,yes,,189223,12,improving at math,being good at math,showing your teacher that you have high math ability,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,6
+43,Useful for those who taking class and for the students,Interesting,female,no,yes,,189223,12,improving at math,being good at math,showing your teacher that you have high math ability,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+43,Useful for those who taking class and for the students,Interesting,female,no,yes,,189223,12,improving at math,being good at math,showing your teacher that you have high math ability,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,6
+43,Useful for those who taking class and for the students,Interesting,female,no,yes,,189223,12,improving at math,being good at math,showing your teacher that you have high math ability,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+44,math,,female,no,yes,,96034,13,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.73
+44,math,,female,no,yes,,96034,13,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.51
+44,math,,female,no,yes,,96034,13,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0.56
+44,math,,female,no,yes,,96034,13,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,0.71
+44,math,,female,no,yes,,96034,13,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0.08
+44,math,,female,no,yes,,96034,13,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.89
+44,math,,female,no,yes,,96034,13,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+44,math,,female,no,yes,,96034,13,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+44,math,,female,no,yes,,96034,13,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,4
+44,math,,female,no,yes,,96034,13,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,3
+44,math,,female,no,yes,,96034,13,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+45,Good,,male,no,yes,,120644,18,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0.7
+45,Good,,male,no,yes,,120644,18,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.59
+45,Good,,male,no,yes,,120644,18,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.71
+45,Good,,male,no,yes,,120644,18,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.71
+45,Good,,male,no,yes,,120644,18,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0.84
+45,Good,,male,no,yes,,120644,18,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,0.75
+45,Good,,male,no,yes,,120644,18,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+45,Good,,male,no,yes,,120644,18,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,6
+45,Good,,male,no,yes,,120644,18,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+45,Good,,male,no,yes,,120644,18,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,2
+45,Good,,male,no,yes,,120644,18,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,5
+46,Im not sure what the experiment was about,I liked doing the experiment ,female,no,yes,,146488,10,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+46,Im not sure what the experiment was about,I liked doing the experiment ,female,no,yes,,146488,10,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+46,Im not sure what the experiment was about,I liked doing the experiment ,female,no,yes,,146488,10,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+46,Im not sure what the experiment was about,I liked doing the experiment ,female,no,yes,,146488,10,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+46,Im not sure what the experiment was about,I liked doing the experiment ,female,no,yes,,146488,10,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+46,Im not sure what the experiment was about,I liked doing the experiment ,female,no,yes,,146488,10,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+46,Im not sure what the experiment was about,I liked doing the experiment ,female,no,yes,,146488,10,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+46,Im not sure what the experiment was about,I liked doing the experiment ,female,no,yes,,146488,10,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+46,Im not sure what the experiment was about,I liked doing the experiment ,female,no,yes,,146488,10,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+46,Im not sure what the experiment was about,I liked doing the experiment ,female,no,yes,,146488,10,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+46,Im not sure what the experiment was about,I liked doing the experiment ,female,no,yes,,146488,10,doing well on this test,showing your teacher that you try at math,being good at math,value,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+47,precerptions of intelligence,none,female,yes,no,cant be changed,195568,11,being good at math,improving at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+47,precerptions of intelligence,none,female,yes,no,cant be changed,195568,11,being good at math,improving at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+47,precerptions of intelligence,none,female,yes,no,cant be changed,195568,11,being good at math,improving at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+47,precerptions of intelligence,none,female,yes,no,cant be changed,195568,11,being good at math,improving at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+47,precerptions of intelligence,none,female,yes,no,cant be changed,195568,11,being good at math,improving at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+47,precerptions of intelligence,none,female,yes,no,cant be changed,195568,11,being good at math,improving at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+47,precerptions of intelligence,none,female,yes,no,cant be changed,195568,11,being good at math,improving at math,doing well on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+47,precerptions of intelligence,none,female,yes,no,cant be changed,195568,11,being good at math,improving at math,doing well on this test,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+47,precerptions of intelligence,none,female,yes,no,cant be changed,195568,11,being good at math,improving at math,doing well on this test,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+47,precerptions of intelligence,none,female,yes,no,cant be changed,195568,11,being good at math,improving at math,doing well on this test,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+47,precerptions of intelligence,none,female,yes,no,cant be changed,195568,11,being good at math,improving at math,doing well on this test,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,3
+48,Im not sure,,female,no,no,,105668,6,showing your teacher that you have high math ability,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+48,Im not sure,,female,no,no,,105668,6,showing your teacher that you have high math ability,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+48,Im not sure,,female,no,no,,105668,6,showing your teacher that you have high math ability,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+48,Im not sure,,female,no,no,,105668,6,showing your teacher that you have high math ability,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+48,Im not sure,,female,no,no,,105668,6,showing your teacher that you have high math ability,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+48,Im not sure,,female,no,no,,105668,6,showing your teacher that you have high math ability,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+48,Im not sure,,female,no,no,,105668,6,showing your teacher that you have high math ability,being good at math,doing well on the upcoming test,original,training,forced-choice,g,NA,NA,NA,NA,NA
+48,Im not sure,,female,no,no,,105668,6,showing your teacher that you have high math ability,being good at math,doing well on the upcoming test,original,training,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,5
+48,Im not sure,,female,no,no,,105668,6,showing your teacher that you have high math ability,being good at math,doing well on the upcoming test,original,training,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,1
+48,Im not sure,,female,no,no,,105668,6,showing your teacher that you have high math ability,being good at math,doing well on the upcoming test,original,training,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,1
+48,Im not sure,,female,no,no,,105668,6,showing your teacher that you have high math ability,being good at math,doing well on the upcoming test,original,training,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+49,What people think about their maths knowledge,It was interesting,male,no,yes,,155514,13,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.7
+49,What people think about their maths knowledge,It was interesting,male,no,yes,,155514,13,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.6
+49,What people think about their maths knowledge,It was interesting,male,no,yes,,155514,13,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,0.59
+49,What people think about their maths knowledge,It was interesting,male,no,yes,,155514,13,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0.46
+49,What people think about their maths knowledge,It was interesting,male,no,yes,,155514,13,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.66
+49,What people think about their maths knowledge,It was interesting,male,no,yes,,155514,13,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0.55
+49,What people think about their maths knowledge,It was interesting,male,no,yes,,155514,13,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+49,What people think about their maths knowledge,It was interesting,male,no,yes,,155514,13,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,5
+49,What people think about their maths knowledge,It was interesting,male,no,yes,,155514,13,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,3
+49,What people think about their maths knowledge,It was interesting,male,no,yes,,155514,13,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+49,What people think about their maths knowledge,It was interesting,male,no,yes,,155514,13,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+50,how people think,It was interesting thanks,female,no,yes,,141924,19,NA,NA,NA,achieve,orignal,original,g,show_ability,ability,NA,show,0.62
+50,how people think,It was interesting thanks,female,no,yes,,141924,19,NA,NA,NA,achieve,orignal,original,g,test_bad,test,NA,for_me,0.04
+50,how people think,It was interesting thanks,female,no,yes,,141924,19,NA,NA,NA,achieve,orignal,original,g,test_future,test,future,for_me,0.99
+50,how people think,It was interesting thanks,female,no,yes,,141924,19,NA,NA,NA,achieve,orignal,original,g,ability,ability,NA,for_me,0.12
+50,how people think,It was interesting thanks,female,no,yes,,141924,19,NA,NA,NA,achieve,orignal,original,g,show_effort,effort,NA,show,0.97
+50,how people think,It was interesting thanks,female,no,yes,,141924,19,NA,NA,NA,achieve,orignal,original,g,improve,improve,NA,for_me,0.53
+50,how people think,It was interesting thanks,female,no,yes,,141924,19,NA,NA,NA,achieve,orignal,original,g,test_now,test,now,for_me,0.87
+50,how people think,It was interesting thanks,female,no,yes,,141924,19,NA,NA,NA,achieve,orignal,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,5
+50,how people think,It was interesting thanks,female,no,yes,,141924,19,NA,NA,NA,achieve,orignal,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+50,how people think,It was interesting thanks,female,no,yes,,141924,19,NA,NA,NA,achieve,orignal,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,3
+50,how people think,It was interesting thanks,female,no,yes,,141924,19,NA,NA,NA,achieve,orignal,original,d,You can always substantially change how intelligent you are,NA,NA,NA,2
+51,very good experiment,Precious study,female,no,yes,,279996,14,showing your teacher that you have high math ability,improving at math,doing badly on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+51,very good experiment,Precious study,female,no,yes,,279996,14,showing your teacher that you have high math ability,improving at math,doing badly on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+51,very good experiment,Precious study,female,no,yes,,279996,14,showing your teacher that you have high math ability,improving at math,doing badly on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+51,very good experiment,Precious study,female,no,yes,,279996,14,showing your teacher that you have high math ability,improving at math,doing badly on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+51,very good experiment,Precious study,female,no,yes,,279996,14,showing your teacher that you have high math ability,improving at math,doing badly on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+51,very good experiment,Precious study,female,no,yes,,279996,14,showing your teacher that you have high math ability,improving at math,doing badly on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+51,very good experiment,Precious study,female,no,yes,,279996,14,showing your teacher that you have high math ability,improving at math,doing badly on this test,original,original,forced-choice,g,NA,NA,NA,NA,NA
+51,very good experiment,Precious study,female,no,yes,,279996,14,showing your teacher that you have high math ability,improving at math,doing badly on this test,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,6
+51,very good experiment,Precious study,female,no,yes,,279996,14,showing your teacher that you have high math ability,improving at math,doing badly on this test,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+51,very good experiment,Precious study,female,no,yes,,279996,14,showing your teacher that you have high math ability,improving at math,doing badly on this test,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,3
+51,very good experiment,Precious study,female,no,yes,,279996,14,showing your teacher that you have high math ability,improving at math,doing badly on this test,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+52,thoughts about whether or not someone can improve their intelligence,Thanks,female,no,yes,,209479,9,doing well on this test,improving at math,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+52,thoughts about whether or not someone can improve their intelligence,Thanks,female,no,yes,,209479,9,doing well on this test,improving at math,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+52,thoughts about whether or not someone can improve their intelligence,Thanks,female,no,yes,,209479,9,doing well on this test,improving at math,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+52,thoughts about whether or not someone can improve their intelligence,Thanks,female,no,yes,,209479,9,doing well on this test,improving at math,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+52,thoughts about whether or not someone can improve their intelligence,Thanks,female,no,yes,,209479,9,doing well on this test,improving at math,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+52,thoughts about whether or not someone can improve their intelligence,Thanks,female,no,yes,,209479,9,doing well on this test,improving at math,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+52,thoughts about whether or not someone can improve their intelligence,Thanks,female,no,yes,,209479,9,doing well on this test,improving at math,showing your teacher that you try at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+52,thoughts about whether or not someone can improve their intelligence,Thanks,female,no,yes,,209479,9,doing well on this test,improving at math,showing your teacher that you try at math,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,3
+52,thoughts about whether or not someone can improve their intelligence,Thanks,female,no,yes,,209479,9,doing well on this test,improving at math,showing your teacher that you try at math,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+52,thoughts about whether or not someone can improve their intelligence,Thanks,female,no,yes,,209479,9,doing well on this test,improving at math,showing your teacher that you try at math,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,5
+52,thoughts about whether or not someone can improve their intelligence,Thanks,female,no,yes,,209479,9,doing well on this test,improving at math,showing your teacher that you try at math,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+53,math,none,male,no,no,,123973,12,doing well on this test,showing your teacher that you try at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+53,math,none,male,no,no,,123973,12,doing well on this test,showing your teacher that you try at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+53,math,none,male,no,no,,123973,12,doing well on this test,showing your teacher that you try at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+53,math,none,male,no,no,,123973,12,doing well on this test,showing your teacher that you try at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+53,math,none,male,no,no,,123973,12,doing well on this test,showing your teacher that you try at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+53,math,none,male,no,no,,123973,12,doing well on this test,showing your teacher that you try at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+53,math,none,male,no,no,,123973,12,doing well on this test,showing your teacher that you try at math,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+53,math,none,male,no,no,,123973,12,doing well on this test,showing your teacher that you try at math,showing your teacher that you have high math ability,value,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,3
+53,math,none,male,no,no,,123973,12,doing well on this test,showing your teacher that you try at math,showing your teacher that you have high math ability,value,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,3
+53,math,none,male,no,no,,123973,12,doing well on this test,showing your teacher that you try at math,showing your teacher that you have high math ability,value,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+53,math,none,male,no,no,,123973,12,doing well on this test,showing your teacher that you try at math,showing your teacher that you have high math ability,value,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+54,This study is about how to improve my math ability,Thank you,male,no,yes,,205270,18,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+54,This study is about how to improve my math ability,Thank you,male,no,yes,,205270,18,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+54,This study is about how to improve my math ability,Thank you,male,no,yes,,205270,18,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+54,This study is about how to improve my math ability,Thank you,male,no,yes,,205270,18,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+54,This study is about how to improve my math ability,Thank you,male,no,yes,,205270,18,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+54,This study is about how to improve my math ability,Thank you,male,no,yes,,205270,18,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+54,This study is about how to improve my math ability,Thank you,male,no,yes,,205270,18,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+54,This study is about how to improve my math ability,Thank you,male,no,yes,,205270,18,improving at math,doing well on this test,being good at math,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,5
+54,This study is about how to improve my math ability,Thank you,male,no,yes,,205270,18,improving at math,doing well on this test,being good at math,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,3
+54,This study is about how to improve my math ability,Thank you,male,no,yes,,205270,18,improving at math,doing well on this test,being good at math,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+54,This study is about how to improve my math ability,Thank you,male,no,yes,,205270,18,improving at math,doing well on this test,being good at math,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,3
+55,study,none,female,no,no,,90842,10,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.59
+55,study,none,female,no,no,,90842,10,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0.01
+55,study,none,female,no,no,,90842,10,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0.74
+55,study,none,female,no,no,,90842,10,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,0.73
+55,study,none,female,no,no,,90842,10,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.88
+55,study,none,female,no,no,,90842,10,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.63
+55,study,none,female,no,no,,90842,10,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+55,study,none,female,no,no,,90842,10,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+55,study,none,female,no,no,,90842,10,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+55,study,none,female,no,no,,90842,10,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,2
+55,study,none,female,no,no,,90842,10,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+56,opinion on intelligence,,female,no,yes,,137370,16,NA,NA,NA,original,training,original,g,show_ability,ability,NA,show,0.93
+56,opinion on intelligence,,female,no,yes,,137370,16,NA,NA,NA,original,training,original,g,test_now,test,now,for_me,0.59
+56,opinion on intelligence,,female,no,yes,,137370,16,NA,NA,NA,original,training,original,g,test_bad,test,NA,for_me,0.13
+56,opinion on intelligence,,female,no,yes,,137370,16,NA,NA,NA,original,training,original,g,ability,ability,NA,for_me,0.78
+56,opinion on intelligence,,female,no,yes,,137370,16,NA,NA,NA,original,training,original,g,show_effort,effort,NA,show,0.89
+56,opinion on intelligence,,female,no,yes,,137370,16,NA,NA,NA,original,training,original,g,improve,improve,NA,for_me,0.79
+56,opinion on intelligence,,female,no,yes,,137370,16,NA,NA,NA,original,training,original,g,NA,NA,NA,NA,NA
+56,opinion on intelligence,,female,no,yes,,137370,16,NA,NA,NA,original,training,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+56,opinion on intelligence,,female,no,yes,,137370,16,NA,NA,NA,original,training,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+56,opinion on intelligence,,female,no,yes,,137370,16,NA,NA,NA,original,training,original,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+56,opinion on intelligence,,female,no,yes,,137370,16,NA,NA,NA,original,training,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,5
+57,i dont now,very god tusk,male,no,yes,,241554,16,improving at math,doing well on future tests,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+57,i dont now,very god tusk,male,no,yes,,241554,16,improving at math,doing well on future tests,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+57,i dont now,very god tusk,male,no,yes,,241554,16,improving at math,doing well on future tests,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+57,i dont now,very god tusk,male,no,yes,,241554,16,improving at math,doing well on future tests,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+57,i dont now,very god tusk,male,no,yes,,241554,16,improving at math,doing well on future tests,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+57,i dont now,very god tusk,male,no,yes,,241554,16,improving at math,doing well on future tests,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+57,i dont now,very god tusk,male,no,yes,,241554,16,improving at math,doing well on future tests,showing your teacher that you have high math ability,value,original,forced-choice,g,NA,NA,NA,NA,NA
+57,i dont now,very god tusk,male,no,yes,,241554,16,improving at math,doing well on future tests,showing your teacher that you have high math ability,value,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,4
+57,i dont now,very god tusk,male,no,yes,,241554,16,improving at math,doing well on future tests,showing your teacher that you have high math ability,value,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+57,i dont now,very god tusk,male,no,yes,,241554,16,improving at math,doing well on future tests,showing your teacher that you have high math ability,value,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,3
+57,i dont now,very god tusk,male,no,yes,,241554,16,improving at math,doing well on future tests,showing your teacher that you have high math ability,value,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+58,views on intelligence,Interesting survey ,female,no,yes,,115531,15,NA,NA,NA,achieve,orignal,original,g,show_effort,effort,NA,show,0.69
+58,views on intelligence,Interesting survey ,female,no,yes,,115531,15,NA,NA,NA,achieve,orignal,original,g,test_now,test,now,for_me,0.88
+58,views on intelligence,Interesting survey ,female,no,yes,,115531,15,NA,NA,NA,achieve,orignal,original,g,test_bad,test,NA,for_me,0.32
+58,views on intelligence,Interesting survey ,female,no,yes,,115531,15,NA,NA,NA,achieve,orignal,original,g,show_ability,ability,NA,show,0.69
+58,views on intelligence,Interesting survey ,female,no,yes,,115531,15,NA,NA,NA,achieve,orignal,original,g,test_future,test,future,for_me,0.62
+58,views on intelligence,Interesting survey ,female,no,yes,,115531,15,NA,NA,NA,achieve,orignal,original,g,improve,improve,NA,for_me,0.82
+58,views on intelligence,Interesting survey ,female,no,yes,,115531,15,NA,NA,NA,achieve,orignal,original,g,ability,ability,NA,for_me,0.7
+58,views on intelligence,Interesting survey ,female,no,yes,,115531,15,NA,NA,NA,achieve,orignal,original,d,You can always substantially change how intelligent you are,NA,NA,NA,3
+58,views on intelligence,Interesting survey ,female,no,yes,,115531,15,NA,NA,NA,achieve,orignal,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+58,views on intelligence,Interesting survey ,female,no,yes,,115531,15,NA,NA,NA,achieve,orignal,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,3
+58,views on intelligence,Interesting survey ,female,no,yes,,115531,15,NA,NA,NA,achieve,orignal,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+59,To see how one can learn more by working hard,,male,yes,no,A fixed mindset is one that believes their mindset cannot be changed,74500,24,NA,NA,NA,achieve,orignal,original,g,test_bad,test,NA,for_me,0.71
+59,To see how one can learn more by working hard,,male,yes,no,A fixed mindset is one that believes their mindset cannot be changed,74500,24,NA,NA,NA,achieve,orignal,original,g,ability,ability,NA,for_me,0.29
+59,To see how one can learn more by working hard,,male,yes,no,A fixed mindset is one that believes their mindset cannot be changed,74500,24,NA,NA,NA,achieve,orignal,original,g,show_effort,effort,NA,show,0.59
+59,To see how one can learn more by working hard,,male,yes,no,A fixed mindset is one that believes their mindset cannot be changed,74500,24,NA,NA,NA,achieve,orignal,original,g,show_ability,ability,NA,show,0.28
+59,To see how one can learn more by working hard,,male,yes,no,A fixed mindset is one that believes their mindset cannot be changed,74500,24,NA,NA,NA,achieve,orignal,original,g,test_future,test,future,for_me,0.1
+59,To see how one can learn more by working hard,,male,yes,no,A fixed mindset is one that believes their mindset cannot be changed,74500,24,NA,NA,NA,achieve,orignal,original,g,test_now,test,now,for_me,0.11
+59,To see how one can learn more by working hard,,male,yes,no,A fixed mindset is one that believes their mindset cannot be changed,74500,24,NA,NA,NA,achieve,orignal,original,g,improve,improve,NA,for_me,0.13
+59,To see how one can learn more by working hard,,male,yes,no,A fixed mindset is one that believes their mindset cannot be changed,74500,24,NA,NA,NA,achieve,orignal,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,6
+59,To see how one can learn more by working hard,,male,yes,no,A fixed mindset is one that believes their mindset cannot be changed,74500,24,NA,NA,NA,achieve,orignal,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,6
+59,To see how one can learn more by working hard,,male,yes,no,A fixed mindset is one that believes their mindset cannot be changed,74500,24,NA,NA,NA,achieve,orignal,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,1
+59,To see how one can learn more by working hard,,male,yes,no,A fixed mindset is one that believes their mindset cannot be changed,74500,24,NA,NA,NA,achieve,orignal,original,d,You can always substantially change how intelligent you are,NA,NA,NA,1
+60,Attitudes towards math learning,,male,no,yes,,182745,12,doing well on the upcoming test,being good at math,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+60,Attitudes towards math learning,,male,no,yes,,182745,12,doing well on the upcoming test,being good at math,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+60,Attitudes towards math learning,,male,no,yes,,182745,12,doing well on the upcoming test,being good at math,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+60,Attitudes towards math learning,,male,no,yes,,182745,12,doing well on the upcoming test,being good at math,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+60,Attitudes towards math learning,,male,no,yes,,182745,12,doing well on the upcoming test,being good at math,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+60,Attitudes towards math learning,,male,no,yes,,182745,12,doing well on the upcoming test,being good at math,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+60,Attitudes towards math learning,,male,no,yes,,182745,12,doing well on the upcoming test,being good at math,showing your teacher that you try at math,original,training,forced-choice,g,NA,NA,NA,NA,NA
+60,Attitudes towards math learning,,male,no,yes,,182745,12,doing well on the upcoming test,being good at math,showing your teacher that you try at math,original,training,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,2
+60,Attitudes towards math learning,,male,no,yes,,182745,12,doing well on the upcoming test,being good at math,showing your teacher that you try at math,original,training,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+60,Attitudes towards math learning,,male,no,yes,,182745,12,doing well on the upcoming test,being good at math,showing your teacher that you try at math,original,training,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,5
+60,Attitudes towards math learning,,male,no,yes,,182745,12,doing well on the upcoming test,being good at math,showing your teacher that you try at math,original,training,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,5
+61,How we perceive intelligence,Would really like to know what this experiment was about,female,no,yes,,151141,4,NA,NA,NA,achieve,orignal,original,g,test_now,test,now,for_me,1
+61,How we perceive intelligence,Would really like to know what this experiment was about,female,no,yes,,151141,4,NA,NA,NA,achieve,orignal,original,g,improve,improve,NA,for_me,1
+61,How we perceive intelligence,Would really like to know what this experiment was about,female,no,yes,,151141,4,NA,NA,NA,achieve,orignal,original,g,show_effort,effort,NA,show,1
+61,How we perceive intelligence,Would really like to know what this experiment was about,female,no,yes,,151141,4,NA,NA,NA,achieve,orignal,original,g,ability,ability,NA,for_me,1
+61,How we perceive intelligence,Would really like to know what this experiment was about,female,no,yes,,151141,4,NA,NA,NA,achieve,orignal,original,g,show_ability,ability,NA,show,1
+61,How we perceive intelligence,Would really like to know what this experiment was about,female,no,yes,,151141,4,NA,NA,NA,achieve,orignal,original,g,test_future,test,future,for_me,1
+61,How we perceive intelligence,Would really like to know what this experiment was about,female,no,yes,,151141,4,NA,NA,NA,achieve,orignal,original,g,test_bad,test,NA,for_me,0
+61,How we perceive intelligence,Would really like to know what this experiment was about,female,no,yes,,151141,4,NA,NA,NA,achieve,orignal,original,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,1
+61,How we perceive intelligence,Would really like to know what this experiment was about,female,no,yes,,151141,4,NA,NA,NA,achieve,orignal,original,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,1
+61,How we perceive intelligence,Would really like to know what this experiment was about,female,no,yes,,151141,4,NA,NA,NA,achieve,orignal,original,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,6
+61,How we perceive intelligence,Would really like to know what this experiment was about,female,no,yes,,151141,4,NA,NA,NA,achieve,orignal,original,d,You can always substantially change how intelligent you are,NA,NA,NA,6
+62,learning abilities,,female,no,yes,,105940,15,doing well on this test,being good at math,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+62,learning abilities,,female,no,yes,,105940,15,doing well on this test,being good at math,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+62,learning abilities,,female,no,yes,,105940,15,doing well on this test,being good at math,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+62,learning abilities,,female,no,yes,,105940,15,doing well on this test,being good at math,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+62,learning abilities,,female,no,yes,,105940,15,doing well on this test,being good at math,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+62,learning abilities,,female,no,yes,,105940,15,doing well on this test,being good at math,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+62,learning abilities,,female,no,yes,,105940,15,doing well on this test,being good at math,showing your teacher that you try at math,value,original,forced-choice,g,NA,NA,NA,NA,NA
+62,learning abilities,,female,no,yes,,105940,15,doing well on this test,being good at math,showing your teacher that you try at math,value,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,3
+62,learning abilities,,female,no,yes,,105940,15,doing well on this test,being good at math,showing your teacher that you try at math,value,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+62,learning abilities,,female,no,yes,,105940,15,doing well on this test,being good at math,showing your teacher that you try at math,value,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,4
+62,learning abilities,,female,no,yes,,105940,15,doing well on this test,being good at math,showing your teacher that you try at math,value,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,4
+63,,,female,no,,,73388,24,showing your teacher that you have high math ability,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+63,,,female,no,,,73388,24,showing your teacher that you have high math ability,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+63,,,female,no,,,73388,24,showing your teacher that you have high math ability,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+63,,,female,no,,,73388,24,showing your teacher that you have high math ability,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+63,,,female,no,,,73388,24,showing your teacher that you have high math ability,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+63,,,female,no,,,73388,24,showing your teacher that you have high math ability,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+63,,,female,no,,,73388,24,showing your teacher that you have high math ability,doing well on this test,doing well on future tests,original,original,forced-choice,g,NA,NA,NA,NA,NA
+63,,,female,no,,,73388,24,showing your teacher that you have high math ability,doing well on this test,doing well on future tests,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,1
+63,,,female,no,,,73388,24,showing your teacher that you have high math ability,doing well on this test,doing well on future tests,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,6
+63,,,female,no,,,73388,24,showing your teacher that you have high math ability,doing well on this test,doing well on future tests,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,1
+63,,,female,no,,,73388,24,showing your teacher that you have high math ability,doing well on this test,doing well on future tests,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,6
+64,Improving skills,-,male,no,yes,,207500,12,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+64,Improving skills,-,male,no,yes,,207500,12,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+64,Improving skills,-,male,no,yes,,207500,12,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+64,Improving skills,-,male,no,yes,,207500,12,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+64,Improving skills,-,male,no,yes,,207500,12,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+64,Improving skills,-,male,no,yes,,207500,12,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+64,Improving skills,-,male,no,yes,,207500,12,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,g,NA,NA,NA,NA,NA
+64,Improving skills,-,male,no,yes,,207500,12,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,4
+64,Improving skills,-,male,no,yes,,207500,12,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,3
+64,Improving skills,-,male,no,yes,,207500,12,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,3
+64,Improving skills,-,male,no,yes,,207500,12,doing well on the upcoming test,being good at math,showing your teacher that you have high math ability,original,training,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+65,reasoning,,female,yes,no,intelligence is static,153355,14,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+65,reasoning,,female,yes,no,intelligence is static,153355,14,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+65,reasoning,,female,yes,no,intelligence is static,153355,14,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+65,reasoning,,female,yes,no,intelligence is static,153355,14,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+65,reasoning,,female,yes,no,intelligence is static,153355,14,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+65,reasoning,,female,yes,no,intelligence is static,153355,14,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+65,reasoning,,female,yes,no,intelligence is static,153355,14,improving at math,doing well on this test,being good at math,original,original,forced-choice,g,NA,NA,NA,NA,NA
+65,reasoning,,female,yes,no,intelligence is static,153355,14,improving at math,doing well on this test,being good at math,original,original,forced-choice,d,You can learn new things but you cant really change your basic intelligence,NA,NA,NA,3
+65,reasoning,,female,yes,no,intelligence is static,153355,14,improving at math,doing well on this test,being good at math,original,original,forced-choice,d,No matter who you are you can significantly change your intelligence level,NA,NA,NA,4
+65,reasoning,,female,yes,no,intelligence is static,153355,14,improving at math,doing well on this test,being good at math,original,original,forced-choice,d,You have a certain amount of intelligence and you cant really do much to change it,NA,NA,NA,4
+65,reasoning,,female,yes,no,intelligence is static,153355,14,improving at math,doing well on this test,being good at math,original,original,forced-choice,d,You can always substantially change how intelligent you are,NA,NA,NA,3

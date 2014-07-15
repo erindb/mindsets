@@ -4,3 +4,4 @@ mturk*.results
 HIT*
 */.R*
 .Rhistory
+old-directory-structure

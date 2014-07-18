@@ -5,18 +5,314 @@ date: "July 15, 2014"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+# Elicitation Analysis
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r}
-summary(cars)
+```{r, echo=F, message=F}
+library(knitr)
+library(ggplot2)
+library(plyr)
+library(bear)
+text.size = 12
+mindset.hist = function(r) {
+  ggplot(r, aes(x=entityScore)) + 
+  geom_histogram(aes(y=..density.., fill=factor(mindset)),
+                 # Histogram with density instead of count on y-axis
+                 binwidth=1, colour="black") +
+  geom_density(alpha=.2, fill="#080808") +
+  theme_bw(text.size)
+}
 ```
 
-You can also embed plots, for example:
+## Theories
 
-```{r, echo=FALSE}
-plot(cars)
+```{r echo=F}
+theory.filter = function(r, all.subjects) {
+  return(
+    all.subjects[
+      sapply(as.character(all.subjects),
+             function(subj){
+               r$sanity0[r$workerID==subj][1] <= 0.1 &
+                 r$sanity1[r$workerID==subj][1] >= 0.9
+               })])}
+load = function(filename, split="median") {
+  r = read.table(filename, header=T, sep=",")
+  r$entityScore = r$entity1 + r$entity2 + (7 - r$increm1) + (7 - r$increm2)
+  
+  # group people into growth and fixed
+  med.split = median(r$entityScore)
+  up.quart = median(r$entityScore[r$entityScore > med.split])
+  low.quart = median(r$entityScore[r$entityScore < med.split])
+  
+  if (split == "median") {
+    r$mindset <- ifelse(r$entityScore > med.split, "fixed", "growth")
+  } else if (split == "quartile") {
+    r$mindset <- ifelse(r$entityScore >= up.quart, "fixed", NA)
+    r$mindset[r$entityScore <= low.quart] = "growth"
+    r = r[!is.na(r$mindset),]
+  }
+  
+  #factors and labels
+  r$e = factor(r$effort, levels=c("low", "medium", "high"),
+               labels=c("0", "0.5", "1"))
+  r$a = factor(r$ability, levels=c("low", "high"),
+               labels=c("0.5", "1"))
+  r$d = factor(r$difficulty, levels=c("easy", "difficult"),
+               labels=c("0.2", "2"))
+  r$e = as.numeric(as.character(r$e))
+  r$a = as.numeric(as.character(r$a))
+  r$d = as.numeric(as.character(r$d))
+  
+  #factors and labels
+  r$effort = factor(r$effort, levels=c("low", "medium", "high"),
+                    labels=c("Low effort", "Medium effort", "High effort"))
+  r$ability = factor(r$ability, levels=c("low", "high"),
+                     labels=c("Low ability", "High ability"))
+  r$difficulty = factor(r$difficulty, levels=c("easy", "difficult"),
+                        labels=c("Easy", "Difficult"))
+  
+  return(r)
+}
+plot.all = function(r, theory) {
+  theory.all <- subset(r, theoryType==theory)
+  print(ggplot(theory.all, aes(x=entityScore, y=response, color=effort)) +
+      geom_smooth(method=lm) +
+      facet_grid(difficulty ~ ability) +
+      theme_bw(text.size) +
+      xlab("Fixedness") +
+      ylab("Performance") #+ ggtitle(r.title)
+      )
+}
+plot.discrete.effort = function(r, theory) {
+  summary = summarySE(subset(r, theoryType==theory),
+                           measurevar="response",
+                           groupvars=c("ability", "effort",
+                                       "difficulty", "mindset"))
+  print(ggplot(summary,
+       aes(x=effort, y=response, color=mindset)) +
+  geom_errorbar(aes(ymin=response-ci, ymax=response+ci), width=0.2, color="grey") +
+  geom_point(size=3) +
+  facet_grid(difficulty ~ ability) +
+  theme_bw(text.size) +
+  xlab("") +
+  ylab(theory))
+}
+
+plot.continuous.effort = function(r) {
+  ggplot(r, aes(x=e, y=response, color=mindset)) +
+    geom_point(alpha=1/3) +
+    facet_grid(. ~ theoryType) +
+    theme_bw(text.size) +
+    stat_smooth(method="lm") +
+    xlab("effort") +
+    ylab("response")
+}
+plot.just.mindset = function(r, theory) {
+  theory.all <- subset(r, theoryType==theory)
+  justMindset <- summarySE(theory.all, measurevar="response",
+                                       groupvars=c("mindset"))
+  ggplot(justMindset, aes(x=mindset, y=response, fill=mindset)) +
+    geom_bar(stat="identity", color="black") +
+    geom_errorbar(aes(ymin=response-ci, ymax=response+ci), width=0.2) +
+    theme_bw(text.size) +
+    ylab(theory) +
+    xlab("Mindset")
+}
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+### Pilot (R0)
+
+```{r echo=F}
+theories.r0 = load("../data/theories-r0.csv")
+all.subjects = unique(theories.r0$workerID)
+good.subjects = theory.filter(theories.r0, all.subjects)
+# improvement <- summarySE(subset(r, theoryType=="improvement"),
+#                          measurevar="response",
+#                          groupvars=c("ability", "effort", "difficulty", "mindset"))
+```
+
+There were `r length(all.subjects)` Ss total, `r length(good.subjects)` of whom passed attention checks.
+
+Here were Ss' entity scores (higher scores indicate more endorsement of entity theories):
+
+```{r fig.width=7, fig.height=3, echo=F}
+print(mindset.hist(theories.r0))
+```
+
+Median entity score (used for split) was `r median(theories.r0$entityScore)`.
+
+People with different mindsets did not differ in their overall prediction of success:
+
+```{r fig.width=4, fig.height=2, echo=F}
+plot.just.mindset(theories.r0, "performance")
+```
+
+People with "growth" mindsets predicted more improvement overall than did people with "fixed" mindsets:
+
+```{r fig.width=4, fig.height=2, echo=F}
+plot.just.mindset(theories.r0, "improvement")
+```
+
+People with more "growth" mindsets (lower entity scores) may think people are less likely to succeed at difficult tasks without trying (lower left, red line).
+
+Performance as a function of entity score:
+
+```{r fig.width=7, fig.height=3, echo=F}
+plot.all(theories.r0, "performance")
+```
+
+Performance as a function of effort:
+
+```{r fig.width=7, fig.height=3, echo=F}
+plot.discrete.effort(theories.r0, "performance")
+```
+
+Improvement as a function of effort:
+
+```{r fig.width=6, fig.height=3, echo=F}
+plot.discrete.effort(theories.r0, "improvement")
+```
+
+People with different mindsets seem to differ in how much they think effort matters to improvement, but not in how much effort matters to success:
+
+Performance and improvement as a function of effort:
+
+```{r fig.width=7, fig.height=3, echo=F}
+plot.continuous.effort(theories.r0)
+```
+
+### "Replication" with goals
+
+```{r echo=F}
+theories.with.goals.r0 = load("../data/theories-with-goals-r0.csv")
+all.subjects = unique(theories.with.goals.r0$workerID)
+good.subjects = theory.filter(theories.with.goals.r0, all.subjects)
+```
+
+There were `r length(all.subjects)` Ss total, `r length(good.subjects)` of whom passed attention checks.
+
+Here were Ss' entity scores (higher scores indicate more endorsement of entity theories):
+
+```{r fig.width=7, fig.height=3, echo=F}
+print(mindset.hist(theories.with.goals.r0))
+```
+
+Median entity score (used for split) was `r median(theories.r0$entityScore)`.
+
+People with different mindsets did not differ in their overall prediction of success:
+
+```{r fig.width=4, fig.height=2, echo=F}
+plot.just.mindset(theories.with.goals.r0, "performance")
+```
+
+People with "growth" mindsets did not differ in their overall prediction of improvment (this is different from what we found in the pilot):
+
+```{r fig.width=4, fig.height=2, echo=F}
+plot.just.mindset(theories.with.goals.r0, "improvement")
+```
+
+{{{{{{{{}}}}}}}}
+
+Performance as a function of entity score:
+
+```{r fig.width=7, fig.height=3, echo=F}
+plot.all(theories.with.goals.r0, "performance")
+```
+
+Performance as a function of effort:
+
+```{r fig.width=7, fig.height=3, echo=F}
+plot.discrete.effort(theories.with.goals.r0, "performance")
+```
+
+Improvement as a function of effort:
+
+```{r fig.width=6, fig.height=3, echo=F}
+plot.discrete.effort(theories.with.goals.r0, "improvement")
+```
+
+{{{{{{{{{{{{People with different mindsets seem to differ in how much they think effort matters to improvement, but not in how much effort matters to success:}}}}}}}}}
+
+Performance and improvement as a function of effort:
+
+```{r fig.width=7, fig.height=3, echo=F}
+plot.continuous.effort(theories.with.goals.r0)
+```
+
+
+
+## hi
+
+```{r fig.width=7, fig.height=4, echo=F}
+theories.with.goals.r0 = load("../data/theories-with-goals-r0.csv")
+all.subjects = unique(theories.with.goals.r0$workerID)
+good.subjects = theory.filter(theories.with.goals.r0, all.subjects)
+```
+
+There were `r length(all.subjects)` Ss total, `r length(good.subjects)` of whom passed attention checks.
+
+#### Responses to mindset questionnaire
+
+Here were Ss' entity scores (higher scores indicate more endorsement of entity theories):
+
+```{r fig.width=7, fig.height=3, echo=F}
+print(mindset.hist(theories.with.goals.r0))
+```
+
+Median entity score (used for split) was `r median(theories.with.goals.r0$entityScore)`.
+
+#### Performance
+
+Performance as a function of entity score:
+
+```{r fig.width=7, fig.height=3, echo=F}
+plot.performance.all(theories.with.goals.r0)
+```
+
+Performance as a function of effort:
+
+```{r fig.width=6, fig.height=3, echo=F}
+plot.discrete.effort(theories.with.goals.r0, "performance")
+```
+
+People with different entity scores do not seem to differ in their theories of performance.
+
+#### Improvement
+
+Improvement as a function of effort:
+
+```{r fig.width=7, fig.height=3, echo=F}
+plot.discrete.effort(theories.with.goals.r0, "improvement")
+```
+
+#### Performance and Improvement
+
+Performance and improvement as a function of effort:
+
+```{r fig.width=7, fig.height=3, echo=F}
+plot.continuous.effort(theories.with.goals.r0)
+```
+
+### Replication without goals (R1)
+
+```{r fig.width=7, fig.height=4, echo=F}
+theories.r1 = load("../data/theories-r1.csv")
+all.subjects = unique(theories.r1$workerID)
+good.subjects = theory.filter(theories.r1, all.subjects)
+```
+
+There were `r length(all.subjects)` Ss total, `r length(good.subjects)` of whom passed attention checks.
+
+Here were Ss' entity scores (higher scores indicate more endorsement of entity theories):
+
+```{r fig.width=7, fig.height=3, echo=F}
+print(mindset.hist(theories.r1))
+```
+
+Median entity score (used for split) was `r median(theories.r1$entityScore)`.
+
+## Goals
+
+```{r fig.width=7, fig.height=4, echo=F}
+goals.r0 = read.table("../data/goals-r0.csv", header=T, sep=",")
+```

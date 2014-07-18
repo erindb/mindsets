@@ -32,7 +32,8 @@ theory.filter = function(r, all.subjects) {
       sapply(as.character(all.subjects),
              function(subj){
                r$sanity0[r$workerID==subj][1] <= 0.1 &
-                 r$sanity1[r$workerID==subj][1] >= 0.9
+                 r$sanity1[r$workerID==subj][1] >= 0.9 &
+                 r$heardOf[r$workerID==subj][1] == "no"
                })])}
 load = function(filename, split="median") {
   r = read.table(filename, header=T, sep=",")
@@ -96,7 +97,6 @@ plot.discrete.effort = function(r, theory) {
   xlab("") +
   ylab(theory))
 }
-
 plot.continuous.effort = function(r) {
   ggplot(r, aes(x=e, y=response, color=mindset)) +
     geom_point(alpha=1/3) +
@@ -117,6 +117,12 @@ plot.just.mindset = function(r, theory) {
     ylab(theory) +
     xlab("Mindset")
 }
+significance = function(r, theory) {
+  theory.all <- subset(r, theoryType==theory)
+  fit = lm(response ~ a * d * e * entityScore, data=theory.all)
+  print(anova(fit))
+  print(fit)
+}
 
 ```
 
@@ -126,9 +132,6 @@ plot.just.mindset = function(r, theory) {
 theories.r0 = load("../data/theories-r0.csv")
 all.subjects = unique(theories.r0$workerID)
 good.subjects = theory.filter(theories.r0, all.subjects)
-# improvement <- summarySE(subset(r, theoryType=="improvement"),
-#                          measurevar="response",
-#                          groupvars=c("ability", "effort", "difficulty", "mindset"))
 ```
 
 There were `r length(all.subjects)` Ss total, `r length(good.subjects)` of whom passed attention checks.
@@ -181,6 +184,22 @@ Performance and improvement as a function of effort:
 plot.continuous.effort(theories.r0)
 ```
 
+#### performance ANOVA
+
+Entity score does does not seem to be a factor that significantly effects people's predictions of performance. Ability (a), difficulty (d), and effort (e) all matter to people's predictions for success. There do not seem to be any interactions between factors, except a marginally significant interaction between difficulty and effort.
+
+```{r echo=F}
+significance(theories.r0, "performance")
+```
+
+#### improvement ANOVA
+
+There is a significant effect of someone's entity score on their prediction of how much someone will improve overall. There is a significant interaction between their entity score and effort (e), i.e. larger amounts of effort matter more to people with higher entity scores. Ability does not seem to matter to prediction of improvement, but difficulty (d) and effort (e) do seem to matter, with interactions between many of these variables.
+
+```{r echo=F}
+significance(theories.r0, "improvement")
+```
+
 ### "Replication" with goals
 
 ```{r echo=F}
@@ -197,7 +216,7 @@ Here were Ss' entity scores (higher scores indicate more endorsement of entity t
 print(mindset.hist(theories.with.goals.r0))
 ```
 
-Median entity score (used for split) was `r median(theories.r0$entityScore)`.
+Median entity score (used for split) was `r median(theories.with.goals.r0$entityScore)`.
 
 People with different mindsets did not differ in their overall prediction of success:
 
@@ -210,8 +229,6 @@ People with "growth" mindsets did not differ in their overall prediction of impr
 ```{r fig.width=4, fig.height=2, echo=F}
 plot.just.mindset(theories.with.goals.r0, "improvement")
 ```
-
-{{{{{{{{}}}}}}}}
 
 Performance as a function of entity score:
 
@@ -231,7 +248,7 @@ Improvement as a function of effort:
 plot.discrete.effort(theories.with.goals.r0, "improvement")
 ```
 
-{{{{{{{{{{{{People with different mindsets seem to differ in how much they think effort matters to improvement, but not in how much effort matters to success:}}}}}}}}}
+People with different mindsets do not seem to differ in how much they think effort matters to improvement or to success (not what we found in the pilot):
 
 Performance and improvement as a function of effort:
 
@@ -239,63 +256,25 @@ Performance and improvement as a function of effort:
 plot.continuous.effort(theories.with.goals.r0)
 ```
 
+#### performance ANOVA
 
+As in the pilot, ability (a), difficulty (d), and effort(e) all matter to performance. However, we now find that people with more "growth" mindsets are marginally less likely to predict success. We also no find a significant interaction between ability and effort.
 
-## hi
-
-```{r fig.width=7, fig.height=4, echo=F}
-theories.with.goals.r0 = load("../data/theories-with-goals-r0.csv")
-all.subjects = unique(theories.with.goals.r0$workerID)
-good.subjects = theory.filter(theories.with.goals.r0, all.subjects)
+```{r echo=F}
+significance(theories.with.goals.r0, "performance")
 ```
 
-There were `r length(all.subjects)` Ss total, `r length(good.subjects)` of whom passed attention checks.
+#### improvement ANOVA
 
-#### Responses to mindset questionnaire
+Again difficulty (d) and effort (e) matter, but now entity score does not, nor is there an interaction between entity score and effort. There are interactions between many of the other variables.
 
-Here were Ss' entity scores (higher scores indicate more endorsement of entity theories):
-
-```{r fig.width=7, fig.height=3, echo=F}
-print(mindset.hist(theories.with.goals.r0))
-```
-
-Median entity score (used for split) was `r median(theories.with.goals.r0$entityScore)`.
-
-#### Performance
-
-Performance as a function of entity score:
-
-```{r fig.width=7, fig.height=3, echo=F}
-plot.performance.all(theories.with.goals.r0)
-```
-
-Performance as a function of effort:
-
-```{r fig.width=6, fig.height=3, echo=F}
-plot.discrete.effort(theories.with.goals.r0, "performance")
-```
-
-People with different entity scores do not seem to differ in their theories of performance.
-
-#### Improvement
-
-Improvement as a function of effort:
-
-```{r fig.width=7, fig.height=3, echo=F}
-plot.discrete.effort(theories.with.goals.r0, "improvement")
-```
-
-#### Performance and Improvement
-
-Performance and improvement as a function of effort:
-
-```{r fig.width=7, fig.height=3, echo=F}
-plot.continuous.effort(theories.with.goals.r0)
+```{r echo=F}
+significance(theories.with.goals.r0, "improvement")
 ```
 
 ### Replication without goals (R1)
 
-```{r fig.width=7, fig.height=4, echo=F}
+```{r echo=F}
 theories.r1 = load("../data/theories-r1.csv")
 all.subjects = unique(theories.r1$workerID)
 good.subjects = theory.filter(theories.r1, all.subjects)
@@ -303,13 +282,69 @@ good.subjects = theory.filter(theories.r1, all.subjects)
 
 There were `r length(all.subjects)` Ss total, `r length(good.subjects)` of whom passed attention checks.
 
-Here were Ss' entity scores (higher scores indicate more endorsement of entity theories):
+Here were Ss' entity scores:
 
 ```{r fig.width=7, fig.height=3, echo=F}
 print(mindset.hist(theories.r1))
 ```
 
 Median entity score (used for split) was `r median(theories.r1$entityScore)`.
+
+People with different mindsets did not differ in their overall prediction of success:
+
+```{r fig.width=4, fig.height=2, echo=F}
+plot.just.mindset(theories.r1, "performance")
+```
+
+People with "growth" mindsets predicted more improvement overall than did people with "fixed" mindsets (this is a replication of the finding in the pilot):
+
+```{r fig.width=4, fig.height=2, echo=F}
+plot.just.mindset(theories.r1, "improvement")
+```
+
+People with more "growth" mindsets (lower entity scores) may think people are less likely to succeed at difficult tasks without trying (lower left, red line).
+
+Performance as a function of entity score:
+
+```{r fig.width=7, fig.height=3, echo=F}
+plot.all(theories.r1, "performance")
+```
+
+Performance as a function of effort:
+
+```{r fig.width=7, fig.height=3, echo=F}
+plot.discrete.effort(theories.r1, "performance")
+```
+
+Improvement as a function of effort:
+
+```{r fig.width=6, fig.height=3, echo=F}
+plot.discrete.effort(theories.r1, "improvement")
+```
+
+People with different mindsets seem to differ in how much they think effort matters to improvement, but not in how much effort matters to success:
+
+Performance and improvement as a function of effort:
+
+```{r fig.width=7, fig.height=3, echo=F}
+plot.continuous.effort(theories.r1)
+```
+
+#### performance ANOVA
+
+Ability (a), difficulty (d), and effort (e) all matter to performance, entity score is marginally significant, and other interactions exist.
+
+```{r echo=F}
+significance(theories.r1, "performance")
+```
+
+#### improvement ANOVA
+
+We replicated the finding from the pilot that effort matters more to people with lower entity scores. we again found that difficulty and effort matter more than ability, and we found several interactions between variables.
+
+```{r echo=F}
+significance(theories.r1, "improvement")
+```
 
 ## Goals
 
